@@ -1,3 +1,0 @@
-MODULE Relogio
-	SUBMODULE Somador_Subtrator
-		INSTANCE XLXI_38

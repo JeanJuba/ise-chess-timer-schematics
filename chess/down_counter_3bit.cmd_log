@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family artix7 -refsym down_counter_3bit C:/Users/jeanw/ise-chess-timer-schematics/chess/down_counter_3bit.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/down_counter_3bit.sym 
