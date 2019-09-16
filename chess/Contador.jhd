@@ -1,0 +1,5 @@
+MODULE Contador
+	SUBMODULE Decodificador_4bits
+		INSTANCE XLXI_24
+	SUBMODULE decade_down_counter
+		INSTANCE XLXI_25
