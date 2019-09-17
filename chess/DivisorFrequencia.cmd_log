@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3 -w -refsym DivisorFrequencia C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.sym 
