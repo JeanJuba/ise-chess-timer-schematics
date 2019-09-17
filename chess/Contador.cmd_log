@@ -1,1 +1,2 @@
 sch2sym -intstyle ise -family artix7 -refsym Contador C:/Users/jeanw/ise-chess-timer-schematics/chess/Contador.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/Contador.sym 
+sch2sym -intstyle ise -family spartan3 -w -refsym Contador C:/Users/jeanw/ise-chess-timer-schematics/chess/Contador.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/Contador.sym 

@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <drawing version="7">
-    <attr value="artix7" name="DeviceFamilyName">
+    <attr value="spartan3" name="DeviceFamilyName">
         <trait delete="all:0" />
         <trait editname="all:0" />
         <trait edittrait="all:0" />
     </attr>
     <netlist>
         <signal name="clock" />
-        <signal name="XLXN_3" />
+        <signal name="POWER" />
         <signal name="XLXN_8" />
-        <signal name="XLXN_9" />
         <signal name="XLXN_10" />
         <signal name="XLXN_11" />
         <signal name="C" />
-        <signal name="XLXN_13" />
         <signal name="XLXN_15" />
         <signal name="XLXN_16" />
         <signal name="XLXN_17" />
@@ -22,32 +20,19 @@
         <signal name="XLXN_20" />
         <signal name="XLXN_21" />
         <signal name="XLXN_22" />
-        <signal name="XLXN_23" />
-        <signal name="XLXN_24" />
-        <signal name="XLXN_25" />
-        <signal name="XLXN_26" />
-        <signal name="XLXN_27" />
         <signal name="XLXN_28" />
-        <signal name="XLXN_29" />
-        <signal name="XLXN_30" />
         <signal name="XLXN_31" />
         <signal name="XLXN_32" />
-        <signal name="XLXN_33" />
-        <signal name="XLXN_34" />
         <signal name="XLXN_35" />
         <signal name="D" />
         <signal name="B" />
         <signal name="XLXN_36" />
         <signal name="XLXN_42" />
-        <signal name="XLXN_43" />
-        <signal name="XLXN_44" />
         <signal name="A" />
         <signal name="XLXN_46" />
-        <signal name="XLXN_48" />
-        <signal name="XLXN_49" />
-        <signal name="XLXN_50" />
         <signal name="CLEAR" />
         <port polarity="Input" name="clock" />
+        <port polarity="Input" name="POWER" />
         <port polarity="Output" name="C" />
         <port polarity="Output" name="D" />
         <port polarity="Output" name="B" />
@@ -65,12 +50,6 @@
             <line x2="64" y1="-128" y2="-144" x1="80" />
             <line x2="80" y1="-112" y2="-128" x1="64" />
             <rect width="256" x="64" y="-384" height="320" />
-        </blockdef>
-        <blockdef name="vcc">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-32" y2="-64" x1="64" />
-            <line x2="64" y1="0" y2="-32" x1="64" />
-            <line x2="32" y1="-64" y2="-64" x1="96" />
         </blockdef>
         <blockdef name="or2">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -169,7 +148,7 @@
         <block symbolname="fjkc" name="XLXI_1">
             <blockpin signalname="clock" name="C" />
             <blockpin signalname="CLEAR" name="CLR" />
-            <blockpin signalname="XLXN_3" name="J" />
+            <blockpin signalname="POWER" name="J" />
             <blockpin signalname="XLXN_15" name="K" />
             <blockpin signalname="A" name="Q" />
         </block>
@@ -179,9 +158,6 @@
             <blockpin signalname="XLXN_22" name="J" />
             <blockpin signalname="XLXN_32" name="K" />
             <blockpin signalname="B" name="Q" />
-        </block>
-        <block symbolname="vcc" name="XLXI_7">
-            <blockpin signalname="XLXN_3" name="P" />
         </block>
         <block symbolname="or2" name="XLXI_8">
             <blockpin signalname="XLXN_8" name="I0" />
@@ -276,9 +252,8 @@
         <instance x="2752" y="1408" name="XLXI_4" orien="R0" />
         <instance x="496" y="1408" name="XLXI_1" orien="R0" />
         <iomarker fontsize="28" x="192" y="1280" name="clock" orien="R180" />
-        <instance x="160" y="1056" name="XLXI_7" orien="R0" />
-        <branch name="XLXN_3">
-            <wire x2="224" y1="1056" y2="1088" x1="224" />
+        <branch name="POWER">
+            <wire x2="224" y1="1088" y2="1088" x1="208" />
             <wire x2="496" y1="1088" y2="1088" x1="224" />
         </branch>
         <instance x="1360" y="672" name="XLXI_8" orien="R0" />
@@ -500,5 +475,6 @@
             <wire x2="2752" y1="1376" y2="1520" x1="2752" />
         </branch>
         <iomarker fontsize="28" x="192" y="1520" name="CLEAR" orien="R180" />
+        <iomarker fontsize="28" x="208" y="1088" name="POWER" orien="R180" />
     </sheet>
 </drawing>

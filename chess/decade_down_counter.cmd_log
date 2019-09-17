@@ -1,2 +1,4 @@
 sch2sym -intstyle ise -family artix7 -refsym decade_down_counter C:/Users/jeanw/chess/decade_down_counter.sch C:/Users/jeanw/chess/decade_down_counter.sym 
 sch2hdl -intstyle ise -family artix7 -flat -suppress -vhdl decade_down_counter_drc.vhf -w C:/Users/jeanw/chess/decade_down_counter.sch 
+sch2sym -intstyle ise -family spartan3 -refsym decade_down_counter C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.sym 
+sch2sym -intstyle ise -family spartan3 -w -refsym decade_down_counter C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.sym 

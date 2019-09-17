@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <drawing version="7">
-    <attr value="artix7" name="DeviceFamilyName">
+    <attr value="spartan3" name="DeviceFamilyName">
         <trait delete="all:0" />
         <trait editname="all:0" />
         <trait edittrait="all:0" />
@@ -18,8 +18,8 @@
         <signal name="CYCLE" />
         <signal name="XLXN_70" />
         <signal name="XLXN_71" />
-        <signal name="XLXN_72" />
         <signal name="XLXN_73" />
+        <signal name="POWER" />
         <port polarity="Output" name="A" />
         <port polarity="Output" name="B" />
         <port polarity="Output" name="C" />
@@ -30,6 +30,7 @@
         <port polarity="Input" name="CLOCK" />
         <port polarity="Input" name="CLEAR" />
         <port polarity="Output" name="CYCLE" />
+        <port polarity="Input" name="POWER" />
         <blockdef name="Decodificador_4bits">
             <timestamp>2019-9-16T0:12:0</timestamp>
             <rect width="256" x="64" y="-448" height="448" />
@@ -46,14 +47,15 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="decade_down_counter">
-            <timestamp>2019-9-16T2:23:51</timestamp>
-            <rect width="256" x="64" y="-256" height="256" />
+            <timestamp>2019-9-17T23:14:3</timestamp>
+            <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-224" y2="-224" x1="320" />
             <line x2="384" y1="-160" y2="-160" x1="320" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="256" x="64" y="-256" height="320" />
         </blockdef>
         <block symbolname="Decodificador_4bits" name="XLXI_24">
             <blockpin signalname="XLXN_70" name="C" />
@@ -75,6 +77,7 @@
             <blockpin signalname="CYCLE" name="D" />
             <blockpin signalname="XLXN_71" name="B" />
             <blockpin signalname="XLXN_73" name="A" />
+            <blockpin signalname="POWER" name="POWER" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -144,5 +147,9 @@
             <wire x2="1616" y1="1264" y2="1312" x1="1616" />
             <wire x2="2176" y1="1312" y2="1312" x1="1616" />
         </branch>
+        <branch name="POWER">
+            <wire x2="672" y1="1328" y2="1328" x1="640" />
+        </branch>
+        <iomarker fontsize="28" x="640" y="1328" name="POWER" orien="R180" />
     </sheet>
 </drawing>

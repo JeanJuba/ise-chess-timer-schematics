@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <drawing version="7">
-    <attr value="artix7" name="DeviceFamilyName">
+    <attr value="spartan3" name="DeviceFamilyName">
         <trait delete="all:0" />
         <trait editname="all:0" />
         <trait edittrait="all:0" />
@@ -24,6 +24,8 @@
         <signal name="DECF" />
         <signal name="DECG" />
         <signal name="TIMEOUT" />
+        <signal name="XLXN_3" />
+        <signal name="XLXN_4" />
         <port polarity="Input" name="CLEAR" />
         <port polarity="Input" name="CLOCK" />
         <port polarity="Output" name="CONTA" />
@@ -42,8 +44,8 @@
         <port polarity="Output" name="DECG" />
         <port polarity="Output" name="TIMEOUT" />
         <blockdef name="Contador">
-            <timestamp>2019-9-16T3:17:15</timestamp>
-            <rect width="256" x="64" y="-512" height="512" />
+            <timestamp>2019-9-17T23:14:38</timestamp>
+            <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-480" y2="-480" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-480" y2="-480" x1="320" />
@@ -54,6 +56,7 @@
             <line x2="384" y1="-160" y2="-160" x1="320" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="256" x="64" y="-512" height="576" />
         </blockdef>
         <blockdef name="Decimal">
             <timestamp>2019-9-17T1:55:37</timestamp>
@@ -69,6 +72,12 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
             <rect width="256" x="64" y="-448" height="512" />
         </blockdef>
+        <blockdef name="vcc">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-64" x1="64" />
+            <line x2="64" y1="0" y2="-32" x1="64" />
+            <line x2="32" y1="-64" y2="-64" x1="96" />
+        </blockdef>
         <block symbolname="Contador" name="XLXI_1">
             <blockpin signalname="CLOCK" name="CLOCK" />
             <blockpin signalname="CLEAR" name="CLEAR" />
@@ -80,6 +89,7 @@
             <blockpin signalname="CONTF" name="F" />
             <blockpin signalname="CONTG" name="G" />
             <blockpin signalname="XLXN_2" name="CYCLE" />
+            <blockpin signalname="XLXN_3" name="POWER" />
         </block>
         <block symbolname="Decimal" name="XLXI_6">
             <blockpin signalname="XLXN_2" name="CLOCK" />
@@ -92,6 +102,9 @@
             <blockpin signalname="DECF" name="F" />
             <blockpin signalname="DECG" name="G" />
             <blockpin signalname="TIMEOUT" name="CYCLE" />
+        </block>
+        <block symbolname="vcc" name="XLXI_7">
+            <blockpin signalname="XLXN_3" name="P" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -182,5 +195,11 @@
         <iomarker fontsize="28" x="2144" y="2096" name="TIMEOUT" orien="R0" />
         <instance x="1728" y="2064" name="XLXI_6" orien="R0">
         </instance>
+        <instance x="944" y="1312" name="XLXI_7" orien="R0" />
+        <branch name="XLXN_3">
+            <wire x2="1008" y1="1312" y2="1328" x1="1008" />
+            <wire x2="1008" y1="1328" y2="1440" x1="1008" />
+            <wire x2="1072" y1="1440" y2="1440" x1="1008" />
+        </branch>
     </sheet>
 </drawing>
