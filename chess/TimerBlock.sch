@@ -7,7 +7,6 @@
     </attr>
     <netlist>
         <signal name="XLXN_2" />
-        <signal name="XLXN_3" />
         <signal name="CLEAR" />
         <signal name="CLOCK" />
         <signal name="CONTA" />
@@ -24,6 +23,7 @@
         <signal name="DECE" />
         <signal name="DECF" />
         <signal name="DECG" />
+        <signal name="TIMEOUT" />
         <port polarity="Input" name="CLEAR" />
         <port polarity="Input" name="CLOCK" />
         <port polarity="Output" name="CONTA" />
@@ -40,6 +40,7 @@
         <port polarity="Output" name="DECE" />
         <port polarity="Output" name="DECF" />
         <port polarity="Output" name="DECG" />
+        <port polarity="Output" name="TIMEOUT" />
         <blockdef name="Contador">
             <timestamp>2019-9-16T3:17:15</timestamp>
             <rect width="256" x="64" y="-512" height="512" />
@@ -55,8 +56,8 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="Decimal">
-            <timestamp>2019-9-16T3:17:20</timestamp>
-            <rect width="256" x="64" y="-448" height="448" />
+            <timestamp>2019-9-17T1:55:37</timestamp>
+            <line x2="384" y1="32" y2="32" x1="320" />
             <line x2="0" y1="-416" y2="-416" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-416" y2="-416" x1="320" />
@@ -66,6 +67,7 @@
             <line x2="384" y1="-160" y2="-160" x1="320" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="256" x="64" y="-448" height="512" />
         </blockdef>
         <block symbolname="Contador" name="XLXI_1">
             <blockpin signalname="CLOCK" name="CLOCK" />
@@ -79,7 +81,7 @@
             <blockpin signalname="CONTG" name="G" />
             <blockpin signalname="XLXN_2" name="CYCLE" />
         </block>
-        <block symbolname="Decimal" name="XLXI_2">
+        <block symbolname="Decimal" name="XLXI_6">
             <blockpin signalname="XLXN_2" name="CLOCK" />
             <blockpin signalname="CLEAR" name="CLEAR" />
             <blockpin signalname="DECA" name="A" />
@@ -89,23 +91,21 @@
             <blockpin signalname="DECE" name="E" />
             <blockpin signalname="DECF" name="F" />
             <blockpin signalname="DECG" name="G" />
+            <blockpin signalname="TIMEOUT" name="CYCLE" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <instance x="1072" y="1408" name="XLXI_1" orien="R0">
         </instance>
-        <instance x="1744" y="2064" name="XLXI_2" orien="R0">
-        </instance>
         <branch name="XLXN_2">
-            <wire x2="1600" y1="1376" y2="1376" x1="1456" />
-            <wire x2="1600" y1="1376" y2="1648" x1="1600" />
-            <wire x2="1744" y1="1648" y2="1648" x1="1600" />
+            <wire x2="1456" y1="1376" y2="1648" x1="1456" />
+            <wire x2="1728" y1="1648" y2="1648" x1="1456" />
         </branch>
         <branch name="CLEAR">
             <wire x2="816" y1="1376" y2="1376" x1="656" />
             <wire x2="1072" y1="1376" y2="1376" x1="816" />
             <wire x2="816" y1="1376" y2="2032" x1="816" />
-            <wire x2="1744" y1="2032" y2="2032" x1="816" />
+            <wire x2="1728" y1="2032" y2="2032" x1="816" />
         </branch>
         <iomarker fontsize="28" x="656" y="1376" name="CLEAR" orien="R180" />
         <branch name="CLOCK">
@@ -141,32 +141,46 @@
         </branch>
         <iomarker fontsize="28" x="1488" y="1312" name="CONTG" orien="R0" />
         <branch name="DECA">
-            <wire x2="2160" y1="1648" y2="1648" x1="2128" />
+            <wire x2="2144" y1="1648" y2="1648" x1="2112" />
+            <wire x2="2160" y1="1648" y2="1648" x1="2144" />
         </branch>
         <iomarker fontsize="28" x="2160" y="1648" name="DECA" orien="R0" />
         <branch name="DECB">
-            <wire x2="2160" y1="1712" y2="1712" x1="2128" />
+            <wire x2="2144" y1="1712" y2="1712" x1="2112" />
+            <wire x2="2160" y1="1712" y2="1712" x1="2144" />
         </branch>
         <iomarker fontsize="28" x="2160" y="1712" name="DECB" orien="R0" />
         <branch name="DECC">
-            <wire x2="2160" y1="1776" y2="1776" x1="2128" />
+            <wire x2="2144" y1="1776" y2="1776" x1="2112" />
+            <wire x2="2160" y1="1776" y2="1776" x1="2144" />
         </branch>
         <iomarker fontsize="28" x="2160" y="1776" name="DECC" orien="R0" />
         <branch name="DECD">
-            <wire x2="2160" y1="1840" y2="1840" x1="2128" />
+            <wire x2="2144" y1="1840" y2="1840" x1="2112" />
+            <wire x2="2160" y1="1840" y2="1840" x1="2144" />
         </branch>
         <iomarker fontsize="28" x="2160" y="1840" name="DECD" orien="R0" />
         <branch name="DECE">
-            <wire x2="2160" y1="1904" y2="1904" x1="2128" />
+            <wire x2="2144" y1="1904" y2="1904" x1="2112" />
+            <wire x2="2160" y1="1904" y2="1904" x1="2144" />
         </branch>
         <iomarker fontsize="28" x="2160" y="1904" name="DECE" orien="R0" />
         <branch name="DECF">
-            <wire x2="2160" y1="1968" y2="1968" x1="2128" />
+            <wire x2="2144" y1="1968" y2="1968" x1="2112" />
+            <wire x2="2160" y1="1968" y2="1968" x1="2144" />
         </branch>
         <iomarker fontsize="28" x="2160" y="1968" name="DECF" orien="R0" />
         <branch name="DECG">
-            <wire x2="2160" y1="2032" y2="2032" x1="2128" />
+            <wire x2="2144" y1="2032" y2="2032" x1="2112" />
+            <wire x2="2160" y1="2032" y2="2032" x1="2144" />
         </branch>
         <iomarker fontsize="28" x="2160" y="2032" name="DECG" orien="R0" />
+        <branch name="TIMEOUT">
+            <wire x2="2128" y1="2096" y2="2096" x1="2112" />
+            <wire x2="2144" y1="2096" y2="2096" x1="2128" />
+        </branch>
+        <iomarker fontsize="28" x="2144" y="2096" name="TIMEOUT" orien="R0" />
+        <instance x="1728" y="2064" name="XLXI_6" orien="R0">
+        </instance>
     </sheet>
 </drawing>

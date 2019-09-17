@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family artix7 -refsym TimerBlock C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.sym 

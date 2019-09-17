@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-09-16T12:35:33</DateModified>
+  <DateModified>2019-09-16T23:00:18</DateModified>
   <ModuleName>TimerBlock</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/jeanw/ise-chess-timer-schematics/chess/iseconfig/TimerBlock.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/jeanw/ise-chess-timer-schematics/chess</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/jeanw/ise-chess-timer-schematics/chess\</ImplementationReportsDirectory>
   <DateInitialized>2019-09-16T12:35:33</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

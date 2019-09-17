@@ -25,6 +25,7 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Contador.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Decimal.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Decodificador_4bits.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="TimerBlock.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="decade_down_counter.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="decade_down_counter_drc.vhf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="down_counter_3bit.sym" xil_pn:origination="imported"/>
