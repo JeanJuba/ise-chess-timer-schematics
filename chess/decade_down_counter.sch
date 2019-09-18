@@ -193,11 +193,6 @@
             <blockpin signalname="D" name="I2" />
             <blockpin signalname="XLXN_17" name="O" />
         </block>
-        <block symbolname="and2" name="XLXI_15">
-            <blockpin signalname="XLXN_17" name="I0" />
-            <blockpin signalname="XLXN_16" name="I1" />
-            <blockpin signalname="XLXN_22" name="O" />
-        </block>
         <block symbolname="inv" name="XLXI_16">
             <blockpin signalname="D" name="I" />
             <blockpin signalname="XLXN_18" name="O" />
@@ -220,7 +215,7 @@
             <blockpin signalname="XLXN_32" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_21">
-            <blockpin name="I" />
+            <blockpin signalname="A" name="I" />
             <blockpin signalname="XLXN_31" name="O" />
         </block>
         <block symbolname="and3b2" name="XLXI_22">
@@ -244,6 +239,11 @@
             <blockpin signalname="B" name="I1" />
             <blockpin signalname="C" name="I2" />
             <blockpin signalname="XLXN_46" name="O" />
+        </block>
+        <block symbolname="or2" name="XLXI_28">
+            <blockpin signalname="XLXN_17" name="I0" />
+            <blockpin signalname="XLXN_16" name="I1" />
+            <blockpin signalname="XLXN_22" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -301,7 +301,6 @@
         </branch>
         <instance x="992" y="1920" name="XLXI_13" orien="R0" />
         <instance x="992" y="2144" name="XLXI_14" orien="R0" />
-        <instance x="1376" y="2000" name="XLXI_15" orien="R0" />
         <branch name="XLXN_16">
             <wire x2="1312" y1="1792" y2="1792" x1="1248" />
             <wire x2="1312" y1="1792" y2="1872" x1="1312" />
@@ -426,8 +425,8 @@
             <wire x2="400" y1="1856" y2="2112" x1="400" />
             <wire x2="592" y1="2112" y2="2112" x1="400" />
             <wire x2="400" y1="2112" y2="2384" x1="400" />
-            <wire x2="688" y1="2384" y2="2384" x1="400" />
             <wire x2="400" y1="2384" y2="2480" x1="400" />
+            <wire x2="704" y1="2384" y2="2384" x1="400" />
             <wire x2="880" y1="1152" y2="1232" x1="880" />
             <wire x2="880" y1="1232" y2="1472" x1="880" />
             <wire x2="960" y1="1232" y2="1232" x1="880" />
@@ -476,5 +475,6 @@
         </branch>
         <iomarker fontsize="28" x="192" y="1520" name="CLEAR" orien="R180" />
         <iomarker fontsize="28" x="208" y="1088" name="POWER" orien="R180" />
+        <instance x="1376" y="2000" name="XLXI_28" orien="R0" />
     </sheet>
 </drawing>

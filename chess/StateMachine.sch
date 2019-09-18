@@ -18,31 +18,18 @@
         <signal name="XLXN_25" />
         <signal name="XLXN_26" />
         <signal name="XLXN_27" />
-        <signal name="XLXN_28" />
         <signal name="XLXN_37" />
         <signal name="XLXN_38" />
         <signal name="XLXN_39" />
         <signal name="XLXN_41" />
         <signal name="XLXN_42" />
         <signal name="W" />
-        <signal name="XLXN_54" />
-        <signal name="XLXN_58" />
         <signal name="XLXN_59" />
         <signal name="XLXN_60" />
-        <signal name="XLXN_61" />
         <signal name="J" />
         <signal name="K" />
         <signal name="Z" />
-        <signal name="XLXN_67" />
-        <signal name="XLXN_72" />
-        <signal name="XLXN_75" />
-        <signal name="XLXN_76" />
-        <signal name="XLXN_78" />
-        <signal name="XLXN_81" />
-        <signal name="XLXN_84" />
         <signal name="CLEAR" />
-        <signal name="XLXN_86" />
-        <signal name="XLXN_87" />
         <signal name="CLOCK" />
         <port polarity="Input" name="TIMEOUT" />
         <port polarity="Input" name="BUTTON" />

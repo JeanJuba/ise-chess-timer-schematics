@@ -24,7 +24,6 @@
         <signal name="DECG" />
         <signal name="TIMEOUT" />
         <signal name="XLXN_3" />
-        <signal name="XLXN_4" />
         <signal name="XLXN_5" />
         <signal name="CLOCK" />
         <port polarity="Input" name="CLEAR" />
@@ -202,11 +201,9 @@
         <iomarker fontsize="28" x="2144" y="2096" name="TIMEOUT" orien="R0" />
         <instance x="1728" y="2064" name="XLXI_6" orien="R0">
         </instance>
-        <instance x="944" y="1312" name="XLXI_7" orien="R0" />
         <branch name="XLXN_3">
-            <wire x2="1008" y1="1312" y2="1328" x1="1008" />
-            <wire x2="1008" y1="1328" y2="1440" x1="1008" />
-            <wire x2="1072" y1="1440" y2="1440" x1="1008" />
+            <wire x2="896" y1="1264" y2="1440" x1="896" />
+            <wire x2="1072" y1="1440" y2="1440" x1="896" />
         </branch>
         <branch name="XLXN_5">
             <wire x2="1072" y1="928" y2="928" x1="1040" />
@@ -217,5 +214,6 @@
             <wire x2="656" y1="928" y2="928" x1="624" />
         </branch>
         <iomarker fontsize="28" x="624" y="928" name="CLOCK" orien="R180" />
+        <instance x="832" y="1264" name="XLXI_7" orien="R0" />
     </sheet>
 </drawing>
