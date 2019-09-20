@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\jeanw\ise-chess-timer-schematics\chess\teste_contador.ncd
+OUTFILE=C:\Users\jeanw\ise-chess-timer-schematics\chess\teste_contador.bit
+FAMILY=Spartan3
+PART=xc3s1000-4ft256
+WORKINGDIR=C:\Users\jeanw\ise-chess-timer-schematics\chess
+LICENSE=WebPack
+USER_INFO=__0_0_0

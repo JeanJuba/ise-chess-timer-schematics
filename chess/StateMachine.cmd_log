@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3 -w -refsym StateMachine C:/Users/jeanw/ise-chess-timer-schematics/chess/StateMachine.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/StateMachine.sym 

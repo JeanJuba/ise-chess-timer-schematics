@@ -1,0 +1,12 @@
+NET "CLOCK" LOC = T9;
+NET "CLEAR" LOC = L14;
+#NET "POWER" LOC = N8;
+
+
+NET "B" LOC = G13;
+NET "A" LOC = E14;
+NET "C" LOC = N15;
+NET "D" LOC = P15;
+NET "E" LOC = R16;
+NET "F" LOC = F13;
+NET "G" LOC = N16;

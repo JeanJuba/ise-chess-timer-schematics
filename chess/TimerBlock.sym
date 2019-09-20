@@ -1,60 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="TimerBlock">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2019-9-17T1:59:16</timestamp>
-    <pin polarity="Input" x="0" y="-928" name="CLEAR" />
-    <pin polarity="Input" x="0" y="-32" name="CLOCK" />
-    <pin polarity="Output" x="384" y="-928" name="CONTA" />
-    <pin polarity="Output" x="384" y="-864" name="CONTB" />
-    <pin polarity="Output" x="384" y="-800" name="CONTC" />
-    <pin polarity="Output" x="384" y="-736" name="CONTD" />
-    <pin polarity="Output" x="384" y="-672" name="CONTE" />
-    <pin polarity="Output" x="384" y="-608" name="CONTF" />
-    <pin polarity="Output" x="384" y="-544" name="CONTG" />
-    <pin polarity="Output" x="384" y="-480" name="DECA" />
-    <pin polarity="Output" x="384" y="-416" name="DECB" />
-    <pin polarity="Output" x="384" y="-352" name="DECC" />
-    <pin polarity="Output" x="384" y="-288" name="DECD" />
-    <pin polarity="Output" x="384" y="-224" name="DECE" />
-    <pin polarity="Output" x="384" y="-160" name="DECF" />
-    <pin polarity="Output" x="384" y="-96" name="DECG" />
-    <pin polarity="Output" x="384" y="-32" name="TIMEOUT" />
+    <timestamp>2019-9-19T23:57:12</timestamp>
+    <pin polarity="Output" x="400" y="-624" name="DECA" />
+    <pin polarity="Output" x="400" y="-560" name="DECB" />
+    <pin polarity="Input" x="16" y="-496" name="CLOCK" />
+    <pin polarity="Output" x="400" y="-496" name="TIMEOUT" />
+    <pin polarity="Output" x="400" y="-928" name="CONTA" />
+    <pin polarity="Output" x="400" y="-864" name="CONTB" />
+    <pin polarity="Output" x="400" y="-800" name="CONTC" />
+    <pin polarity="Output" x="400" y="-736" name="CONTD" />
+    <pin polarity="Input" x="16" y="-928" name="CLEAR" />
     <graph>
-        <rect width="256" x="64" y="-960" height="960" />
         <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-968" type="symbol" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-928" type="pin CLEAR" />
-        <line x2="0" y1="-928" y2="-928" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin CLOCK" />
-        <line x2="0" y1="-32" y2="-32" x1="64" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-928" type="pin CONTA" />
-        <line x2="384" y1="-928" y2="-928" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-864" type="pin CONTB" />
-        <line x2="384" y1="-864" y2="-864" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-800" type="pin CONTC" />
-        <line x2="384" y1="-800" y2="-800" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-736" type="pin CONTD" />
-        <line x2="384" y1="-736" y2="-736" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-672" type="pin CONTE" />
-        <line x2="384" y1="-672" y2="-672" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-608" type="pin CONTF" />
-        <line x2="384" y1="-608" y2="-608" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-544" type="pin CONTG" />
-        <line x2="384" y1="-544" y2="-544" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-480" type="pin DECA" />
-        <line x2="384" y1="-480" y2="-480" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-416" type="pin DECB" />
-        <line x2="384" y1="-416" y2="-416" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-352" type="pin DECC" />
-        <line x2="384" y1="-352" y2="-352" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-288" type="pin DECD" />
-        <line x2="384" y1="-288" y2="-288" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-224" type="pin DECE" />
-        <line x2="384" y1="-224" y2="-224" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-160" type="pin DECF" />
-        <line x2="384" y1="-160" y2="-160" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-96" type="pin DECG" />
-        <line x2="384" y1="-96" y2="-96" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-32" type="pin TIMEOUT" />
-        <line x2="384" y1="-32" y2="-32" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="328" y="-624" type="pin DECA" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="328" y="-560" type="pin DECB" />
+        <line x2="400" y1="-624" y2="-624" x1="336" />
+        <line x2="400" y1="-560" y2="-560" x1="336" />
+        <line x2="16" y1="-496" y2="-496" x1="80" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="88" y="-496" type="pin CLOCK" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="328" y="-496" type="pin TIMEOUT" />
+        <line x2="400" y1="-496" y2="-496" x1="336" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="328" y="-928" type="pin CONTA" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="328" y="-864" type="pin CONTB" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="328" y="-800" type="pin CONTC" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="328" y="-736" type="pin CONTD" />
+        <line x2="400" y1="-928" y2="-928" x1="336" />
+        <line x2="400" y1="-864" y2="-864" x1="336" />
+        <line x2="400" y1="-800" y2="-800" x1="336" />
+        <line x2="400" y1="-736" y2="-736" x1="336" />
+        <line x2="80" y1="-928" y2="-928" x1="20" />
+        <rect width="256" x="80" y="-956" height="500" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="92" y="-928" type="pin CLEAR" />
     </graph>
 </symbol>

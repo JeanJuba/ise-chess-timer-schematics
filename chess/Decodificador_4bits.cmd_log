@@ -1,1 +1,2 @@
 sch2sym -intstyle ise -family artix7 -refsym Decodificador_4bits C:/Users/jeanw/chess/Decodificador_4bits.sch C:/Users/jeanw/chess/Decodificador_4bits.sym 
+sch2sym -intstyle ise -family spartan3 -w -refsym Decodificador_4bits C:/Users/jeanw/ise-chess-timer-schematics/chess/Decodificador_4bits.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/Decodificador_4bits.sym 

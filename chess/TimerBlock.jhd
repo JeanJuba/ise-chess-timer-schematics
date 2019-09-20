@@ -1,7 +1,5 @@
 MODULE TimerBlock
-	SUBMODULE Contador
-		INSTANCE XLXI_1
 	SUBMODULE Decimal
 		INSTANCE XLXI_6
-	SUBMODULE DivisorFrequencia
-		INSTANCE XLXI_8
+	SUBMODULE decade_down_counter
+		INSTANCE XLXI_10

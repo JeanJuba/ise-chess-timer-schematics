@@ -3,3 +3,4 @@ sch2sym -intstyle ise -family artix7 -refsym Decimal C:/Users/jeanw/ise-chess-ti
 sch2sym -intstyle ise -family artix7 -refsym Decimal C:/Users/jeanw/ise-chess-timer-schematics/chess/Decimal.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/Decimal.sym 
 sch2sym -intstyle ise -family artix7 -w -refsym Decimal C:/Users/jeanw/ise-chess-timer-schematics/chess/Decimal.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/Decimal.sym 
 sch2sym -intstyle ise -family artix7 -refsym Decimal C:/Users/jeanw/ise-chess-timer-schematics/chess/Decimal.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/Decimal.sym 
+sch2sym -intstyle ise -family spartan3 -w -refsym Decimal C:/Users/jeanw/ise-chess-timer-schematics/chess/Decimal.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/Decimal.sym 

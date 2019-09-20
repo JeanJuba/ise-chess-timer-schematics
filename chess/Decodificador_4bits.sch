@@ -6,10 +6,10 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="C" />
         <signal name="B" />
-        <signal name="A" />
+        <signal name="C" />
         <signal name="D" />
+        <signal name="A" />
         <signal name="XLXN_32" />
         <signal name="XLXN_33" />
         <signal name="XLXN_34" />
@@ -34,10 +34,10 @@
         <signal name="e_7" />
         <signal name="f_7" />
         <signal name="g_7" />
-        <port polarity="Input" name="C" />
         <port polarity="Input" name="B" />
-        <port polarity="Input" name="A" />
+        <port polarity="Input" name="C" />
         <port polarity="Input" name="D" />
+        <port polarity="Input" name="A" />
         <port polarity="Output" name="a_7" />
         <port polarity="Output" name="b_7" />
         <port polarity="Output" name="c_7" />
@@ -142,37 +142,37 @@
             <arc ex="208" ey="-96" sx="128" sy="-48" r="88" cx="132" cy="-136" />
         </blockdef>
         <block symbolname="inv" name="XLXI_1">
-            <blockpin signalname="B" name="I" />
+            <blockpin signalname="C" name="I" />
             <blockpin signalname="XLXN_32" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_2">
-            <blockpin signalname="C" name="I" />
+            <blockpin signalname="B" name="I" />
             <blockpin signalname="XLXN_33" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_3">
-            <blockpin signalname="D" name="I" />
+            <blockpin signalname="A" name="I" />
             <blockpin signalname="XLXN_34" name="O" />
         </block>
         <block symbolname="xnor2" name="XLXI_6">
-            <blockpin signalname="D" name="I0" />
-            <blockpin signalname="B" name="I1" />
+            <blockpin signalname="A" name="I0" />
+            <blockpin signalname="C" name="I1" />
             <blockpin signalname="XLXN_36" name="O" />
         </block>
         <block symbolname="xnor2" name="XLXI_7">
-            <blockpin signalname="D" name="I0" />
-            <blockpin signalname="C" name="I1" />
+            <blockpin signalname="A" name="I0" />
+            <blockpin signalname="B" name="I1" />
             <blockpin signalname="XLXN_37" name="O" />
         </block>
         <block symbolname="or3" name="XLXI_10">
-            <blockpin signalname="C" name="I0" />
-            <blockpin signalname="A" name="I1" />
+            <blockpin signalname="B" name="I0" />
+            <blockpin signalname="D" name="I1" />
             <blockpin signalname="XLXN_36" name="I2" />
             <blockpin signalname="a_7" name="O" />
         </block>
         <block symbolname="or3" name="XLXI_11">
-            <blockpin signalname="D" name="I0" />
+            <blockpin signalname="A" name="I0" />
             <blockpin signalname="XLXN_33" name="I1" />
-            <blockpin signalname="B" name="I2" />
+            <blockpin signalname="C" name="I2" />
             <blockpin signalname="c_7" name="O" />
         </block>
         <block symbolname="or2" name="XLXI_12">
@@ -186,19 +186,19 @@
             <blockpin signalname="XLXN_40" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_14">
-            <blockpin signalname="C" name="I0" />
+            <blockpin signalname="B" name="I0" />
             <blockpin signalname="XLXN_32" name="I1" />
             <blockpin signalname="XLXN_41" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_15">
             <blockpin signalname="XLXN_34" name="I0" />
-            <blockpin signalname="C" name="I1" />
+            <blockpin signalname="B" name="I1" />
             <blockpin signalname="XLXN_42" name="O" />
         </block>
         <block symbolname="and3" name="XLXI_16">
-            <blockpin signalname="D" name="I0" />
+            <blockpin signalname="A" name="I0" />
             <blockpin signalname="XLXN_33" name="I1" />
-            <blockpin signalname="B" name="I2" />
+            <blockpin signalname="C" name="I2" />
             <blockpin signalname="XLXN_43" name="O" />
         </block>
         <block symbolname="or4" name="XLXI_17">
@@ -210,7 +210,7 @@
         </block>
         <block symbolname="or2" name="XLXI_18">
             <blockpin signalname="XLXN_52" name="I0" />
-            <blockpin signalname="A" name="I1" />
+            <blockpin signalname="D" name="I1" />
             <blockpin signalname="d_7" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_19">
@@ -220,7 +220,7 @@
         </block>
         <block symbolname="and2" name="XLXI_20">
             <blockpin signalname="XLXN_34" name="I0" />
-            <blockpin signalname="C" name="I1" />
+            <blockpin signalname="B" name="I1" />
             <blockpin signalname="XLXN_56" name="O" />
         </block>
         <block symbolname="or2" name="XLXI_21">
@@ -235,41 +235,41 @@
         </block>
         <block symbolname="and2" name="XLXI_23">
             <blockpin signalname="XLXN_33" name="I0" />
-            <blockpin signalname="B" name="I1" />
+            <blockpin signalname="C" name="I1" />
             <blockpin signalname="XLXN_60" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_24">
             <blockpin signalname="XLXN_34" name="I0" />
-            <blockpin signalname="B" name="I1" />
+            <blockpin signalname="C" name="I1" />
             <blockpin signalname="XLXN_59" name="O" />
         </block>
         <block symbolname="or4" name="XLXI_25">
             <blockpin signalname="XLXN_59" name="I0" />
             <blockpin signalname="XLXN_60" name="I1" />
             <blockpin signalname="XLXN_61" name="I2" />
-            <blockpin signalname="A" name="I3" />
+            <blockpin signalname="D" name="I3" />
             <blockpin signalname="f_7" name="O" />
         </block>
         <block symbolname="xor2" name="XLXI_26">
-            <blockpin signalname="C" name="I0" />
-            <blockpin signalname="B" name="I1" />
+            <blockpin signalname="B" name="I0" />
+            <blockpin signalname="C" name="I1" />
             <blockpin signalname="XLXN_72" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_27">
             <blockpin signalname="XLXN_34" name="I0" />
-            <blockpin signalname="C" name="I1" />
+            <blockpin signalname="B" name="I1" />
             <blockpin signalname="XLXN_71" name="O" />
         </block>
         <block symbolname="or3" name="XLXI_28">
             <blockpin signalname="XLXN_71" name="I0" />
             <blockpin signalname="XLXN_72" name="I1" />
-            <blockpin signalname="A" name="I2" />
+            <blockpin signalname="D" name="I2" />
             <blockpin signalname="g_7" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <branch name="C">
-            <wire x2="608" y1="160" y2="208" x1="608" />
+        <branch name="B">
+            <wire x2="608" y1="176" y2="208" x1="608" />
             <wire x2="720" y1="208" y2="208" x1="608" />
             <wire x2="720" y1="208" y2="224" x1="720" />
             <wire x2="608" y1="208" y2="560" x1="608" />
@@ -295,8 +295,8 @@
             <wire x2="1632" y1="560" y2="624" x1="1632" />
             <wire x2="1744" y1="560" y2="560" x1="1632" />
         </branch>
-        <iomarker fontsize="28" x="416" y="176" name="B" orien="R270" />
-        <branch name="A">
+        <iomarker fontsize="28" x="416" y="176" name="C" orien="R270" />
+        <branch name="D">
             <wire x2="272" y1="176" y2="592" x1="272" />
             <wire x2="304" y1="592" y2="592" x1="272" />
             <wire x2="304" y1="592" y2="624" x1="304" />
@@ -314,11 +314,10 @@
             <wire x2="1744" y1="496" y2="496" x1="1632" />
             <wire x2="1632" y1="496" y2="624" x1="1632" />
         </branch>
-        <iomarker fontsize="28" x="272" y="176" name="A" orien="R270" />
+        <iomarker fontsize="28" x="272" y="176" name="D" orien="R270" />
         <instance x="464" y="224" name="XLXI_1" orien="R90" />
         <instance x="688" y="224" name="XLXI_2" orien="R90" />
-        <iomarker fontsize="28" x="608" y="160" name="C" orien="R270" />
-        <branch name="D">
+        <branch name="A">
             <wire x2="800" y1="176" y2="224" x1="800" />
             <wire x2="912" y1="224" y2="224" x1="800" />
             <wire x2="912" y1="224" y2="256" x1="912" />
@@ -335,7 +334,7 @@
             <wire x2="1264" y1="576" y2="576" x1="800" />
         </branch>
         <instance x="880" y="256" name="XLXI_3" orien="R90" />
-        <iomarker fontsize="28" x="800" y="176" name="D" orien="R270" />
+        <iomarker fontsize="28" x="800" y="176" name="A" orien="R270" />
         <branch name="XLXN_32">
             <wire x2="496" y1="448" y2="672" x1="496" />
             <wire x2="1600" y1="672" y2="672" x1="496" />
@@ -446,7 +445,7 @@
             <wire x2="1664" y1="2000" y2="2000" x1="1648" />
             <wire x2="1648" y1="2000" y2="2016" x1="1648" />
         </branch>
-        <branch name="B">
+        <branch name="C">
             <wire x2="416" y1="176" y2="208" x1="416" />
             <wire x2="496" y1="208" y2="208" x1="416" />
             <wire x2="496" y1="208" y2="224" x1="496" />
@@ -514,5 +513,6 @@
             <wire x2="1984" y1="2336" y2="2336" x1="1952" />
         </branch>
         <iomarker fontsize="28" x="1984" y="2336" name="g_7" orien="R0" />
+        <iomarker fontsize="28" x="608" y="176" name="B" orien="R270" />
     </sheet>
 </drawing>

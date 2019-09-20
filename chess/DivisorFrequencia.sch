@@ -105,7 +105,7 @@
             <blockpin signalname="XLXN_4(15:0)" name="O" />
         </block>
         <block symbolname="constant" name="XLXI_6">
-            <attr value="02FA" name="CValue">
+            <attr value="0FF01AD" name="CValue">
                 <trait delete="all:1 sym:0" />
                 <trait editname="all:1 sch:0" />
                 <trait valuetype="BitVector 32 Hexadecimal" />
