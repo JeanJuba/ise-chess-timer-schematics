@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Decodificador_4bits.vhf
--- /___/   /\     Timestamp : 09/19/2019 21:26:07
+-- /___/   /\     Timestamp : 09/20/2019 19:35:24
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

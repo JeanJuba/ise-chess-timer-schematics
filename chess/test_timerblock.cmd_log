@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/jeanw/ise-chess-timer-schematics/chess/test_timerblock.xst" -ofn "C:/Users/jeanw/ise-chess-timer-schematics/chess/test_timerblock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 test_timerblock.ngc test_timerblock.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o test_timerblock_map.ncd test_timerblock.ngd test_timerblock.pcf 
+par -w -intstyle ise -ol high -t 1 test_timerblock_map.ncd test_timerblock.ncd test_timerblock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_timerblock.twx test_timerblock.ncd -o test_timerblock.twr test_timerblock.pcf 
+bitgen -intstyle ise -f test_timerblock.ut test_timerblock.ncd 
+xst -intstyle ise -ifn "C:/Users/jeanw/ise-chess-timer-schematics/chess/test_timerblock.xst" -ofn "C:/Users/jeanw/ise-chess-timer-schematics/chess/test_timerblock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test_timerblock.ucf -p xc3s1000-ft256-4 test_timerblock.ngc test_timerblock.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o test_timerblock_map.ncd test_timerblock.ngd test_timerblock.pcf 
+par -w -intstyle ise -ol high -t 1 test_timerblock_map.ncd test_timerblock.ncd test_timerblock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_timerblock.twx test_timerblock.ncd -o test_timerblock.twr test_timerblock.pcf -ucf test_timerblock.ucf 
+bitgen -intstyle ise -f test_timerblock.ut test_timerblock.ncd 

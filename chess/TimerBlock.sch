@@ -41,7 +41,7 @@
             <line x2="32" y1="-64" y2="-64" x1="96" />
         </blockdef>
         <blockdef name="decade_down_counter">
-            <timestamp>2019-9-19T23:43:59</timestamp>
+            <timestamp>2019-9-20T18:44:28</timestamp>
             <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
@@ -60,12 +60,12 @@
         </block>
         <block symbolname="decade_down_counter" name="XLXI_10">
             <blockpin signalname="CLOCK" name="clock" />
-            <blockpin signalname="CLEAR" name="CLEAR" />
             <blockpin signalname="XLXN_3" name="POWER" />
-            <blockpin signalname="CONTA" name="A" />
-            <blockpin signalname="CONTB" name="B" />
+            <blockpin signalname="CLEAR" name="CLEAR" />
             <blockpin signalname="CONTC" name="C" />
             <blockpin signalname="CONTD" name="D" />
+            <blockpin signalname="CONTB" name="B" />
+            <blockpin signalname="CONTA" name="A" />
         </block>
         <block symbolname="vcc" name="XLXI_7">
             <blockpin signalname="XLXN_3" name="P" />

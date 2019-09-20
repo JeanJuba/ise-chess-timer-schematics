@@ -1,3 +1,1 @@
-sch2hdl,-intstyle,ise,-family,spartan3,-flat,-suppress,-vhdl,C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf,-w,C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.sch
-sch2hdl,-intstyle,ise,-family,spartan3,-flat,-suppress,-vhdl,C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_contador.vhf,-w,C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_contador.sch
-sch2hdl,-intstyle,ise,-family,spartan3,-flat,-suppress,-vhdl,C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_contador.vhf,-w,C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_contador.sch
+sch2hdl,-intstyle,ise,-family,spartan3,-flat,-suppress,-vhdl,C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf,-w,C:/Users/jeanw/ise-chess-timer-schematics/chess/System.sch

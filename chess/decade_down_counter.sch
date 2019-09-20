@@ -6,7 +6,7 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="clock" />
+        <signal name="CLOCK" />
         <signal name="POWER" />
         <signal name="XLXN_8" />
         <signal name="XLXN_10" />
@@ -31,7 +31,7 @@
         <signal name="A" />
         <signal name="XLXN_46" />
         <signal name="CLEAR" />
-        <port polarity="Input" name="clock" />
+        <port polarity="Input" name="CLOCK" />
         <port polarity="Input" name="POWER" />
         <port polarity="Output" name="C" />
         <port polarity="Output" name="D" />
@@ -132,28 +132,28 @@
             <line x2="64" y1="-80" y2="-80" x1="144" />
         </blockdef>
         <block symbolname="fjkc" name="XLXI_3">
-            <blockpin signalname="clock" name="C" />
+            <blockpin signalname="CLOCK" name="C" />
             <blockpin signalname="CLEAR" name="CLR" />
             <blockpin signalname="XLXN_35" name="J" />
             <blockpin signalname="XLXN_42" name="K" />
             <blockpin signalname="C" name="Q" />
         </block>
         <block symbolname="fjkc" name="XLXI_4">
-            <blockpin signalname="clock" name="C" />
+            <blockpin signalname="CLOCK" name="C" />
             <blockpin signalname="CLEAR" name="CLR" />
             <blockpin signalname="XLXN_46" name="J" />
             <blockpin signalname="XLXN_46" name="K" />
             <blockpin signalname="D" name="Q" />
         </block>
         <block symbolname="fjkc" name="XLXI_1">
-            <blockpin signalname="clock" name="C" />
+            <blockpin signalname="CLOCK" name="C" />
             <blockpin signalname="CLEAR" name="CLR" />
             <blockpin signalname="POWER" name="J" />
             <blockpin signalname="XLXN_15" name="K" />
             <blockpin signalname="A" name="Q" />
         </block>
         <block symbolname="fjkc" name="XLXI_2">
-            <blockpin signalname="clock" name="C" />
+            <blockpin signalname="CLOCK" name="C" />
             <blockpin signalname="CLEAR" name="CLR" />
             <blockpin signalname="XLXN_22" name="J" />
             <blockpin signalname="XLXN_32" name="K" />
@@ -251,7 +251,7 @@
         <instance x="1904" y="1424" name="XLXI_3" orien="R0" />
         <instance x="2752" y="1408" name="XLXI_4" orien="R0" />
         <instance x="496" y="1408" name="XLXI_1" orien="R0" />
-        <iomarker fontsize="28" x="192" y="1280" name="clock" orien="R180" />
+        <iomarker fontsize="28" x="192" y="1280" name="CLOCK" orien="R180" />
         <branch name="POWER">
             <wire x2="224" y1="1088" y2="1088" x1="208" />
             <wire x2="496" y1="1088" y2="1088" x1="224" />
@@ -445,7 +445,7 @@
             <wire x2="2624" y1="1152" y2="1936" x1="2624" />
             <wire x2="2752" y1="1152" y2="1152" x1="2624" />
         </branch>
-        <branch name="clock">
+        <branch name="CLOCK">
             <wire x2="368" y1="1280" y2="1280" x1="192" />
             <wire x2="496" y1="1280" y2="1280" x1="368" />
             <wire x2="368" y1="1280" y2="1424" x1="368" />

@@ -1,0 +1,7 @@
+vhdl work "C:\Users\jeanw\ise-chess-timer-schematics\chess\down_counter_3bit.vhf"
+vhdl work "C:\Users\jeanw\ise-chess-timer-schematics\chess\Decimal.vhf"
+vhdl work "C:\Users\jeanw\ise-chess-timer-schematics\chess\decade_down_counter.vhf"
+vhdl work "C:\Users\jeanw\ise-chess-timer-schematics\chess\TimerBlock.vhf"
+vhdl work "C:\Users\jeanw\ise-chess-timer-schematics\chess\DivisorFrequencia.vhf"
+vhdl work "C:\Users\jeanw\ise-chess-timer-schematics\chess\Decodificador_4bits.vhf"
+vhdl work "C:\Users\jeanw\ise-chess-timer-schematics\chess\test_timerblock.vhf"

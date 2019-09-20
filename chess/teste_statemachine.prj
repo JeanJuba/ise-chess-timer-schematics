@@ -1,0 +1,3 @@
+vhdl work "StateMachine.vhf"
+vhdl work "DivisorFrequencia.vhf"
+vhdl work "teste_statemachine.vhf"

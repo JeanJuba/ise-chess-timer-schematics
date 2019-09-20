@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : DivisorFrequencia.vhf
--- /___/   /\     Timestamp : 09/19/2019 21:32:14
+-- /___/   /\     Timestamp : 09/20/2019 19:35:23
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -535,8 +535,8 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity DivisorFrequencia is
-   port ( clock : in    std_logic; 
-          saida : out   std_logic);
+   port ( CLOCK : in    std_logic; 
+          SAIDA : out   std_logic);
 end DivisorFrequencia;
 
 architecture BEHAVIORAL of DivisorFrequencia is
@@ -591,11 +591,11 @@ architecture BEHAVIORAL of DivisorFrequencia is
              Q   : out   std_logic_vector (15 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_0";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_1";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_2";
-   attribute HU_SET of XLXI_19 : label is "XLXI_19_3";
-   attribute HU_SET of XLXI_20 : label is "XLXI_20_4";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_37";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_38";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_39";
+   attribute HU_SET of XLXI_19 : label is "XLXI_19_40";
+   attribute HU_SET of XLXI_20 : label is "XLXI_20_41";
 begin
    XLXN_4(15 downto 0) <= x"FFFF";
    XLXN_5(15 downto 0) <= x"01AD";
@@ -619,7 +619,7 @@ begin
                 CLR=>XLXN_21,
                 J=>XLXN_18,
                 K=>XLXN_18,
-                Q=>saida);
+                Q=>SAIDA);
    
    XLXI_17 : VCC
       port map (P=>XLXN_18);
@@ -629,7 +629,7 @@ begin
                 O=>XLXN_21);
    
    XLXI_19 : CR16CE_MXILINX_DivisorFrequencia
-      port map (C=>clock,
+      port map (C=>CLOCK,
                 CE=>XLXN_18,
                 CLR=>XLXN_7,
                 Q(15 downto 0)=>XLXN_1(15 downto 0));

@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Sep 19 21:32:55 2019
+Fri Sep 20 15:51:43 2019
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -81,7 +81,7 @@ Pinout by Pin Number:
 |D11       |           |DIFFS    |IO_L28N_1          |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |D12       |           |IOB      |IO/VREF_1          |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |D13       |           |         |VCCINT             |         |           |              |          |         |           |         |1.2      |          |           |                |
-|D14       |           |DIFFM    |IO_L16P_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|D14       |D14        |IOB      |IO_L16P_2          |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
 |D15       |           |DIFFS    |IO_L17N_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |D16       |           |DIFFM    |IO_L17P_2/VREF_2   |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |E1        |           |DIFFS    |IO_L20N_7          |UNUSED   |           |7             |          |         |           |         |         |          |           |                |
@@ -96,7 +96,7 @@ Pinout by Pin Number:
 |E10       |           |DIFFM    |IO_L30P_1          |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |E11       |           |DIFFM    |IO_L28P_1          |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |E12       |           |         |VCCINT             |         |           |              |          |         |           |         |1.2      |          |           |                |
-|E13       |           |DIFFS    |IO_L19N_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|E13       |E13        |IOB      |IO_L19N_2          |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
 |E14       |A          |IOB      |IO_L19P_2          |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
 |E15       |           |DIFFS    |IO_L20N_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |E16       |           |DIFFM    |IO_L20P_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
@@ -113,7 +113,7 @@ Pinout by Pin Number:
 |F11       |           |         |GND                |         |           |              |          |         |           |         |         |          |           |                |
 |F12       |           |DIFFS    |IO_L21N_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |F13       |F          |IOB      |IO_L21P_2          |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
-|F14       |           |DIFFS    |IO_L22N_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|F14       |F14        |IOB      |IO_L22N_2          |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
 |F15       |           |DIFFM    |IO_L22P_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |F16       |           |         |VCCAUX             |         |           |              |          |         |           |         |2.5      |          |           |                |
 |G1        |           |DIFFM    |IO_L40P_7          |UNUSED   |           |7             |          |         |           |         |         |          |           |                |
@@ -129,7 +129,7 @@ Pinout by Pin Number:
 |G11       |           |         |VCCO_2             |         |           |2             |          |         |           |         |2.50     |          |           |                |
 |G12       |           |DIFFS    |IO_L23N_2/VREF_2   |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |G13       |B          |IOB      |IO_L23P_2          |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
-|G14       |           |DIFFS    |IO_L24N_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|G14       |G14        |IOB      |IO_L24N_2          |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
 |G15       |           |DIFFM    |IO_L24P_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |G16       |           |DIFFM    |IO                 |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |H1        |           |DIFFS    |IO_L40N_7/VREF_7   |UNUSED   |           |7             |          |         |           |         |         |          |           |                |

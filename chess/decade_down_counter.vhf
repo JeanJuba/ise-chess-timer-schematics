@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : decade_down_counter.vhf
--- /___/   /\     Timestamp : 09/19/2019 21:26:07
+-- /___/   /\     Timestamp : 09/20/2019 19:35:25
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -127,7 +127,7 @@ use UNISIM.Vcomponents.ALL;
 
 entity decade_down_counter is
    port ( CLEAR : in    std_logic; 
-          clock : in    std_logic; 
+          CLOCK : in    std_logic; 
           POWER : in    std_logic; 
           A     : out   std_logic; 
           B     : out   std_logic; 
@@ -220,38 +220,38 @@ architecture BEHAVIORAL of decade_down_counter is
    end component;
    attribute BOX_TYPE of AND3B3 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_16";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_17";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_14";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_15";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_48";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_49";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_46";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_47";
 begin
    A <= A_DUMMY;
    B <= B_DUMMY;
    C <= C_DUMMY;
    D <= D_DUMMY;
    XLXI_1 : FJKC_MXILINX_decade_down_counter
-      port map (C=>clock,
+      port map (C=>CLOCK,
                 CLR=>CLEAR,
                 J=>POWER,
                 K=>XLXN_15,
                 Q=>A_DUMMY);
    
    XLXI_2 : FJKC_MXILINX_decade_down_counter
-      port map (C=>clock,
+      port map (C=>CLOCK,
                 CLR=>CLEAR,
                 J=>XLXN_22,
                 K=>XLXN_32,
                 Q=>B_DUMMY);
    
    XLXI_3 : FJKC_MXILINX_decade_down_counter
-      port map (C=>clock,
+      port map (C=>CLOCK,
                 CLR=>CLEAR,
                 J=>XLXN_35,
                 K=>XLXN_42,
                 Q=>C_DUMMY);
    
    XLXI_4 : FJKC_MXILINX_decade_down_counter
-      port map (C=>clock,
+      port map (C=>CLOCK,
                 CLR=>CLEAR,
                 J=>XLXN_46,
                 K=>XLXN_46,

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="Players">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2019-9-20T0:13:53</timestamp>
+    <timestamp>2019-9-20T0:42:35</timestamp>
     <pin polarity="Output" x="384" y="-1824" name="TIMEOUTP2" />
     <pin polarity="Output" x="384" y="-1888" name="TIMEOUTP1" />
     <pin polarity="Input" x="0" y="-1760" name="ACIONAP2" />
@@ -17,9 +17,9 @@
     <pin polarity="Output" x="384" y="-1232" name="P2UC" />
     <pin polarity="Output" x="384" y="-1600" name="P1UD" />
     <pin polarity="Output" x="384" y="-1536" name="P1DA" />
-    <pin polarity="Output" x="384" y="-1472" name="P1DB" />
     <pin polarity="Output" x="384" y="-1120" name="P2DA" />
     <pin polarity="Output" x="384" y="-1072" name="P2DB" />
+    <pin polarity="Output" x="384" y="-1488" name="P1DB" />
     <graph>
         <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-1928" type="symbol" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1824" type="pin TIMEOUTP2" />
@@ -52,12 +52,12 @@
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1600" type="pin P1UD" />
         <line x2="384" y1="-1600" y2="-1600" x1="320" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1536" type="pin P1DA" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1472" type="pin P1DB" />
         <line x2="384" y1="-1536" y2="-1536" x1="320" />
-        <line x2="384" y1="-1472" y2="-1472" x1="320" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1120" type="pin P2DA" />
         <line x2="384" y1="-1120" y2="-1120" x1="320" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1072" type="pin P2DB" />
         <line x2="384" y1="-1072" y2="-1072" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1488" type="pin P1DB" />
+        <line x2="384" y1="-1488" y2="-1488" x1="320" />
     </graph>
 </symbol>

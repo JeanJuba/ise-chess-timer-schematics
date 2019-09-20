@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: teste_contador.prj
 
@@ -105,25 +105,28 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_contador.vhf" in Library work.
+Entity <fjkc_mxilinx_teste_contador> compiled.
+Entity <fjkc_mxilinx_teste_contador> (Architecture <behavioral>) compiled.
+Entity <decade_down_counter_muser_teste_contador> compiled.
+Entity <decade_down_counter_muser_teste_contador> (Architecture <behavioral>) compiled.
 Entity <decodificador_4bits_muser_teste_contador> compiled.
 Entity <decodificador_4bits_muser_teste_contador> (Architecture <behavioral>) compiled.
 Entity <cr16ce_mxilinx_teste_contador> compiled.
 Entity <cr16ce_mxilinx_teste_contador> (Architecture <behavioral>) compiled.
-Entity <fjkc_mxilinx_teste_contador> compiled.
-Entity <fjkc_mxilinx_teste_contador> (Architecture <behavioral>) compiled.
 Entity <comp16_mxilinx_teste_contador> compiled.
 Entity <comp16_mxilinx_teste_contador> (Architecture <behavioral>) compiled.
 Entity <divisorfrequencia_muser_teste_contador> compiled.
 Entity <divisorfrequencia_muser_teste_contador> (Architecture <behavioral>) compiled.
-Entity <decade_down_counter_muser_teste_contador> compiled.
-Entity <decade_down_counter_muser_teste_contador> (Architecture <behavioral>) compiled.
 Entity <teste_contador> compiled.
 Entity <teste_contador> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.vhf" in Library work.
-Architecture behavioral of Entity fjkc_mxilinx_decade_down_counter is up to date.
-Architecture behavioral of Entity decade_down_counter is up to date.
+Entity <fjkc_mxilinx_decade_down_counter> compiled.
+Entity <fjkc_mxilinx_decade_down_counter> (Architecture <behavioral>) compiled.
+Entity <decade_down_counter> compiled.
+Entity <decade_down_counter> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/jeanw/ise-chess-timer-schematics/chess/Decodificador_4bits.vhf" in Library work.
-Architecture behavioral of Entity decodificador_4bits is up to date.
+Entity <decodificador_4bits> compiled.
+Entity <decodificador_4bits> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf" in Library work.
 Entity <cr16ce_mxilinx_divisorfrequencia> compiled.
 Entity <cr16ce_mxilinx_divisorfrequencia> (Architecture <behavioral>) compiled.
@@ -139,16 +142,16 @@ Entity <divisorfrequencia> (Architecture <behavioral>) compiled.
 =========================================================================
 Analyzing hierarchy for entity <teste_contador> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <decade_down_counter_MUSER_teste_contador> in library <work> (architecture <behavioral>).
-
 Analyzing hierarchy for entity <DivisorFrequencia_MUSER_teste_contador> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <Decodificador_4bits_MUSER_teste_contador> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FJKC_MXILINX_teste_contador> in library <work> (architecture <behavioral>) with generics.
-	INIT = '0'
+Analyzing hierarchy for entity <decade_down_counter_MUSER_teste_contador> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <COMP16_MXILINX_teste_contador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FJKC_MXILINX_teste_contador> in library <work> (architecture <behavioral>) with generics.
+	INIT = '0'
 
 Analyzing hierarchy for entity <CR16CE_MXILINX_teste_contador> in library <work> (architecture <behavioral>).
 
@@ -159,29 +162,22 @@ Analyzing hierarchy for entity <CR16CE_MXILINX_teste_contador> in library <work>
 Analyzing Entity <teste_contador> in library <work> (Architecture <behavioral>).
 Entity <teste_contador> analyzed. Unit <teste_contador> generated.
 
-Analyzing Entity <decade_down_counter_MUSER_teste_contador> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_1_21" for instance <XLXI_1> in unit <decade_down_counter_MUSER_teste_contador>.
-    Set user-defined property "HU_SET =  XLXI_2_22" for instance <XLXI_2> in unit <decade_down_counter_MUSER_teste_contador>.
-    Set user-defined property "HU_SET =  XLXI_3_19" for instance <XLXI_3> in unit <decade_down_counter_MUSER_teste_contador>.
-    Set user-defined property "HU_SET =  XLXI_4_20" for instance <XLXI_4> in unit <decade_down_counter_MUSER_teste_contador>.
-Entity <decade_down_counter_MUSER_teste_contador> analyzed. Unit <decade_down_counter_MUSER_teste_contador> generated.
+Analyzing Entity <DivisorFrequencia_MUSER_teste_contador> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_3_22" for instance <XLXI_3> in unit <DivisorFrequencia_MUSER_teste_contador>.
+    Set user-defined property "HU_SET =  XLXI_4_23" for instance <XLXI_4> in unit <DivisorFrequencia_MUSER_teste_contador>.
+    Set user-defined property "HU_SET =  XLXI_15_24" for instance <XLXI_15> in unit <DivisorFrequencia_MUSER_teste_contador>.
+    Set user-defined property "HU_SET =  XLXI_19_25" for instance <XLXI_19> in unit <DivisorFrequencia_MUSER_teste_contador>.
+    Set user-defined property "HU_SET =  XLXI_20_26" for instance <XLXI_20> in unit <DivisorFrequencia_MUSER_teste_contador>.
+Entity <DivisorFrequencia_MUSER_teste_contador> analyzed. Unit <DivisorFrequencia_MUSER_teste_contador> generated.
+
+Analyzing Entity <COMP16_MXILINX_teste_contador> in library <work> (Architecture <behavioral>).
+Entity <COMP16_MXILINX_teste_contador> analyzed. Unit <COMP16_MXILINX_teste_contador> generated.
 
 Analyzing generic Entity <FJKC_MXILINX_teste_contador> in library <work> (Architecture <behavioral>).
 	INIT = '0'
     Set user-defined property "INIT =  0" for instance <I_36_32> in unit <FJKC_MXILINX_teste_contador>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_32> in unit <FJKC_MXILINX_teste_contador>.
 Entity <FJKC_MXILINX_teste_contador> analyzed. Unit <FJKC_MXILINX_teste_contador> generated.
-
-Analyzing Entity <DivisorFrequencia_MUSER_teste_contador> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_3_14" for instance <XLXI_3> in unit <DivisorFrequencia_MUSER_teste_contador>.
-    Set user-defined property "HU_SET =  XLXI_4_15" for instance <XLXI_4> in unit <DivisorFrequencia_MUSER_teste_contador>.
-    Set user-defined property "HU_SET =  XLXI_15_16" for instance <XLXI_15> in unit <DivisorFrequencia_MUSER_teste_contador>.
-    Set user-defined property "HU_SET =  XLXI_19_17" for instance <XLXI_19> in unit <DivisorFrequencia_MUSER_teste_contador>.
-    Set user-defined property "HU_SET =  XLXI_20_18" for instance <XLXI_20> in unit <DivisorFrequencia_MUSER_teste_contador>.
-Entity <DivisorFrequencia_MUSER_teste_contador> analyzed. Unit <DivisorFrequencia_MUSER_teste_contador> generated.
-
-Analyzing Entity <COMP16_MXILINX_teste_contador> in library <work> (Architecture <behavioral>).
-Entity <COMP16_MXILINX_teste_contador> analyzed. Unit <COMP16_MXILINX_teste_contador> generated.
 
 Analyzing Entity <CR16CE_MXILINX_teste_contador> in library <work> (Architecture <behavioral>).
     Set user-defined property "INIT =  0" for instance <I_Q0> in unit <CR16CE_MXILINX_teste_contador>.
@@ -205,6 +201,13 @@ Entity <CR16CE_MXILINX_teste_contador> analyzed. Unit <CR16CE_MXILINX_teste_cont
 Analyzing Entity <Decodificador_4bits_MUSER_teste_contador> in library <work> (Architecture <behavioral>).
 Entity <Decodificador_4bits_MUSER_teste_contador> analyzed. Unit <Decodificador_4bits_MUSER_teste_contador> generated.
 
+Analyzing Entity <decade_down_counter_MUSER_teste_contador> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_1_20" for instance <XLXI_1> in unit <decade_down_counter_MUSER_teste_contador>.
+    Set user-defined property "HU_SET =  XLXI_2_21" for instance <XLXI_2> in unit <decade_down_counter_MUSER_teste_contador>.
+    Set user-defined property "HU_SET =  XLXI_3_18" for instance <XLXI_3> in unit <decade_down_counter_MUSER_teste_contador>.
+    Set user-defined property "HU_SET =  XLXI_4_19" for instance <XLXI_4> in unit <decade_down_counter_MUSER_teste_contador>.
+Entity <decade_down_counter_MUSER_teste_contador> analyzed. Unit <decade_down_counter_MUSER_teste_contador> generated.
+
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -217,14 +220,14 @@ Synthesizing Unit <Decodificador_4bits_MUSER_teste_contador>.
 Unit <Decodificador_4bits_MUSER_teste_contador> synthesized.
 
 
-Synthesizing Unit <FJKC_MXILINX_teste_contador>.
-    Related source file is "C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_contador.vhf".
-Unit <FJKC_MXILINX_teste_contador> synthesized.
-
-
 Synthesizing Unit <COMP16_MXILINX_teste_contador>.
     Related source file is "C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_contador.vhf".
 Unit <COMP16_MXILINX_teste_contador> synthesized.
+
+
+Synthesizing Unit <FJKC_MXILINX_teste_contador>.
+    Related source file is "C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_contador.vhf".
+Unit <FJKC_MXILINX_teste_contador> synthesized.
 
 
 Synthesizing Unit <CR16CE_MXILINX_teste_contador>.
@@ -232,14 +235,14 @@ Synthesizing Unit <CR16CE_MXILINX_teste_contador>.
 Unit <CR16CE_MXILINX_teste_contador> synthesized.
 
 
-Synthesizing Unit <decade_down_counter_MUSER_teste_contador>.
-    Related source file is "C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_contador.vhf".
-Unit <decade_down_counter_MUSER_teste_contador> synthesized.
-
-
 Synthesizing Unit <DivisorFrequencia_MUSER_teste_contador>.
     Related source file is "C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_contador.vhf".
 Unit <DivisorFrequencia_MUSER_teste_contador> synthesized.
+
+
+Synthesizing Unit <decade_down_counter_MUSER_teste_contador>.
+    Related source file is "C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_contador.vhf".
+Unit <decade_down_counter_MUSER_teste_contador> synthesized.
 
 
 Synthesizing Unit <teste_contador>.
@@ -275,9 +278,9 @@ Optimizing unit <teste_contador> ...
 
 Optimizing unit <Decodificador_4bits_MUSER_teste_contador> ...
 
-Optimizing unit <FJKC_MXILINX_teste_contador> ...
-
 Optimizing unit <COMP16_MXILINX_teste_contador> ...
+
+Optimizing unit <FJKC_MXILINX_teste_contador> ...
 
 Optimizing unit <CR16CE_MXILINX_teste_contador> ...
 
@@ -320,7 +323,7 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 9
+# IOs                              : 13
 
 Cell Usage :
 # BELS                             : 149
@@ -345,9 +348,9 @@ Cell Usage :
 #      FDCE_1                      : 32
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 8
+# IO Buffers                       : 12
 #      IBUF                        : 1
-#      OBUF                        : 7
+#      OBUF                        : 11
 =========================================================================
 
 Device utilization summary:
@@ -358,8 +361,8 @@ Selected Device : 3s1000ft256-4
  Number of Slices:                       26  out of   7680     0%  
  Number of Slice Flip Flops:             37  out of  15360     0%  
  Number of 4 input LUTs:                 51  out of  15360     0%  
- Number of IOs:                           9
- Number of bonded IOBs:                   9  out of    173     5%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    173     7%  
  Number of GCLKs:                         1  out of      8    12%  
 
 ---------------------------
@@ -416,7 +419,7 @@ XLXI_2/XLXI_19/Q<11>                     | NONE(XLXI_2/XLXI_19/I_Q12)     | 1   
 XLXI_2/XLXI_19/Q<12>                     | NONE(XLXI_2/XLXI_19/I_Q13)     | 1     |
 XLXI_2/XLXI_19/Q<13>                     | NONE(XLXI_2/XLXI_19/I_Q14)     | 1     |
 XLXI_2/XLXI_19/Q<14>                     | NONE(XLXI_2/XLXI_19/I_Q15)     | 1     |
-XLXI_2/XLXI_15/Q                         | NONE(XLXI_1/XLXI_1/I_36_32)    | 4     |
+XLXI_2/XLXI_15/Q                         | NONE(XLXI_13/XLXI_1/I_36_32)   | 4     |
 -----------------------------------------+--------------------------------+-------+
 (*) These 2 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -1180,21 +1183,21 @@ Timing constraint: Default period analysis for Clock 'XLXI_2/XLXI_15/Q'
   Total number of paths / destination ports: 77 / 4
 -------------------------------------------------------------------------
 Delay:               8.976ns (Levels of Logic = 6)
-  Source:            XLXI_1/XLXI_2/I_36_32 (FF)
-  Destination:       XLXI_1/XLXI_1/I_36_32 (FF)
+  Source:            XLXI_13/XLXI_2/I_36_32 (FF)
+  Destination:       XLXI_13/XLXI_1/I_36_32 (FF)
   Source Clock:      XLXI_2/XLXI_15/Q rising
   Destination Clock: XLXI_2/XLXI_15/Q rising
 
-  Data Path: XLXI_1/XLXI_2/I_36_32 to XLXI_1/XLXI_1/I_36_32
+  Data Path: XLXI_13/XLXI_2/I_36_32 to XLXI_13/XLXI_1/I_36_32
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q             14   0.720   1.187  I_36_32 (Q)
-     end scope: 'XLXI_1/XLXI_2'
-     INV:I->O              1   0.551   0.801  XLXI_1/XLXI_11 (XLXI_1/XLXN_11)
-     AND2:I1->O            1   0.551   0.801  XLXI_1/XLXI_9 (XLXI_1/XLXN_28)
-     OR2:I1->O             3   0.551   0.907  XLXI_1/XLXI_8 (XLXI_1/XLXN_15)
-     begin scope: 'XLXI_1/XLXI_1'
+     end scope: 'XLXI_13/XLXI_2'
+     INV:I->O              1   0.551   0.801  XLXI_13/XLXI_11 (XLXI_13/XLXN_11)
+     AND2:I1->O            1   0.551   0.801  XLXI_13/XLXI_9 (XLXI_13/XLXN_28)
+     OR2:I1->O             3   0.551   0.907  XLXI_13/XLXI_8 (XLXI_13/XLXN_15)
+     begin scope: 'XLXI_13/XLXI_1'
      AND3B2:I1->O          1   0.551   0.801  I_36_37 (A0)
      OR3:I2->O             1   0.551   0.801  I_36_41 (AD)
      FDC:D                     0.203          I_36_32
@@ -1207,16 +1210,16 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXI_15/Q'
   Total number of paths / destination ports: 36 / 7
 -------------------------------------------------------------------------
 Offset:              14.559ns (Levels of Logic = 7)
-  Source:            XLXI_1/XLXI_1/I_36_32 (FF)
+  Source:            XLXI_13/XLXI_1/I_36_32 (FF)
   Destination:       D (PAD)
   Source Clock:      XLXI_2/XLXI_15/Q rising
 
-  Data Path: XLXI_1/XLXI_1/I_36_32 to D
+  Data Path: XLXI_13/XLXI_1/I_36_32 to D
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q             13   0.720   1.170  I_36_32 (Q)
-     end scope: 'XLXI_1/XLXI_1'
+     end scope: 'XLXI_13/XLXI_1'
      INV:I->O              7   0.551   1.066  XLXI_3/XLXI_3 (XLXI_3/XLXN_34)
      AND2:I0->O            1   0.551   0.801  XLXI_3/XLXI_13 (XLXI_3/XLXN_40)
      OR4:I3->O             1   0.551   0.801  XLXI_3/XLXI_17 (XLXI_3/XLXN_52)
@@ -1230,12 +1233,12 @@ Offset:              14.559ns (Levels of Logic = 7)
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.64 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.47 secs
  
 --> 
 
-Total memory usage is 4537548 kilobytes
+Total memory usage is 4537560 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

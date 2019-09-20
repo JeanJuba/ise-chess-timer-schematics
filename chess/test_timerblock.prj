@@ -1,0 +1,7 @@
+vhdl work "down_counter_3bit.vhf"
+vhdl work "Decimal.vhf"
+vhdl work "decade_down_counter.vhf"
+vhdl work "TimerBlock.vhf"
+vhdl work "DivisorFrequencia.vhf"
+vhdl work "Decodificador_4bits.vhf"
+vhdl work "test_timerblock.vhf"

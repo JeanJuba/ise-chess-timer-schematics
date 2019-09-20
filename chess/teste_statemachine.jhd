@@ -1,0 +1,5 @@
+MODULE teste_statemachine
+	SUBMODULE DivisorFrequencia
+		INSTANCE XLXI_1
+	SUBMODULE StateMachine
+		INSTANCE XLXI_2

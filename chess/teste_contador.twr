@@ -45,11 +45,11 @@ Clock to Setup on destination clock CLOCK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLOCK          |         |         |         |    1.671|
+CLOCK          |         |         |         |    1.680|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Sep 19 21:33:01 2019 
+Analysis completed Fri Sep 20 15:51:47 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:

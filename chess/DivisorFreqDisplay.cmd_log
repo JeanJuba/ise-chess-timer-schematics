@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3 -w -refsym DivisorFreqDisplay C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFreqDisplay.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFreqDisplay.sym 
+sch2sym -intstyle ise -family spartan3 -w -refsym DivisorFreqDisplay C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFreqDisplay.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFreqDisplay.sym 
+sch2sym -intstyle ise -family spartan3 -w -refsym DivisorFreqDisplay C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFreqDisplay.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFreqDisplay.sym 

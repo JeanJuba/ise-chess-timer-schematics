@@ -1,7 +1,9 @@
 MODULE teste_contador
 	SUBMODULE decade_down_counter
-		INSTANCE XLXI_1
+		INSTANCE XLXI_13
 	SUBMODULE DivisorFrequencia
 		INSTANCE XLXI_2
 	SUBMODULE Decodificador_4bits
 		INSTANCE XLXI_3
+	SUBMODULE down_counter_3bit
+		INSTANCE XLXI_18

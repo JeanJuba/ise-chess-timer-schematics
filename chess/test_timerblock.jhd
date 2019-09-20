@@ -1,0 +1,7 @@
+MODULE test_timerblock
+	SUBMODULE TimerBlock
+		INSTANCE XLXI_1
+	SUBMODULE DivisorFrequencia
+		INSTANCE XLXI_3
+	SUBMODULE Decodificador_4bits
+		INSTANCE XLXI_9

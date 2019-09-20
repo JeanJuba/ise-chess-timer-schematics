@@ -15,10 +15,10 @@
         <signal name="XLXN_18" />
         <signal name="XLXN_21" />
         <signal name="XLXN_22" />
-        <signal name="saida" />
-        <signal name="clock" />
-        <port polarity="Output" name="saida" />
-        <port polarity="Input" name="clock" />
+        <signal name="SAIDA" />
+        <signal name="CLOCK" />
+        <port polarity="Output" name="SAIDA" />
+        <port polarity="Input" name="CLOCK" />
         <blockdef name="comp16">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <rect width="256" x="64" y="-384" height="320" />
@@ -122,7 +122,7 @@
             <blockpin signalname="XLXN_21" name="CLR" />
             <blockpin signalname="XLXN_18" name="J" />
             <blockpin signalname="XLXN_18" name="K" />
-            <blockpin signalname="saida" name="Q" />
+            <blockpin signalname="SAIDA" name="Q" />
         </block>
         <block symbolname="vcc" name="XLXI_17">
             <blockpin signalname="XLXN_18" name="P" />
@@ -132,7 +132,7 @@
             <blockpin signalname="XLXN_21" name="O" />
         </block>
         <block symbolname="cr16ce" name="XLXI_19">
-            <blockpin signalname="clock" name="C" />
+            <blockpin signalname="CLOCK" name="C" />
             <blockpin signalname="XLXN_18" name="CE" />
             <blockpin signalname="XLXN_7" name="CLR" />
             <blockpin signalname="XLXN_1(15:0)" name="Q(15:0)" />
@@ -176,10 +176,9 @@
         </branch>
         <instance x="672" y="1232" name="XLXI_7" orien="R180" />
         <branch name="XLXN_7">
-            <wire x2="336" y1="1216" y2="1328" x1="336" />
+            <wire x2="432" y1="1008" y2="1008" x1="336" />
+            <wire x2="336" y1="1008" y2="1328" x1="336" />
             <wire x2="416" y1="1328" y2="1328" x1="336" />
-            <wire x2="432" y1="1216" y2="1216" x1="336" />
-            <wire x2="432" y1="1008" y2="1216" x1="432" />
         </branch>
         <instance x="2160" y="560" name="XLXI_15" orien="R0" />
         <instance x="1424" y="160" name="XLXI_17" orien="R0" />
@@ -205,20 +204,20 @@
             <wire x2="2624" y1="1360" y2="1360" x1="1568" />
             <wire x2="1568" y1="1008" y2="1360" x1="1568" />
             <wire x2="2160" y1="432" y2="432" x1="2080" />
-            <wire x2="2080" y1="432" y2="544" x1="2080" />
-            <wire x2="2624" y1="544" y2="544" x1="2080" />
-            <wire x2="2624" y1="544" y2="880" x1="2624" />
+            <wire x2="2080" y1="432" y2="608" x1="2080" />
+            <wire x2="2624" y1="608" y2="608" x1="2080" />
+            <wire x2="2624" y1="608" y2="880" x1="2624" />
             <wire x2="2624" y1="880" y2="1360" x1="2624" />
             <wire x2="2624" y1="880" y2="880" x1="2544" />
         </branch>
-        <branch name="saida">
+        <branch name="SAIDA">
             <wire x2="2576" y1="304" y2="304" x1="2544" />
         </branch>
-        <iomarker fontsize="28" x="2576" y="304" name="saida" orien="R0" />
-        <branch name="clock">
+        <iomarker fontsize="28" x="2576" y="304" name="SAIDA" orien="R0" />
+        <branch name="CLOCK">
             <wire x2="432" y1="912" y2="912" x1="400" />
         </branch>
-        <iomarker fontsize="28" x="400" y="912" name="clock" orien="R180" />
+        <iomarker fontsize="28" x="400" y="912" name="CLOCK" orien="R180" />
         <instance x="432" y="1040" name="XLXI_19" orien="R0" />
         <instance x="1568" y="1040" name="XLXI_20" orien="R0" />
     </sheet>
