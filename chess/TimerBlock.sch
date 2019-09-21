@@ -16,6 +16,7 @@
         <signal name="TIMEOUT" />
         <signal name="CLOCK" />
         <signal name="XLXN_3" />
+        <signal name="CE" />
         <port polarity="Input" name="CLEAR" />
         <port polarity="Output" name="CONTA" />
         <port polarity="Output" name="CONTB" />
@@ -25,6 +26,7 @@
         <port polarity="Output" name="DECB" />
         <port polarity="Output" name="TIMEOUT" />
         <port polarity="Input" name="CLOCK" />
+        <port polarity="Input" name="CE" />
         <blockdef name="Decimal">
             <timestamp>2019-9-19T23:53:4</timestamp>
             <line x2="384" y1="32" y2="32" x1="320" />
@@ -41,15 +43,16 @@
             <line x2="32" y1="-64" y2="-64" x1="96" />
         </blockdef>
         <blockdef name="decade_down_counter">
-            <timestamp>2019-9-20T18:44:28</timestamp>
+            <timestamp>2019-9-21T0:1:59</timestamp>
+            <line x2="0" y1="96" y2="96" x1="64" />
             <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="256" x="64" y="-256" height="320" />
             <line x2="384" y1="-192" y2="-192" x1="320" />
             <line x2="384" y1="-128" y2="-128" x1="320" />
             <line x2="384" y1="-64" y2="-64" x1="320" />
             <line x2="384" y1="0" y2="0" x1="320" />
+            <rect width="256" x="64" y="-256" height="384" />
         </blockdef>
         <block symbolname="Decimal" name="XLXI_6">
             <blockpin signalname="CONTD" name="CLOCK" />
@@ -66,6 +69,7 @@
             <blockpin signalname="CONTD" name="D" />
             <blockpin signalname="CONTB" name="B" />
             <blockpin signalname="CONTA" name="A" />
+            <blockpin signalname="CE" name="CE" />
         </block>
         <block symbolname="vcc" name="XLXI_7">
             <blockpin signalname="XLXN_3" name="P" />
@@ -134,5 +138,10 @@
         <instance x="1728" y="2064" name="XLXI_6" orien="R0">
         </instance>
         <instance x="832" y="1072" name="XLXI_7" orien="R0" />
+        <branch name="CE">
+            <wire x2="1056" y1="1216" y2="1216" x1="560" />
+            <wire x2="1072" y1="1216" y2="1216" x1="1056" />
+        </branch>
+        <iomarker fontsize="28" x="560" y="1216" name="CE" orien="R180" />
     </sheet>
 </drawing>

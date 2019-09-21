@@ -1,192 +1,203 @@
-V3 234
-FL C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.vhf 2019/09/20.19:35:25 P.20131013
-EN work/FJKC_MXILINX_decade_down_counter 1569022098 \
+V3 246
+FL C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.vhf 2019/09/20.21:05:04 P.20131013
+AR work/FJKC_MXILINX_decade_down_counter/BEHAVIORAL 1569023239 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/FJKC_MXILINX_decade_down_counter/BEHAVIORAL 1569022099 \
-      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.vhf \
-      EN work/FJKC_MXILINX_decade_down_counter 1569022098 CP FDC CP AND3B2 \
+      EN work/FJKC_MXILINX_decade_down_counter 1569023238 CP FDC CP AND3B2 \
       CP AND3B1 CP OR3 CP AND2B1
-EN work/decade_down_counter 1569022100 \
+EN work/FJKCE_MXILINX_decade_down_counter 1569024397 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/decade_down_counter/BEHAVIORAL 1569022101 \
+AR work/FJKCE_MXILINX_decade_down_counter/BEHAVIORAL 1569024398 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.vhf \
-      EN work/decade_down_counter 1569022100 CP FJKC_MXILINX_decade_down_counter \
-      CP OR2 CP AND2 CP INV CP AND3 CP AND3B2 CP AND2B2 CP AND3B3
+      EN work/FJKCE_MXILINX_decade_down_counter 1569024397 CP FDCE CP AND3B2 \
+      CP AND3B1 CP OR3 CP AND2B1
+EN work/decade_down_counter 1569024399 \
+      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/decade_down_counter/BEHAVIORAL 1569024400 \
+      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.vhf \
+      EN work/decade_down_counter 1569024399 CP OR2 CP AND2 CP INV CP AND3 CP AND3B2 \
+      CP AND2B2 CP AND3B3 CP FJKCE_MXILINX_decade_down_counter
 FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Decimal.vhf 2019/09/20.19:35:32 P.20131013
-EN work/FJKC_MXILINX_Decimal 1569022102 \
+EN work/FJKC_MXILINX_Decimal 1569024401 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Decimal.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FJKC_MXILINX_Decimal/BEHAVIORAL 1569022103 \
+AR work/FJKC_MXILINX_Decimal/BEHAVIORAL 1569024402 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Decimal.vhf \
-      EN work/FJKC_MXILINX_Decimal 1569022102 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
+      EN work/FJKC_MXILINX_Decimal 1569024401 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
       CP AND2B1
-EN work/down_counter_3bit_MUSER_Decimal 1569022104 \
+EN work/down_counter_3bit_MUSER_Decimal 1569024403 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Decimal.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/down_counter_3bit_MUSER_Decimal/BEHAVIORAL 1569022105 \
+AR work/down_counter_3bit_MUSER_Decimal/BEHAVIORAL 1569024404 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Decimal.vhf \
-      EN work/down_counter_3bit_MUSER_Decimal 1569022104 CP FJKC_MXILINX_Decimal \
+      EN work/down_counter_3bit_MUSER_Decimal 1569024403 CP FJKC_MXILINX_Decimal \
       CP INV CP VCC
-EN work/Decimal 1569022106 \
+EN work/Decimal 1569024405 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Decimal.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Decimal/BEHAVIORAL 1569022107 \
+AR work/Decimal/BEHAVIORAL 1569024406 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Decimal.vhf \
-      EN work/Decimal 1569022106 CP down_counter_3bit_MUSER_Decimal CP AND2B2
+      EN work/Decimal 1569024405 CP down_counter_3bit_MUSER_Decimal CP AND2B2
 FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Decodificador_4bits.vhf 2019/09/20.19:35:24 P.20131013
-EN work/Decodificador_4bits 1569022056 \
+EN work/Decodificador_4bits 1569024351 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Decodificador_4bits.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Decodificador_4bits/BEHAVIORAL 1569022057 \
+AR work/Decodificador_4bits/BEHAVIORAL 1569024352 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Decodificador_4bits.vhf \
-      EN work/Decodificador_4bits 1569022056 CP INV CP XNOR2 CP OR3 CP OR2 CP AND2 \
+      EN work/Decodificador_4bits 1569024351 CP INV CP XNOR2 CP OR3 CP OR2 CP AND2 \
       CP AND3 CP OR4 CP XOR2
 FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Demux.vhf 2019/09/20.19:35:25 P.20131013
-EN work/Demux 1569022058 \
+EN work/Demux 1569024353 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Demux.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Demux/BEHAVIORAL 1569022059 \
-      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Demux.vhf EN work/Demux 1569022058 \
+AR work/Demux/BEHAVIORAL 1569024354 \
+      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Demux.vhf EN work/Demux 1569024353 \
       CP AND3 CP AND3B1 CP AND3B2
 FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFreqDisplay.vhf 2019/09/20.20:17:24 P.20131013
-EN work/FJKC_MXILINX_DivisorFreqDisplay 1569022060 \
+EN work/FJKC_MXILINX_DivisorFreqDisplay 1569024355 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFreqDisplay.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FJKC_MXILINX_DivisorFreqDisplay/BEHAVIORAL 1569022061 \
+AR work/FJKC_MXILINX_DivisorFreqDisplay/BEHAVIORAL 1569024356 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFreqDisplay.vhf \
-      EN work/FJKC_MXILINX_DivisorFreqDisplay 1569022060 CP FDC CP AND3B2 CP AND3B1 \
+      EN work/FJKC_MXILINX_DivisorFreqDisplay 1569024355 CP FDC CP AND3B2 CP AND3B1 \
       CP OR3 CP AND2B1
-EN work/COMP16_MXILINX_DivisorFreqDisplay 1569022062 \
+EN work/COMP16_MXILINX_DivisorFreqDisplay 1569024357 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFreqDisplay.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/COMP16_MXILINX_DivisorFreqDisplay/BEHAVIORAL 1569022063 \
+AR work/COMP16_MXILINX_DivisorFreqDisplay/BEHAVIORAL 1569024358 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFreqDisplay.vhf \
-      EN work/COMP16_MXILINX_DivisorFreqDisplay 1569022062 CP AND4 CP XNOR2
-EN work/CR16CE_MXILINX_DivisorFreqDisplay 1569022064 \
-      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFreqDisplay.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/CR16CE_MXILINX_DivisorFreqDisplay/BEHAVIORAL 1569022065 \
-      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFreqDisplay.vhf \
-      EN work/CR16CE_MXILINX_DivisorFreqDisplay 1569022064 CP FDCE_1 CP INV CP VCC
-EN work/DivisorFreqDisplay 1569022066 \
+      EN work/COMP16_MXILINX_DivisorFreqDisplay 1569024357 CP AND4 CP XNOR2
+EN work/CR16CE_MXILINX_DivisorFreqDisplay 1569024359 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFreqDisplay.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/DivisorFreqDisplay/BEHAVIORAL 1569022067 \
+AR work/CR16CE_MXILINX_DivisorFreqDisplay/BEHAVIORAL 1569024360 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFreqDisplay.vhf \
-      EN work/DivisorFreqDisplay 1569022066 CP CR16CE_MXILINX_DivisorFreqDisplay \
+      EN work/CR16CE_MXILINX_DivisorFreqDisplay 1569024359 CP FDCE_1 CP INV CP VCC
+EN work/DivisorFreqDisplay 1569024361 \
+      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFreqDisplay.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/DivisorFreqDisplay/BEHAVIORAL 1569024362 \
+      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFreqDisplay.vhf \
+      EN work/DivisorFreqDisplay 1569024361 CP CR16CE_MXILINX_DivisorFreqDisplay \
       CP COMP16_MXILINX_DivisorFreqDisplay CP FJKC_MXILINX_DivisorFreqDisplay \
       CP INV CP VCC CP OR2
 FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf 2019/09/20.19:35:23 P.20131013
-EN work/CR16CE_MXILINX_DivisorFrequencia 1569022068 \
+EN work/CR16CE_MXILINX_DivisorFrequencia 1569024363 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/CR16CE_MXILINX_DivisorFrequencia/BEHAVIORAL 1569022069 \
+AR work/CR16CE_MXILINX_DivisorFrequencia/BEHAVIORAL 1569024364 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf \
-      EN work/CR16CE_MXILINX_DivisorFrequencia 1569022068 CP FDCE_1 CP INV CP VCC
-EN work/FJKC_MXILINX_DivisorFrequencia 1569022070 \
+      EN work/CR16CE_MXILINX_DivisorFrequencia 1569024363 CP FDCE_1 CP INV CP VCC
+EN work/FJKC_MXILINX_DivisorFrequencia 1569024365 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FJKC_MXILINX_DivisorFrequencia/BEHAVIORAL 1569022071 \
+AR work/FJKC_MXILINX_DivisorFrequencia/BEHAVIORAL 1569024366 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf \
-      EN work/FJKC_MXILINX_DivisorFrequencia 1569022070 CP FDC CP AND3B2 CP AND3B1 \
+      EN work/FJKC_MXILINX_DivisorFrequencia 1569024365 CP FDC CP AND3B2 CP AND3B1 \
       CP OR3 CP AND2B1
-EN work/COMP16_MXILINX_DivisorFrequencia 1569022072 \
+EN work/COMP16_MXILINX_DivisorFrequencia 1569024367 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/COMP16_MXILINX_DivisorFrequencia/BEHAVIORAL 1569022073 \
+AR work/COMP16_MXILINX_DivisorFrequencia/BEHAVIORAL 1569024368 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf \
-      EN work/COMP16_MXILINX_DivisorFrequencia 1569022072 CP AND4 CP XNOR2
-EN work/DivisorFrequencia 1569022074 \
+      EN work/COMP16_MXILINX_DivisorFrequencia 1569024367 CP AND4 CP XNOR2
+EN work/DivisorFrequencia 1569024369 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/DivisorFrequencia/BEHAVIORAL 1569022075 \
+AR work/DivisorFrequencia/BEHAVIORAL 1569024370 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf \
-      EN work/DivisorFrequencia 1569022074 CP COMP16_MXILINX_DivisorFrequencia \
+      EN work/DivisorFrequencia 1569024369 CP COMP16_MXILINX_DivisorFrequencia \
       CP OR2 CP FJKC_MXILINX_DivisorFrequencia CP VCC CP INV \
       CP CR16CE_MXILINX_DivisorFrequencia
 FL C:/Users/jeanw/ise-chess-timer-schematics/chess/down_counter_3bit.vhf 2019/09/20.19:35:24 P.20131013
-EN work/FJKC_MXILINX_down_counter_3bit 1569022108 \
+EN work/FJKC_MXILINX_down_counter_3bit 1569024407 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/down_counter_3bit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FJKC_MXILINX_down_counter_3bit/BEHAVIORAL 1569022109 \
+AR work/FJKC_MXILINX_down_counter_3bit/BEHAVIORAL 1569024408 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/down_counter_3bit.vhf \
-      EN work/FJKC_MXILINX_down_counter_3bit 1569022108 CP FDC CP AND3B2 CP AND3B1 \
+      EN work/FJKC_MXILINX_down_counter_3bit 1569024407 CP FDC CP AND3B2 CP AND3B1 \
       CP OR3 CP AND2B1
-EN work/down_counter_3bit 1569022110 \
+EN work/down_counter_3bit 1569024409 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/down_counter_3bit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/down_counter_3bit/BEHAVIORAL 1569022111 \
+AR work/down_counter_3bit/BEHAVIORAL 1569024410 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/down_counter_3bit.vhf \
-      EN work/down_counter_3bit 1569022110 CP FJKC_MXILINX_down_counter_3bit \
+      EN work/down_counter_3bit 1569024409 CP FJKC_MXILINX_down_counter_3bit \
       CP INV CP VCC
-FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf 2019/09/20.19:35:27 P.20131013
-EN work/FJKC_MXILINX_Players 1569022076 \
+FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf 2019/09/20.21:05:06 P.20131013
+EN work/FJKCE_MXILINX_Players 1569024371 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FJKC_MXILINX_Players/BEHAVIORAL 1569022077 \
+AR work/FJKCE_MXILINX_Players/BEHAVIORAL 1569024372 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf \
-      EN work/FJKC_MXILINX_Players 1569022076 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
+      EN work/FJKCE_MXILINX_Players 1569024371 CP FDCE CP AND3B2 CP AND3B1 CP OR3 \
       CP AND2B1
-EN work/decade_down_counter_MUSER_Players 1569022078 \
+EN work/decade_down_counter_MUSER_Players 1569024373 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/decade_down_counter_MUSER_Players/BEHAVIORAL 1569022079 \
+AR work/decade_down_counter_MUSER_Players/BEHAVIORAL 1569024374 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf \
-      EN work/decade_down_counter_MUSER_Players 1569022078 \
-      CP FJKC_MXILINX_Players CP OR2 CP AND2 CP INV CP AND3 CP AND3B2 CP AND2B2 \
-      CP AND3B3
-EN work/down_counter_3bit_MUSER_Players 1569022080 \
+      EN work/decade_down_counter_MUSER_Players 1569024373 CP OR2 CP AND2 CP INV \
+      CP AND3 CP AND3B2 CP AND2B2 CP AND3B3 CP FJKCE_MXILINX_Players
+EN work/FJKC_MXILINX_Players 1569024375 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/down_counter_3bit_MUSER_Players/BEHAVIORAL 1569022081 \
+AR work/FJKC_MXILINX_Players/BEHAVIORAL 1569024376 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf \
-      EN work/down_counter_3bit_MUSER_Players 1569022080 CP FJKC_MXILINX_Players \
+      EN work/FJKC_MXILINX_Players 1569024375 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
+      CP AND2B1
+EN work/down_counter_3bit_MUSER_Players 1569024377 \
+      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/down_counter_3bit_MUSER_Players/BEHAVIORAL 1569024378 \
+      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf \
+      EN work/down_counter_3bit_MUSER_Players 1569024377 CP FJKC_MXILINX_Players \
       CP INV CP VCC
-EN work/Decimal_MUSER_Players 1569022082 \
+EN work/Decimal_MUSER_Players 1569024379 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Decimal_MUSER_Players/BEHAVIORAL 1569022083 \
+AR work/Decimal_MUSER_Players/BEHAVIORAL 1569024380 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf \
-      EN work/Decimal_MUSER_Players 1569022082 CP down_counter_3bit_MUSER_Players \
+      EN work/Decimal_MUSER_Players 1569024379 CP down_counter_3bit_MUSER_Players \
       CP AND2B2
-EN work/TimerBlock_MUSER_Players 1569022084 \
+EN work/TimerBlock_MUSER_Players 1569024381 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/TimerBlock_MUSER_Players/BEHAVIORAL 1569022085 \
+AR work/TimerBlock_MUSER_Players/BEHAVIORAL 1569024382 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf \
-      EN work/TimerBlock_MUSER_Players 1569022084 CP Decimal_MUSER_Players CP VCC \
+      EN work/TimerBlock_MUSER_Players 1569024381 CP Decimal_MUSER_Players CP VCC \
       CP decade_down_counter_MUSER_Players
-EN work/Players 1569022086 \
+EN work/Players 1569024383 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Players/BEHAVIORAL 1569022087 \
+AR work/Players/BEHAVIORAL 1569024384 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf \
-      EN work/Players 1569022086 CP TimerBlock_MUSER_Players CP AND2
+      EN work/Players 1569024383 CP TimerBlock_MUSER_Players
 FL C:/Users/jeanw/ise-chess-timer-schematics/chess/StateMachine.vhf 2019/09/20.17:25:20 P.20131013
 EN work/StateMachine 1569013818 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/StateMachine.vhf \
@@ -196,134 +207,142 @@ AR work/StateMachine/BEHAVIORAL 1569013819 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/StateMachine.vhf \
       EN work/StateMachine 1569013818 CP FDC CP OR3 CP AND2B1 CP AND3B1 CP AND4B3 \
       CP OR4 CP AND4B2 CP AND5B4 CP AND2
-FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf 2019/09/20.20:26:58 P.20131013
-EN work/FJKC_MXILINX_System 1569022022 \
+FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf 2019/09/20.21:05:08 P.20131013
+EN work/FJKC_MXILINX_System 1569024315 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FJKC_MXILINX_System/BEHAVIORAL 1569022023 \
+AR work/FJKC_MXILINX_System/BEHAVIORAL 1569024316 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      EN work/FJKC_MXILINX_System 1569022022 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
+      EN work/FJKC_MXILINX_System 1569024315 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
       CP AND2B1
-EN work/COMP16_MXILINX_System 1569022024 \
+EN work/COMP16_MXILINX_System 1569024317 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/COMP16_MXILINX_System/BEHAVIORAL 1569022025 \
+AR work/COMP16_MXILINX_System/BEHAVIORAL 1569024318 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      EN work/COMP16_MXILINX_System 1569022024 CP AND4 CP XNOR2
-EN work/CR16CE_MXILINX_System 1569022026 \
-      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/CR16CE_MXILINX_System/BEHAVIORAL 1569022027 \
-      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      EN work/CR16CE_MXILINX_System 1569022026 CP FDCE_1 CP INV CP VCC
-EN work/DivisorFreqDisplay_MUSER_System 1569022028 \
+      EN work/COMP16_MXILINX_System 1569024317 CP AND4 CP XNOR2
+EN work/CR16CE_MXILINX_System 1569024319 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/DivisorFreqDisplay_MUSER_System/BEHAVIORAL 1569022029 \
+AR work/CR16CE_MXILINX_System/BEHAVIORAL 1569024320 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      EN work/DivisorFreqDisplay_MUSER_System 1569022028 CP CR16CE_MXILINX_System \
+      EN work/CR16CE_MXILINX_System 1569024319 CP FDCE_1 CP INV CP VCC
+EN work/DivisorFreqDisplay_MUSER_System 1569024321 \
+      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/DivisorFreqDisplay_MUSER_System/BEHAVIORAL 1569024322 \
+      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
+      EN work/DivisorFreqDisplay_MUSER_System 1569024321 CP CR16CE_MXILINX_System \
       CP COMP16_MXILINX_System CP FJKC_MXILINX_System CP INV CP VCC CP OR2
-EN work/Demux_MUSER_System 1569022030 \
+EN work/Demux_MUSER_System 1569024323 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Demux_MUSER_System/BEHAVIORAL 1569022031 \
+AR work/Demux_MUSER_System/BEHAVIORAL 1569024324 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      EN work/Demux_MUSER_System 1569022030 CP AND3 CP AND3B1 CP AND3B2
-EN work/Decodificador_4bits_MUSER_System 1569022032 \
+      EN work/Demux_MUSER_System 1569024323 CP AND3 CP AND3B1 CP AND3B2
+EN work/Decodificador_4bits_MUSER_System 1569024325 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Decodificador_4bits_MUSER_System/BEHAVIORAL 1569022033 \
+AR work/Decodificador_4bits_MUSER_System/BEHAVIORAL 1569024326 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      EN work/Decodificador_4bits_MUSER_System 1569022032 CP INV CP XNOR2 CP OR3 \
+      EN work/Decodificador_4bits_MUSER_System 1569024325 CP INV CP XNOR2 CP OR3 \
       CP OR2 CP AND2 CP AND3 CP OR4 CP XOR2
-EN work/M2_1E_MXILINX_System 1569022034 \
+EN work/M2_1E_MXILINX_System 1569024327 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1E_MXILINX_System/BEHAVIORAL 1569022035 \
+AR work/M2_1E_MXILINX_System/BEHAVIORAL 1569024328 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      EN work/M2_1E_MXILINX_System 1569022034 CP AND3 CP AND3B1 CP OR2
-EN work/M4_1E_MXILINX_System 1569022036 \
-      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/M4_1E_MXILINX_System/BEHAVIORAL 1569022037 \
-      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      EN work/M4_1E_MXILINX_System 1569022036 CP M2_1E_MXILINX_System CP MUXF5
-EN work/FTCE_MXILINX_System 1569022038 \
+      EN work/M2_1E_MXILINX_System 1569024327 CP AND3 CP AND3B1 CP OR2
+EN work/M4_1E_MXILINX_System 1569024329 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FTCE_MXILINX_System/BEHAVIORAL 1569022039 \
+AR work/M4_1E_MXILINX_System/BEHAVIORAL 1569024330 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      EN work/FTCE_MXILINX_System 1569022038 CP XOR2 CP FDCE
-EN work/CB2CE_MXILINX_System 1569022040 \
-      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/CB2CE_MXILINX_System/BEHAVIORAL 1569022041 \
-      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      EN work/CB2CE_MXILINX_System 1569022040 CP FTCE_MXILINX_System CP AND2 CP VCC
-EN work/decade_down_counter_MUSER_System 1569022042 \
+      EN work/M4_1E_MXILINX_System 1569024329 CP M2_1E_MXILINX_System CP MUXF5
+EN work/FTCE_MXILINX_System 1569024331 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/decade_down_counter_MUSER_System/BEHAVIORAL 1569022043 \
+AR work/FTCE_MXILINX_System/BEHAVIORAL 1569024332 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      EN work/decade_down_counter_MUSER_System 1569022042 CP FJKC_MXILINX_System \
-      CP OR2 CP AND2 CP INV CP AND3 CP AND3B2 CP AND2B2 CP AND3B3
-EN work/down_counter_3bit_MUSER_System 1569022044 \
+      EN work/FTCE_MXILINX_System 1569024331 CP XOR2 CP FDCE
+EN work/CB2CE_MXILINX_System 1569024333 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/down_counter_3bit_MUSER_System/BEHAVIORAL 1569022045 \
+AR work/CB2CE_MXILINX_System/BEHAVIORAL 1569024334 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      EN work/down_counter_3bit_MUSER_System 1569022044 CP FJKC_MXILINX_System \
+      EN work/CB2CE_MXILINX_System 1569024333 CP FTCE_MXILINX_System CP AND2 CP VCC
+EN work/FJKCE_MXILINX_System 1569024335 \
+      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FJKCE_MXILINX_System/BEHAVIORAL 1569024336 \
+      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
+      EN work/FJKCE_MXILINX_System 1569024335 CP FDCE CP AND3B2 CP AND3B1 CP OR3 \
+      CP AND2B1
+EN work/decade_down_counter_MUSER_System 1569024337 \
+      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/decade_down_counter_MUSER_System/BEHAVIORAL 1569024338 \
+      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
+      EN work/decade_down_counter_MUSER_System 1569024337 CP OR2 CP AND2 CP INV \
+      CP AND3 CP AND3B2 CP AND2B2 CP AND3B3 CP FJKCE_MXILINX_System
+EN work/down_counter_3bit_MUSER_System 1569024339 \
+      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/down_counter_3bit_MUSER_System/BEHAVIORAL 1569024340 \
+      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
+      EN work/down_counter_3bit_MUSER_System 1569024339 CP FJKC_MXILINX_System \
       CP INV CP VCC
-EN work/Decimal_MUSER_System 1569022046 \
+EN work/Decimal_MUSER_System 1569024341 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Decimal_MUSER_System/BEHAVIORAL 1569022047 \
+AR work/Decimal_MUSER_System/BEHAVIORAL 1569024342 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      EN work/Decimal_MUSER_System 1569022046 CP down_counter_3bit_MUSER_System \
+      EN work/Decimal_MUSER_System 1569024341 CP down_counter_3bit_MUSER_System \
       CP AND2B2
-EN work/TimerBlock_MUSER_System 1569022048 \
+EN work/TimerBlock_MUSER_System 1569024343 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/TimerBlock_MUSER_System/BEHAVIORAL 1569022049 \
+AR work/TimerBlock_MUSER_System/BEHAVIORAL 1569024344 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      EN work/TimerBlock_MUSER_System 1569022048 CP Decimal_MUSER_System CP VCC \
+      EN work/TimerBlock_MUSER_System 1569024343 CP Decimal_MUSER_System CP VCC \
       CP decade_down_counter_MUSER_System
-EN work/Players_MUSER_System 1569022050 \
+EN work/Players_MUSER_System 1569024345 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Players_MUSER_System/BEHAVIORAL 1569022051 \
+AR work/Players_MUSER_System/BEHAVIORAL 1569024346 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      EN work/Players_MUSER_System 1569022050 CP TimerBlock_MUSER_System CP AND2
-EN work/DivisorFrequencia_MUSER_System 1569022052 \
+      EN work/Players_MUSER_System 1569024345 CP TimerBlock_MUSER_System
+EN work/DivisorFrequencia_MUSER_System 1569024347 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/DivisorFrequencia_MUSER_System/BEHAVIORAL 1569022053 \
+AR work/DivisorFrequencia_MUSER_System/BEHAVIORAL 1569024348 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      EN work/DivisorFrequencia_MUSER_System 1569022052 CP COMP16_MXILINX_System \
+      EN work/DivisorFrequencia_MUSER_System 1569024347 CP COMP16_MXILINX_System \
       CP OR2 CP FJKC_MXILINX_System CP VCC CP INV CP CR16CE_MXILINX_System
-EN work/System 1569022054 \
+EN work/System 1569024349 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/System/BEHAVIORAL 1569022055 \
+AR work/System/BEHAVIORAL 1569024350 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf \
-      EN work/System 1569022054 CP Players_MUSER_System \
+      EN work/System 1569024349 CP Players_MUSER_System \
       CP DivisorFrequencia_MUSER_System CP M4_1E_MXILINX_System \
       CP CB2CE_MXILINX_System CP Decodificador_4bits_MUSER_System CP INV CP VCC \
       CP Demux_MUSER_System CP DivisorFreqDisplay_MUSER_System CP GND
@@ -525,45 +544,52 @@ AR work/test_timerblock/BEHAVIORAL 1569020670 \
       EN work/test_timerblock 1569020669 CP TimerBlock_MUSER_test_timerblock \
       CP DivisorFrequencia_MUSER_test_timerblock CP M2_1_MXILINX_test_timerblock \
       CP GND CP Decodificador_4bits_MUSER_test_timerblock CP INV
-FL C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.vhf 2019/09/20.19:35:31 P.20131013
-EN work/FJKC_MXILINX_TimerBlock 1569022088 \
+FL C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.vhf 2019/09/20.21:05:09 P.20131013
+EN work/FJKCE_MXILINX_TimerBlock 1569024385 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FJKC_MXILINX_TimerBlock/BEHAVIORAL 1569022089 \
+AR work/FJKCE_MXILINX_TimerBlock/BEHAVIORAL 1569024386 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.vhf \
-      EN work/FJKC_MXILINX_TimerBlock 1569022088 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
+      EN work/FJKCE_MXILINX_TimerBlock 1569024385 CP FDCE CP AND3B2 CP AND3B1 CP OR3 \
       CP AND2B1
-EN work/decade_down_counter_MUSER_TimerBlock 1569022090 \
+EN work/decade_down_counter_MUSER_TimerBlock 1569024387 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/decade_down_counter_MUSER_TimerBlock/BEHAVIORAL 1569022091 \
+AR work/decade_down_counter_MUSER_TimerBlock/BEHAVIORAL 1569024388 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.vhf \
-      EN work/decade_down_counter_MUSER_TimerBlock 1569022090 \
-      CP FJKC_MXILINX_TimerBlock CP OR2 CP AND2 CP INV CP AND3 CP AND3B2 CP AND2B2 \
-      CP AND3B3
-EN work/down_counter_3bit_MUSER_TimerBlock 1569022092 \
+      EN work/decade_down_counter_MUSER_TimerBlock 1569024387 CP OR2 CP AND2 CP INV \
+      CP AND3 CP AND3B2 CP AND2B2 CP AND3B3 CP FJKCE_MXILINX_TimerBlock
+EN work/FJKC_MXILINX_TimerBlock 1569024389 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/down_counter_3bit_MUSER_TimerBlock/BEHAVIORAL 1569022093 \
+AR work/FJKC_MXILINX_TimerBlock/BEHAVIORAL 1569024390 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.vhf \
-      EN work/down_counter_3bit_MUSER_TimerBlock 1569022092 \
+      EN work/FJKC_MXILINX_TimerBlock 1569024389 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
+      CP AND2B1
+EN work/down_counter_3bit_MUSER_TimerBlock 1569024391 \
+      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/down_counter_3bit_MUSER_TimerBlock/BEHAVIORAL 1569024392 \
+      FL C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.vhf \
+      EN work/down_counter_3bit_MUSER_TimerBlock 1569024391 \
       CP FJKC_MXILINX_TimerBlock CP INV CP VCC
-EN work/Decimal_MUSER_TimerBlock 1569022094 \
+EN work/Decimal_MUSER_TimerBlock 1569024393 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Decimal_MUSER_TimerBlock/BEHAVIORAL 1569022095 \
+AR work/Decimal_MUSER_TimerBlock/BEHAVIORAL 1569024394 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.vhf \
-      EN work/Decimal_MUSER_TimerBlock 1569022094 \
+      EN work/Decimal_MUSER_TimerBlock 1569024393 \
       CP down_counter_3bit_MUSER_TimerBlock CP AND2B2
-EN work/TimerBlock 1569022096 \
+EN work/TimerBlock 1569024395 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/TimerBlock/BEHAVIORAL 1569022097 \
+AR work/TimerBlock/BEHAVIORAL 1569024396 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.vhf \
-      EN work/TimerBlock 1569022096 CP Decimal_MUSER_TimerBlock CP VCC \
+      EN work/TimerBlock 1569024395 CP Decimal_MUSER_TimerBlock CP VCC \
       CP decade_down_counter_MUSER_TimerBlock

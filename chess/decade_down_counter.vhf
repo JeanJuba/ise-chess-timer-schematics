@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : decade_down_counter.vhf
--- /___/   /\     Timestamp : 09/20/2019 19:35:25
+-- /___/   /\     Timestamp : 09/20/2019 21:05:04
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -25,16 +25,17 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity FJKC_MXILINX_decade_down_counter is
+entity FJKCE_MXILINX_decade_down_counter is
    generic( INIT : bit :=  '0');
    port ( C   : in    std_logic; 
+          CE  : in    std_logic; 
           CLR : in    std_logic; 
           J   : in    std_logic; 
           K   : in    std_logic; 
           Q   : out   std_logic);
-end FJKC_MXILINX_decade_down_counter;
+end FJKCE_MXILINX_decade_down_counter;
 
-architecture BEHAVIORAL of FJKC_MXILINX_decade_down_counter is
+architecture BEHAVIORAL of FJKCE_MXILINX_decade_down_counter is
    attribute BOX_TYPE   : string ;
    attribute RLOC       : string ;
    signal AD      : std_logic;
@@ -42,14 +43,15 @@ architecture BEHAVIORAL of FJKC_MXILINX_decade_down_counter is
    signal A1      : std_logic;
    signal A2      : std_logic;
    signal Q_DUMMY : std_logic;
-   component FDC
+   component FDCE
       generic( INIT : bit :=  '0');
       port ( C   : in    std_logic; 
+             CE  : in    std_logic; 
              CLR : in    std_logic; 
              D   : in    std_logic; 
              Q   : out   std_logic);
    end component;
-   attribute BOX_TYPE of FDC : component is "BLACK_BOX";
+   attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
    component AND3B2
       port ( I0 : in    std_logic; 
@@ -85,9 +87,10 @@ architecture BEHAVIORAL of FJKC_MXILINX_decade_down_counter is
    attribute RLOC of I_36_32 : label is "X0Y0";
 begin
    Q <= Q_DUMMY;
-   I_36_32 : FDC
+   I_36_32 : FDCE
    generic map( INIT => INIT)
       port map (C=>C,
+                CE=>CE,
                 CLR=>CLR,
                 D=>AD,
                 Q=>Q_DUMMY);
@@ -126,7 +129,8 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity decade_down_counter is
-   port ( CLEAR : in    std_logic; 
+   port ( CE    : in    std_logic; 
+          CLEAR : in    std_logic; 
           CLOCK : in    std_logic; 
           POWER : in    std_logic; 
           A     : out   std_logic; 
@@ -136,8 +140,8 @@ entity decade_down_counter is
 end decade_down_counter;
 
 architecture BEHAVIORAL of decade_down_counter is
-   attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
+   attribute HU_SET     : string ;
    signal XLXN_8  : std_logic;
    signal XLXN_10 : std_logic;
    signal XLXN_11 : std_logic;
@@ -160,15 +164,6 @@ architecture BEHAVIORAL of decade_down_counter is
    signal B_DUMMY : std_logic;
    signal C_DUMMY : std_logic;
    signal D_DUMMY : std_logic;
-   component FJKC_MXILINX_decade_down_counter
-      generic( INIT : bit :=  '0');
-      port ( C   : in    std_logic; 
-             CLR : in    std_logic; 
-             J   : in    std_logic; 
-             K   : in    std_logic; 
-             Q   : out   std_logic);
-   end component;
-   
    component OR2
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -220,43 +215,25 @@ architecture BEHAVIORAL of decade_down_counter is
    end component;
    attribute BOX_TYPE of AND3B3 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_48";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_49";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_46";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_47";
+   component FJKCE_MXILINX_decade_down_counter
+      generic( INIT : bit :=  '0');
+      port ( C   : in    std_logic; 
+             CE  : in    std_logic; 
+             CLR : in    std_logic; 
+             J   : in    std_logic; 
+             K   : in    std_logic; 
+             Q   : out   std_logic);
+   end component;
+   
+   attribute HU_SET of XLXI_29 : label is "XLXI_29_37";
+   attribute HU_SET of XLXI_30 : label is "XLXI_30_38";
+   attribute HU_SET of XLXI_31 : label is "XLXI_31_39";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_40";
 begin
    A <= A_DUMMY;
    B <= B_DUMMY;
    C <= C_DUMMY;
    D <= D_DUMMY;
-   XLXI_1 : FJKC_MXILINX_decade_down_counter
-      port map (C=>CLOCK,
-                CLR=>CLEAR,
-                J=>POWER,
-                K=>XLXN_15,
-                Q=>A_DUMMY);
-   
-   XLXI_2 : FJKC_MXILINX_decade_down_counter
-      port map (C=>CLOCK,
-                CLR=>CLEAR,
-                J=>XLXN_22,
-                K=>XLXN_32,
-                Q=>B_DUMMY);
-   
-   XLXI_3 : FJKC_MXILINX_decade_down_counter
-      port map (C=>CLOCK,
-                CLR=>CLEAR,
-                J=>XLXN_35,
-                K=>XLXN_42,
-                Q=>C_DUMMY);
-   
-   XLXI_4 : FJKC_MXILINX_decade_down_counter
-      port map (C=>CLOCK,
-                CLR=>CLEAR,
-                J=>XLXN_46,
-                K=>XLXN_46,
-                Q=>D_DUMMY);
-   
    XLXI_8 : OR2
       port map (I0=>XLXN_8,
                 I1=>XLXN_28,
@@ -342,6 +319,38 @@ begin
       port map (I0=>XLXN_17,
                 I1=>XLXN_16,
                 O=>XLXN_22);
+   
+   XLXI_29 : FJKCE_MXILINX_decade_down_counter
+      port map (C=>CLOCK,
+                CE=>CE,
+                CLR=>CLEAR,
+                J=>POWER,
+                K=>XLXN_15,
+                Q=>A_DUMMY);
+   
+   XLXI_30 : FJKCE_MXILINX_decade_down_counter
+      port map (C=>CLOCK,
+                CE=>CE,
+                CLR=>CLEAR,
+                J=>XLXN_22,
+                K=>XLXN_32,
+                Q=>B_DUMMY);
+   
+   XLXI_31 : FJKCE_MXILINX_decade_down_counter
+      port map (C=>CLOCK,
+                CE=>CE,
+                CLR=>CLEAR,
+                J=>XLXN_35,
+                K=>XLXN_42,
+                Q=>C_DUMMY);
+   
+   XLXI_32 : FJKCE_MXILINX_decade_down_counter
+      port map (C=>CLOCK,
+                CE=>CE,
+                CLR=>CLEAR,
+                J=>XLXN_46,
+                K=>XLXN_46,
+                Q=>D_DUMMY);
    
 end BEHAVIORAL;
 

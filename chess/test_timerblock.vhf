@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : test_timerblock.vhf
--- /___/   /\     Timestamp : 09/20/2019 20:04:04
+-- /___/   /\     Timestamp : 09/20/2019 21:05:10
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -877,11 +877,11 @@ architecture BEHAVIORAL of DivisorFrequencia_MUSER_test_timerblock is
              Q   : out   std_logic_vector (15 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_0";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_1";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_2";
-   attribute HU_SET of XLXI_19 : label is "XLXI_19_3";
-   attribute HU_SET of XLXI_20 : label is "XLXI_20_4";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_78";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_79";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_80";
+   attribute HU_SET of XLXI_19 : label is "XLXI_19_81";
+   attribute HU_SET of XLXI_20 : label is "XLXI_20_82";
 begin
    XLXN_4(15 downto 0) <= x"FFFF";
    XLXN_5(15 downto 0) <= x"01AD";
@@ -936,8 +936,112 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
+entity FJKCE_MXILINX_test_timerblock is
+   generic( INIT : bit :=  '0');
+   port ( C   : in    std_logic; 
+          CE  : in    std_logic; 
+          CLR : in    std_logic; 
+          J   : in    std_logic; 
+          K   : in    std_logic; 
+          Q   : out   std_logic);
+end FJKCE_MXILINX_test_timerblock;
+
+architecture BEHAVIORAL of FJKCE_MXILINX_test_timerblock is
+   attribute BOX_TYPE   : string ;
+   attribute RLOC       : string ;
+   signal AD      : std_logic;
+   signal A0      : std_logic;
+   signal A1      : std_logic;
+   signal A2      : std_logic;
+   signal Q_DUMMY : std_logic;
+   component FDCE
+      generic( INIT : bit :=  '0');
+      port ( C   : in    std_logic; 
+             CE  : in    std_logic; 
+             CLR : in    std_logic; 
+             D   : in    std_logic; 
+             Q   : out   std_logic);
+   end component;
+   attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
+   
+   component AND3B2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND3B2 : component is "BLACK_BOX";
+   
+   component AND3B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND3B1 : component is "BLACK_BOX";
+   
+   component OR3
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR3 : component is "BLACK_BOX";
+   
+   component AND2B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
+   
+   attribute RLOC of I_36_32 : label is "X0Y0";
+begin
+   Q <= Q_DUMMY;
+   I_36_32 : FDCE
+   generic map( INIT => INIT)
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>AD,
+                Q=>Q_DUMMY);
+   
+   I_36_37 : AND3B2
+      port map (I0=>J,
+                I1=>K,
+                I2=>Q_DUMMY,
+                O=>A0);
+   
+   I_36_40 : AND3B1
+      port map (I0=>Q_DUMMY,
+                I1=>K,
+                I2=>J,
+                O=>A1);
+   
+   I_36_41 : OR3
+      port map (I0=>A2,
+                I1=>A1,
+                I2=>A0,
+                O=>AD);
+   
+   I_36_43 : AND2B1
+      port map (I0=>K,
+                I1=>J,
+                O=>A2);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
 entity decade_down_counter_MUSER_test_timerblock is
-   port ( CLEAR : in    std_logic; 
+   port ( CE    : in    std_logic; 
+          CLEAR : in    std_logic; 
           CLOCK : in    std_logic; 
           POWER : in    std_logic; 
           A     : out   std_logic; 
@@ -947,8 +1051,8 @@ entity decade_down_counter_MUSER_test_timerblock is
 end decade_down_counter_MUSER_test_timerblock;
 
 architecture BEHAVIORAL of decade_down_counter_MUSER_test_timerblock is
-   attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
+   attribute HU_SET     : string ;
    signal XLXN_8  : std_logic;
    signal XLXN_10 : std_logic;
    signal XLXN_11 : std_logic;
@@ -971,15 +1075,6 @@ architecture BEHAVIORAL of decade_down_counter_MUSER_test_timerblock is
    signal B_DUMMY : std_logic;
    signal C_DUMMY : std_logic;
    signal D_DUMMY : std_logic;
-   component FJKC_MXILINX_test_timerblock
-      generic( INIT : bit :=  '0');
-      port ( C   : in    std_logic; 
-             CLR : in    std_logic; 
-             J   : in    std_logic; 
-             K   : in    std_logic; 
-             Q   : out   std_logic);
-   end component;
-   
    component OR2
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -1031,43 +1126,25 @@ architecture BEHAVIORAL of decade_down_counter_MUSER_test_timerblock is
    end component;
    attribute BOX_TYPE of AND3B3 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_7";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_8";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_5";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_6";
+   component FJKCE_MXILINX_test_timerblock
+      generic( INIT : bit :=  '0');
+      port ( C   : in    std_logic; 
+             CE  : in    std_logic; 
+             CLR : in    std_logic; 
+             J   : in    std_logic; 
+             K   : in    std_logic; 
+             Q   : out   std_logic);
+   end component;
+   
+   attribute HU_SET of XLXI_29 : label is "XLXI_29_83";
+   attribute HU_SET of XLXI_30 : label is "XLXI_30_84";
+   attribute HU_SET of XLXI_31 : label is "XLXI_31_85";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_86";
 begin
    A <= A_DUMMY;
    B <= B_DUMMY;
    C <= C_DUMMY;
    D <= D_DUMMY;
-   XLXI_1 : FJKC_MXILINX_test_timerblock
-      port map (C=>CLOCK,
-                CLR=>CLEAR,
-                J=>POWER,
-                K=>XLXN_15,
-                Q=>A_DUMMY);
-   
-   XLXI_2 : FJKC_MXILINX_test_timerblock
-      port map (C=>CLOCK,
-                CLR=>CLEAR,
-                J=>XLXN_22,
-                K=>XLXN_32,
-                Q=>B_DUMMY);
-   
-   XLXI_3 : FJKC_MXILINX_test_timerblock
-      port map (C=>CLOCK,
-                CLR=>CLEAR,
-                J=>XLXN_35,
-                K=>XLXN_42,
-                Q=>C_DUMMY);
-   
-   XLXI_4 : FJKC_MXILINX_test_timerblock
-      port map (C=>CLOCK,
-                CLR=>CLEAR,
-                J=>XLXN_46,
-                K=>XLXN_46,
-                Q=>D_DUMMY);
-   
    XLXI_8 : OR2
       port map (I0=>XLXN_8,
                 I1=>XLXN_28,
@@ -1154,6 +1231,38 @@ begin
                 I1=>XLXN_16,
                 O=>XLXN_22);
    
+   XLXI_29 : FJKCE_MXILINX_test_timerblock
+      port map (C=>CLOCK,
+                CE=>CE,
+                CLR=>CLEAR,
+                J=>POWER,
+                K=>XLXN_15,
+                Q=>A_DUMMY);
+   
+   XLXI_30 : FJKCE_MXILINX_test_timerblock
+      port map (C=>CLOCK,
+                CE=>CE,
+                CLR=>CLEAR,
+                J=>XLXN_22,
+                K=>XLXN_32,
+                Q=>B_DUMMY);
+   
+   XLXI_31 : FJKCE_MXILINX_test_timerblock
+      port map (C=>CLOCK,
+                CE=>CE,
+                CLR=>CLEAR,
+                J=>XLXN_35,
+                K=>XLXN_42,
+                Q=>C_DUMMY);
+   
+   XLXI_32 : FJKCE_MXILINX_test_timerblock
+      port map (C=>CLOCK,
+                CE=>CE,
+                CLR=>CLEAR,
+                J=>XLXN_46,
+                K=>XLXN_46,
+                Q=>D_DUMMY);
+   
 end BEHAVIORAL;
 
 
@@ -1197,8 +1306,8 @@ architecture BEHAVIORAL of down_counter_3bit_MUSER_test_timerblock is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_9";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_10";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_87";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_88";
 begin
    A <= A_DUMMY;
    XLXI_1 : FJKC_MXILINX_test_timerblock
@@ -1283,7 +1392,8 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity TimerBlock_MUSER_test_timerblock is
-   port ( CLEAR   : in    std_logic; 
+   port ( CE      : in    std_logic; 
+          CLEAR   : in    std_logic; 
           CLOCK   : in    std_logic; 
           CONTA   : out   std_logic; 
           CONTB   : out   std_logic; 
@@ -1318,7 +1428,8 @@ architecture BEHAVIORAL of TimerBlock_MUSER_test_timerblock is
              C     : out   std_logic; 
              D     : out   std_logic; 
              B     : out   std_logic; 
-             A     : out   std_logic);
+             A     : out   std_logic; 
+             CE    : in    std_logic);
    end component;
    
 begin
@@ -1334,7 +1445,8 @@ begin
       port map (P=>XLXN_3);
    
    XLXI_10 : decade_down_counter_MUSER_test_timerblock
-      port map (CLEAR=>CLEAR,
+      port map (CE=>CE,
+                CLEAR=>CLEAR,
                 clock=>CLOCK,
                 POWER=>XLXN_3,
                 A=>CONTA,
@@ -1368,35 +1480,37 @@ end test_timerblock;
 architecture BEHAVIORAL of test_timerblock is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal XLXN_2  : std_logic;
-   signal XLXN_3  : std_logic;
-   signal XLXN_4  : std_logic;
-   signal XLXN_5  : std_logic;
-   signal XLXN_6  : std_logic;
-   signal XLXN_7  : std_logic;
-   signal XLXN_8  : std_logic;
-   signal XLXN_10 : std_logic;
-   signal XLXN_11 : std_logic;
-   signal XLXN_12 : std_logic;
-   signal XLXN_13 : std_logic;
-   signal XLXN_14 : std_logic;
-   signal XLXN_15 : std_logic;
-   signal XLXN_16 : std_logic;
-   signal XLXN_17 : std_logic;
-   signal XLXN_18 : std_logic;
-   signal XLXN_19 : std_logic;
-   signal XLXN_20 : std_logic;
-   signal XLXN_21 : std_logic;
+   signal XLXN_2               : std_logic;
+   signal XLXN_3               : std_logic;
+   signal XLXN_4               : std_logic;
+   signal XLXN_5               : std_logic;
+   signal XLXN_6               : std_logic;
+   signal XLXN_7               : std_logic;
+   signal XLXN_8               : std_logic;
+   signal XLXN_10              : std_logic;
+   signal XLXN_11              : std_logic;
+   signal XLXN_12              : std_logic;
+   signal XLXN_13              : std_logic;
+   signal XLXN_14              : std_logic;
+   signal XLXN_15              : std_logic;
+   signal XLXN_16              : std_logic;
+   signal XLXN_17              : std_logic;
+   signal XLXN_18              : std_logic;
+   signal XLXN_19              : std_logic;
+   signal XLXN_20              : std_logic;
+   signal XLXN_21              : std_logic;
+   signal XLXI_1_CE_openSignal : std_logic;
    component TimerBlock_MUSER_test_timerblock
-      port ( DECA    : out   std_logic; 
-             DECB    : out   std_logic; 
+      port ( CLEAR   : in    std_logic; 
              CLOCK   : in    std_logic; 
-             TIMEOUT : out   std_logic; 
              CONTA   : out   std_logic; 
              CONTB   : out   std_logic; 
              CONTC   : out   std_logic; 
              CONTD   : out   std_logic; 
-             CLEAR   : in    std_logic);
+             DECA    : out   std_logic; 
+             DECB    : out   std_logic; 
+             TIMEOUT : out   std_logic; 
+             CE      : in    std_logic);
    end component;
    
    component DivisorFrequencia_MUSER_test_timerblock
@@ -1436,13 +1550,14 @@ architecture BEHAVIORAL of test_timerblock is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_11";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_12";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_13";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_14";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_89";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_90";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_91";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_92";
 begin
    XLXI_1 : TimerBlock_MUSER_test_timerblock
-      port map (CLEAR=>CLEAR,
+      port map (CE=>XLXI_1_CE_openSignal,
+                CLEAR=>CLEAR,
                 CLOCK=>XLXN_2,
                 CONTA=>XLXN_3,
                 CONTB=>XLXN_4,

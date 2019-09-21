@@ -9,7 +9,7 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -4
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Fri Sep 20 20:27:14 2019
+Mapped Date    : Fri Sep 20 21:05:27 2019
 
 Mapping design into LUTs...
 Running directed packing...
@@ -44,11 +44,11 @@ Logic Distribution:
     Number of Slices containing unrelated logic:          0 out of     108   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
   Total Number of 4 input LUTs:          52 out of  15,360    1%
-  Number of bonded IOBs:                 21 out of     173   12%
+  Number of bonded IOBs:                 23 out of     173   13%
   Number of BUFGMUXs:                     1 out of       8   12%
 
   Number of RPM macros:           16
-Average Fanout of Non-Clock Nets:                3.54
+Average Fanout of Non-Clock Nets:                3.56
 
 Peak Memory Usage:  4412 MB
 Total REAL time to MAP completion:  1 secs 

@@ -1,2 +1,3 @@
 sch2sym -intstyle ise -family spartan3 -w -refsym Players C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.sym 
 sch2sym -intstyle ise -family spartan3 -w -refsym Players C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.sym 
+sch2sym -intstyle ise -family spartan3 -w -refsym Players C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.sym 

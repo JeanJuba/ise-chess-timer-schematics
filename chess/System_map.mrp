@@ -9,7 +9,7 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -4
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Fri Sep 20 20:27:14 2019
+Mapped Date    : Fri Sep 20 21:05:27 2019
 
 Design Summary
 --------------
@@ -24,11 +24,11 @@ Logic Distribution:
     Number of Slices containing unrelated logic:          0 out of     108   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
   Total Number of 4 input LUTs:          52 out of  15,360    1%
-  Number of bonded IOBs:                 21 out of     173   12%
+  Number of bonded IOBs:                 23 out of     173   13%
   Number of BUFGMUXs:                     1 out of       8   12%
 
   Number of RPM macros:           16
-Average Fanout of Non-Clock Nets:                3.54
+Average Fanout of Non-Clock Nets:                3.56
 
 Peak Memory Usage:  4412 MB
 Total REAL time to MAP completion:  1 secs 
@@ -134,13 +134,13 @@ Unused block "XLXI_9/I_36_37" (AND) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
-AND3B2 		XLXI_2/XLXI_1/XLXI_10/XLXI_1/I_36_37
-AND2B1 		XLXI_2/XLXI_1/XLXI_10/XLXI_4/I_36_43
+AND3B2 		XLXI_2/XLXI_1/XLXI_10/XLXI_29/I_36_37
+AND2B1 		XLXI_2/XLXI_1/XLXI_10/XLXI_32/I_36_43
 AND3B2 		XLXI_2/XLXI_1/XLXI_6/XLXI_1/XLXI_1/I_36_37
 AND2B1 		XLXI_2/XLXI_1/XLXI_6/XLXI_1/XLXI_1/I_36_43
 AND2B1 		XLXI_2/XLXI_1/XLXI_6/XLXI_1/XLXI_2/I_36_43
-AND3B2 		XLXI_2/XLXI_2/XLXI_10/XLXI_1/I_36_37
-AND2B1 		XLXI_2/XLXI_2/XLXI_10/XLXI_4/I_36_43
+AND3B2 		XLXI_2/XLXI_2/XLXI_10/XLXI_29/I_36_37
+AND2B1 		XLXI_2/XLXI_2/XLXI_10/XLXI_32/I_36_43
 AND3B2 		XLXI_2/XLXI_2/XLXI_6/XLXI_1/XLXI_1/I_36_37
 AND2B1 		XLXI_2/XLXI_2/XLXI_6/XLXI_1/XLXI_1/I_36_43
 AND2B1 		XLXI_2/XLXI_2/XLXI_6/XLXI_1/XLXI_2/I_36_43
@@ -174,6 +174,8 @@ Section 6 - IOB Properties
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 | A                                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | B                                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BT1                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BT2                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | C                                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | CLEAR                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | CLOCK                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
@@ -197,22 +199,22 @@ Section 6 - IOB Properties
 
 Section 7 - RPMs
 ----------------
-XLXI_2/XLXI_1/XLXI_10_XLXI_1_11         
-XLXI_2/XLXI_1/XLXI_10_XLXI_2_12         
-XLXI_2/XLXI_1/XLXI_10_XLXI_3_9          
-XLXI_2/XLXI_1/XLXI_10_XLXI_4_10         
-XLXI_2/XLXI_2/XLXI_10_XLXI_1_11         
-XLXI_2/XLXI_2/XLXI_10_XLXI_2_12         
-XLXI_2/XLXI_2/XLXI_10_XLXI_3_9          
-XLXI_2/XLXI_2/XLXI_10_XLXI_4_10         
-XLXI_2_XLXI_1_XLXI_6_XLXI_1_XLXI_1_13   
-XLXI_2_XLXI_1_XLXI_6_XLXI_1_XLXI_2_14   
-XLXI_2_XLXI_2_XLXI_6_XLXI_1_XLXI_1_13   
-XLXI_2_XLXI_2_XLXI_6_XLXI_1_XLXI_2_14   
-XLXI_32_XLXI_26_4                       
-XLXI_4_XLXI_15_17                       
-XLXI_9/XLXI_9_I_Q0_7                    
-XLXI_9/XLXI_9_I_Q1_8                    
+XLXI_2/XLXI_1/XLXI_10_XLXI_29_56        
+XLXI_2/XLXI_1/XLXI_10_XLXI_30_57        
+XLXI_2/XLXI_1/XLXI_10_XLXI_31_58        
+XLXI_2/XLXI_1/XLXI_10_XLXI_32_59        
+XLXI_2/XLXI_2/XLXI_10_XLXI_29_56        
+XLXI_2/XLXI_2/XLXI_10_XLXI_30_57        
+XLXI_2/XLXI_2/XLXI_10_XLXI_31_58        
+XLXI_2/XLXI_2/XLXI_10_XLXI_32_59        
+XLXI_2_XLXI_1_XLXI_6_XLXI_1_XLXI_1_60   
+XLXI_2_XLXI_1_XLXI_6_XLXI_1_XLXI_2_61   
+XLXI_2_XLXI_2_XLXI_6_XLXI_1_XLXI_1_60   
+XLXI_2_XLXI_2_XLXI_6_XLXI_1_XLXI_2_61   
+XLXI_32_XLXI_26_51                      
+XLXI_4_XLXI_15_64                       
+XLXI_9/XLXI_9_I_Q0_54                   
+XLXI_9/XLXI_9_I_Q1_55                   
 
 Section 8 - Guide Report
 ------------------------

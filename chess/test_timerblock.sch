@@ -13,7 +13,6 @@
         <signal name="XLXN_6" />
         <signal name="XLXN_7" />
         <signal name="XLXN_8" />
-        <signal name="XLXN_9" />
         <signal name="XLXN_10" />
         <signal name="XLXN_11" />
         <signal name="XLXN_12" />
@@ -36,9 +35,6 @@
         <signal name="CLOCK" />
         <signal name="CLEAR" />
         <signal name="BUTTON" />
-        <signal name="XLXN_32" />
-        <signal name="XLXN_33" />
-        <signal name="XLXN_34" />
         <port polarity="Output" name="A" />
         <port polarity="Output" name="B" />
         <port polarity="Output" name="C" />
@@ -50,7 +46,8 @@
         <port polarity="Input" name="CLEAR" />
         <port polarity="Input" name="BUTTON" />
         <blockdef name="TimerBlock">
-            <timestamp>2019-9-19T23:57:12</timestamp>
+            <timestamp>2019-9-21T0:2:36</timestamp>
+            <line x2="16" y1="-432" y2="-432" x1="80" />
             <line x2="400" y1="-624" y2="-624" x1="336" />
             <line x2="400" y1="-560" y2="-560" x1="336" />
             <line x2="16" y1="-496" y2="-496" x1="80" />
@@ -60,7 +57,7 @@
             <line x2="400" y1="-800" y2="-800" x1="336" />
             <line x2="400" y1="-736" y2="-736" x1="336" />
             <line x2="80" y1="-928" y2="-928" x1="20" />
-            <rect width="256" x="80" y="-956" height="500" />
+            <rect width="256" x="80" y="-956" height="564" />
         </blockdef>
         <blockdef name="DivisorFrequencia">
             <timestamp>2019-9-20T0:47:58</timestamp>
@@ -115,15 +112,16 @@
             <circle r="16" cx="144" cy="-32" />
         </blockdef>
         <block symbolname="TimerBlock" name="XLXI_1">
-            <blockpin signalname="XLXN_7" name="DECA" />
-            <blockpin signalname="XLXN_8" name="DECB" />
+            <blockpin signalname="CLEAR" name="CLEAR" />
             <blockpin signalname="XLXN_2" name="CLOCK" />
-            <blockpin name="TIMEOUT" />
             <blockpin signalname="XLXN_3" name="CONTA" />
             <blockpin signalname="XLXN_4" name="CONTB" />
             <blockpin signalname="XLXN_5" name="CONTC" />
             <blockpin signalname="XLXN_6" name="CONTD" />
-            <blockpin signalname="CLEAR" name="CLEAR" />
+            <blockpin signalname="XLXN_7" name="DECA" />
+            <blockpin signalname="XLXN_8" name="DECB" />
+            <blockpin name="TIMEOUT" />
+            <blockpin name="CE" />
         </block>
         <block symbolname="DivisorFrequencia" name="XLXI_3">
             <blockpin signalname="CLOCK" name="CLOCK" />

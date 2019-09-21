@@ -6,9 +6,6 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="XLXN_67" />
-        <signal name="XLXN_75" />
-        <signal name="XLXN_76" />
         <signal name="XLXN_77" />
         <signal name="XLXN_78" />
         <signal name="XLXN_79" />
@@ -19,16 +16,7 @@
         <signal name="XLXN_84" />
         <signal name="XLXN_85" />
         <signal name="XLXN_87" />
-        <signal name="XLXN_88" />
-        <signal name="XLXN_91" />
-        <signal name="XLXN_92" />
-        <signal name="XLXN_93" />
-        <signal name="XLXN_94" />
-        <signal name="XLXN_95" />
-        <signal name="XLXN_96" />
-        <signal name="XLXN_97" />
         <signal name="M1" />
-        <signal name="XLXN_101" />
         <signal name="M3" />
         <signal name="M4" />
         <signal name="XLXN_104" />
@@ -46,62 +34,28 @@
         <signal name="F" />
         <signal name="G" />
         <signal name="XLXN_119" />
-        <signal name="XLXN_120" />
-        <signal name="XLXN_121" />
-        <signal name="XLXN_122" />
         <signal name="XLXN_124" />
         <signal name="L1" />
         <signal name="L2" />
         <signal name="L3" />
         <signal name="L4" />
         <signal name="XLXN_134" />
-        <signal name="XLXN_136" />
-        <signal name="XLXN_137" />
-        <signal name="XLXN_138" />
         <signal name="XLXN_141" />
-        <signal name="XLXN_142" />
-        <signal name="XLXN_143" />
-        <signal name="XLXN_144" />
-        <signal name="XLXN_145" />
-        <signal name="XLXN_146" />
-        <signal name="XLXN_147" />
         <signal name="CLOCK" />
         <signal name="XLXN_149" />
-        <signal name="XLXN_151" />
-        <signal name="XLXN_152" />
-        <signal name="XLXN_153" />
-        <signal name="XLXN_154" />
-        <signal name="XLXN_161" />
-        <signal name="XLXN_162" />
-        <signal name="XLXN_164" />
-        <signal name="XLXN_166" />
-        <signal name="XLXN_167" />
         <signal name="CLEAR" />
-        <signal name="XLXN_172" />
         <signal name="G14" />
         <signal name="E13" />
-        <signal name="XLXN_184" />
-        <signal name="XLXN_185" />
-        <signal name="XLXN_186" />
-        <signal name="XLXN_187" />
         <signal name="M2" />
-        <signal name="XLXN_191" />
-        <signal name="XLXN_192" />
-        <signal name="XLXN_193" />
         <signal name="XLXN_194" />
         <signal name="XLXN_195" />
         <signal name="XLXN_196" />
-        <signal name="XLXN_197" />
-        <signal name="XLXN_198" />
-        <signal name="XLXN_199" />
         <signal name="XLXN_200" />
-        <signal name="XLXN_201" />
-        <signal name="XLXN_202" />
-        <signal name="XLXN_203" />
-        <signal name="XLXN_204" />
         <signal name="XLXN_205" />
         <signal name="F14" />
         <signal name="D14" />
+        <signal name="BT1" />
+        <signal name="BT2" />
         <port polarity="Output" name="M1" />
         <port polarity="Output" name="M3" />
         <port polarity="Output" name="M4" />
@@ -123,8 +77,10 @@
         <port polarity="Output" name="M2" />
         <port polarity="Output" name="F14" />
         <port polarity="Output" name="D14" />
+        <port polarity="Input" name="BT1" />
+        <port polarity="Input" name="BT2" />
         <blockdef name="Players">
-            <timestamp>2019-9-20T0:42:35</timestamp>
+            <timestamp>2019-9-21T0:4:9</timestamp>
             <line x2="384" y1="-1888" y2="-1888" x1="320" />
             <line x2="384" y1="-1824" y2="-1824" x1="320" />
             <line x2="0" y1="-1760" y2="-1760" x1="64" />
@@ -248,24 +204,24 @@
             <blockpin signalname="XLXN_141" name="saida" />
         </block>
         <block symbolname="Players" name="XLXI_2">
-            <blockpin name="TIMEOUTP2" />
-            <blockpin name="TIMEOUTP1" />
-            <blockpin signalname="XLXN_67" name="ACIONAP2" />
-            <blockpin signalname="XLXN_141" name="CLOCK" />
             <blockpin signalname="CLEAR" name="CLEAR" />
-            <blockpin signalname="XLXN_67" name="ACIONAP1" />
+            <blockpin signalname="BT1" name="ACIONAP1" />
+            <blockpin signalname="BT2" name="ACIONAP2" />
+            <blockpin signalname="XLXN_141" name="CLOCK" />
+            <blockpin name="TIMEOUTP1" />
+            <blockpin signalname="XLXN_77" name="P1UA" />
             <blockpin signalname="XLXN_81" name="P1UB" />
             <blockpin signalname="XLXN_85" name="P1UC" />
-            <blockpin signalname="XLXN_77" name="P1UA" />
-            <blockpin signalname="XLXN_83" name="P2UB" />
-            <blockpin signalname="XLXN_79" name="P2UA" />
-            <blockpin signalname="XLXN_196" name="P2UD" />
-            <blockpin signalname="XLXN_195" name="P2UC" />
             <blockpin signalname="XLXN_87" name="P1UD" />
             <blockpin signalname="XLXN_78" name="P1DA" />
+            <blockpin signalname="XLXN_82" name="P1DB" />
+            <blockpin signalname="XLXN_196" name="P2UD" />
+            <blockpin signalname="XLXN_195" name="P2UC" />
+            <blockpin signalname="XLXN_83" name="P2UB" />
+            <blockpin signalname="XLXN_79" name="P2UA" />
             <blockpin signalname="XLXN_80" name="P2DA" />
             <blockpin signalname="XLXN_84" name="P2DB" />
-            <blockpin signalname="XLXN_82" name="P1DB" />
+            <blockpin name="TIMEOUTP2" />
         </block>
         <block symbolname="cb2ce" name="XLXI_9">
             <blockpin signalname="XLXN_149" name="C" />
@@ -375,9 +331,6 @@
         <block symbolname="vcc" name="XLXI_29">
             <blockpin signalname="XLXN_134" name="P" />
         </block>
-        <block symbolname="vcc" name="XLXI_30">
-            <blockpin signalname="XLXN_67" name="P" />
-        </block>
         <block symbolname="DivisorFreqDisplay" name="XLXI_32">
             <blockpin signalname="CLOCK" name="CLOCK" />
             <blockpin signalname="XLXN_149" name="SAIDA" />
@@ -403,16 +356,6 @@
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
-        <branch name="XLXN_67">
-            <wire x2="1200" y1="1040" y2="1136" x1="1200" />
-            <wire x2="1200" y1="1136" y2="1184" x1="1200" />
-            <wire x2="1696" y1="1184" y2="1184" x1="1200" />
-            <wire x2="1616" y1="1136" y2="1136" x1="1200" />
-            <wire x2="1616" y1="336" y2="1136" x1="1616" />
-            <wire x2="1904" y1="336" y2="336" x1="1616" />
-            <wire x2="1696" y1="432" y2="1184" x1="1696" />
-            <wire x2="1904" y1="432" y2="432" x1="1696" />
-        </branch>
         <instance x="1904" y="2192" name="XLXI_2" orien="R0">
         </instance>
         <branch name="XLXN_77">
@@ -586,7 +529,6 @@
         <branch name="XLXN_134">
             <wire x2="1856" y1="2160" y2="2160" x1="1792" />
         </branch>
-        <instance x="1136" y="1040" name="XLXI_30" orien="R0" />
         <instance x="400" y="1776" name="XLXI_4" orien="R0">
         </instance>
         <branch name="XLXN_141">
@@ -710,5 +652,13 @@
             <wire x2="3776" y1="2416" y2="2416" x1="3744" />
         </branch>
         <iomarker fontsize="28" x="3776" y="2416" name="D14" orien="R0" />
+        <branch name="BT1">
+            <wire x2="1904" y1="336" y2="336" x1="1872" />
+        </branch>
+        <iomarker fontsize="28" x="1872" y="336" name="BT1" orien="R180" />
+        <branch name="BT2">
+            <wire x2="1904" y1="432" y2="432" x1="1872" />
+        </branch>
+        <iomarker fontsize="28" x="1872" y="432" name="BT2" orien="R180" />
     </sheet>
 </drawing>

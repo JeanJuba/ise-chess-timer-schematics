@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : System.vhf
--- /___/   /\     Timestamp : 09/20/2019 20:26:55
+-- /___/   /\     Timestamp : 09/20/2019 21:05:06
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -591,11 +591,11 @@ architecture BEHAVIORAL of DivisorFreqDisplay_MUSER_System is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_22 : label is "XLXI_22_0";
-   attribute HU_SET of XLXI_23 : label is "XLXI_23_1";
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_2";
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_3";
-   attribute HU_SET of XLXI_26 : label is "XLXI_26_4";
+   attribute HU_SET of XLXI_22 : label is "XLXI_22_47";
+   attribute HU_SET of XLXI_23 : label is "XLXI_23_48";
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_49";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_50";
+   attribute HU_SET of XLXI_26 : label is "XLXI_26_51";
 begin
    XLXN_36(15 downto 0) <= x"FFFF";
    XLXN_37(15 downto 0) <= x"0005";
@@ -1044,8 +1044,8 @@ architecture BEHAVIORAL of M4_1E_MXILINX_System is
    end component;
    attribute BOX_TYPE of MUXF5 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_M01 : label is "I_M01_6";
-   attribute HU_SET of I_M23 : label is "I_M23_5";
+   attribute HU_SET of I_M01 : label is "I_M01_53";
+   attribute HU_SET of I_M23 : label is "I_M23_52";
 begin
    I_M01 : M2_1E_MXILINX_System
       port map (D0=>D0,
@@ -1172,8 +1172,8 @@ architecture BEHAVIORAL of CB2CE_MXILINX_System is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_7";
-   attribute HU_SET of I_Q1 : label is "I_Q1_8";
+   attribute HU_SET of I_Q0 : label is "I_Q0_54";
+   attribute HU_SET of I_Q1 : label is "I_Q1_55";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -1215,8 +1215,112 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
+entity FJKCE_MXILINX_System is
+   generic( INIT : bit :=  '0');
+   port ( C   : in    std_logic; 
+          CE  : in    std_logic; 
+          CLR : in    std_logic; 
+          J   : in    std_logic; 
+          K   : in    std_logic; 
+          Q   : out   std_logic);
+end FJKCE_MXILINX_System;
+
+architecture BEHAVIORAL of FJKCE_MXILINX_System is
+   attribute BOX_TYPE   : string ;
+   attribute RLOC       : string ;
+   signal AD      : std_logic;
+   signal A0      : std_logic;
+   signal A1      : std_logic;
+   signal A2      : std_logic;
+   signal Q_DUMMY : std_logic;
+   component FDCE
+      generic( INIT : bit :=  '0');
+      port ( C   : in    std_logic; 
+             CE  : in    std_logic; 
+             CLR : in    std_logic; 
+             D   : in    std_logic; 
+             Q   : out   std_logic);
+   end component;
+   attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
+   
+   component AND3B2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND3B2 : component is "BLACK_BOX";
+   
+   component AND3B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND3B1 : component is "BLACK_BOX";
+   
+   component OR3
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR3 : component is "BLACK_BOX";
+   
+   component AND2B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
+   
+   attribute RLOC of I_36_32 : label is "X0Y0";
+begin
+   Q <= Q_DUMMY;
+   I_36_32 : FDCE
+   generic map( INIT => INIT)
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>AD,
+                Q=>Q_DUMMY);
+   
+   I_36_37 : AND3B2
+      port map (I0=>J,
+                I1=>K,
+                I2=>Q_DUMMY,
+                O=>A0);
+   
+   I_36_40 : AND3B1
+      port map (I0=>Q_DUMMY,
+                I1=>K,
+                I2=>J,
+                O=>A1);
+   
+   I_36_41 : OR3
+      port map (I0=>A2,
+                I1=>A1,
+                I2=>A0,
+                O=>AD);
+   
+   I_36_43 : AND2B1
+      port map (I0=>K,
+                I1=>J,
+                O=>A2);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
 entity decade_down_counter_MUSER_System is
-   port ( CLEAR : in    std_logic; 
+   port ( CE    : in    std_logic; 
+          CLEAR : in    std_logic; 
           CLOCK : in    std_logic; 
           POWER : in    std_logic; 
           A     : out   std_logic; 
@@ -1226,8 +1330,8 @@ entity decade_down_counter_MUSER_System is
 end decade_down_counter_MUSER_System;
 
 architecture BEHAVIORAL of decade_down_counter_MUSER_System is
-   attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
+   attribute HU_SET     : string ;
    signal XLXN_8  : std_logic;
    signal XLXN_10 : std_logic;
    signal XLXN_11 : std_logic;
@@ -1250,15 +1354,6 @@ architecture BEHAVIORAL of decade_down_counter_MUSER_System is
    signal B_DUMMY : std_logic;
    signal C_DUMMY : std_logic;
    signal D_DUMMY : std_logic;
-   component FJKC_MXILINX_System
-      generic( INIT : bit :=  '0');
-      port ( C   : in    std_logic; 
-             CLR : in    std_logic; 
-             J   : in    std_logic; 
-             K   : in    std_logic; 
-             Q   : out   std_logic);
-   end component;
-   
    component OR2
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -1310,43 +1405,25 @@ architecture BEHAVIORAL of decade_down_counter_MUSER_System is
    end component;
    attribute BOX_TYPE of AND3B3 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_11";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_12";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_9";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_10";
+   component FJKCE_MXILINX_System
+      generic( INIT : bit :=  '0');
+      port ( C   : in    std_logic; 
+             CE  : in    std_logic; 
+             CLR : in    std_logic; 
+             J   : in    std_logic; 
+             K   : in    std_logic; 
+             Q   : out   std_logic);
+   end component;
+   
+   attribute HU_SET of XLXI_29 : label is "XLXI_29_56";
+   attribute HU_SET of XLXI_30 : label is "XLXI_30_57";
+   attribute HU_SET of XLXI_31 : label is "XLXI_31_58";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_59";
 begin
    A <= A_DUMMY;
    B <= B_DUMMY;
    C <= C_DUMMY;
    D <= D_DUMMY;
-   XLXI_1 : FJKC_MXILINX_System
-      port map (C=>CLOCK,
-                CLR=>CLEAR,
-                J=>POWER,
-                K=>XLXN_15,
-                Q=>A_DUMMY);
-   
-   XLXI_2 : FJKC_MXILINX_System
-      port map (C=>CLOCK,
-                CLR=>CLEAR,
-                J=>XLXN_22,
-                K=>XLXN_32,
-                Q=>B_DUMMY);
-   
-   XLXI_3 : FJKC_MXILINX_System
-      port map (C=>CLOCK,
-                CLR=>CLEAR,
-                J=>XLXN_35,
-                K=>XLXN_42,
-                Q=>C_DUMMY);
-   
-   XLXI_4 : FJKC_MXILINX_System
-      port map (C=>CLOCK,
-                CLR=>CLEAR,
-                J=>XLXN_46,
-                K=>XLXN_46,
-                Q=>D_DUMMY);
-   
    XLXI_8 : OR2
       port map (I0=>XLXN_8,
                 I1=>XLXN_28,
@@ -1433,6 +1510,38 @@ begin
                 I1=>XLXN_16,
                 O=>XLXN_22);
    
+   XLXI_29 : FJKCE_MXILINX_System
+      port map (C=>CLOCK,
+                CE=>CE,
+                CLR=>CLEAR,
+                J=>POWER,
+                K=>XLXN_15,
+                Q=>A_DUMMY);
+   
+   XLXI_30 : FJKCE_MXILINX_System
+      port map (C=>CLOCK,
+                CE=>CE,
+                CLR=>CLEAR,
+                J=>XLXN_22,
+                K=>XLXN_32,
+                Q=>B_DUMMY);
+   
+   XLXI_31 : FJKCE_MXILINX_System
+      port map (C=>CLOCK,
+                CE=>CE,
+                CLR=>CLEAR,
+                J=>XLXN_35,
+                K=>XLXN_42,
+                Q=>C_DUMMY);
+   
+   XLXI_32 : FJKCE_MXILINX_System
+      port map (C=>CLOCK,
+                CE=>CE,
+                CLR=>CLEAR,
+                J=>XLXN_46,
+                K=>XLXN_46,
+                Q=>D_DUMMY);
+   
 end BEHAVIORAL;
 
 
@@ -1476,8 +1585,8 @@ architecture BEHAVIORAL of down_counter_3bit_MUSER_System is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_13";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_14";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_60";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_61";
 begin
    A <= A_DUMMY;
    XLXI_1 : FJKC_MXILINX_System
@@ -1562,7 +1671,8 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity TimerBlock_MUSER_System is
-   port ( CLEAR   : in    std_logic; 
+   port ( CE      : in    std_logic; 
+          CLEAR   : in    std_logic; 
           CLOCK   : in    std_logic; 
           CONTA   : out   std_logic; 
           CONTB   : out   std_logic; 
@@ -1597,7 +1707,8 @@ architecture BEHAVIORAL of TimerBlock_MUSER_System is
              C     : out   std_logic; 
              D     : out   std_logic; 
              B     : out   std_logic; 
-             A     : out   std_logic);
+             A     : out   std_logic; 
+             CE    : in    std_logic);
    end component;
    
 begin
@@ -1613,7 +1724,8 @@ begin
       port map (P=>XLXN_3);
    
    XLXI_10 : decade_down_counter_MUSER_System
-      port map (CLEAR=>CLEAR,
+      port map (CE=>CE,
+                CLEAR=>CLEAR,
                 clock=>CLOCK,
                 POWER=>XLXN_3,
                 A=>CONTA,
@@ -1653,32 +1765,24 @@ entity Players_MUSER_System is
 end Players_MUSER_System;
 
 architecture BEHAVIORAL of Players_MUSER_System is
-   attribute BOX_TYPE   : string ;
-   signal XLXN_56   : std_logic;
-   signal XLXN_57   : std_logic;
    component TimerBlock_MUSER_System
-      port ( DECA    : out   std_logic; 
-             DECB    : out   std_logic; 
+      port ( CLEAR   : in    std_logic; 
              CLOCK   : in    std_logic; 
-             TIMEOUT : out   std_logic; 
              CONTA   : out   std_logic; 
              CONTB   : out   std_logic; 
              CONTC   : out   std_logic; 
              CONTD   : out   std_logic; 
-             CLEAR   : in    std_logic);
+             DECA    : out   std_logic; 
+             DECB    : out   std_logic; 
+             TIMEOUT : out   std_logic; 
+             CE      : in    std_logic);
    end component;
-   
-   component AND2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
    
 begin
    XLXI_1 : TimerBlock_MUSER_System
-      port map (CLEAR=>CLEAR,
-                CLOCK=>XLXN_57,
+      port map (CE=>ACIONAP1,
+                CLEAR=>CLEAR,
+                CLOCK=>CLOCK,
                 CONTA=>P1UA,
                 CONTB=>P1UB,
                 CONTC=>P1UC,
@@ -1688,8 +1792,9 @@ begin
                 TIMEOUT=>TIMEOUTP1);
    
    XLXI_2 : TimerBlock_MUSER_System
-      port map (CLEAR=>CLEAR,
-                CLOCK=>XLXN_56,
+      port map (CE=>ACIONAP2,
+                CLEAR=>CLEAR,
+                CLOCK=>CLOCK,
                 CONTA=>P2UA,
                 CONTB=>P2UB,
                 CONTC=>P2UC,
@@ -1697,16 +1802,6 @@ begin
                 DECA=>P2DA,
                 DECB=>P2DB,
                 TIMEOUT=>TIMEOUTP2);
-   
-   XLXI_3 : AND2
-      port map (I0=>CLOCK,
-                I1=>ACIONAP1,
-                O=>XLXN_57);
-   
-   XLXI_4 : AND2
-      port map (I0=>ACIONAP2,
-                I1=>CLOCK,
-                O=>XLXN_56);
    
 end BEHAVIORAL;
 
@@ -1775,11 +1870,11 @@ architecture BEHAVIORAL of DivisorFrequencia_MUSER_System is
              Q   : out   std_logic_vector (15 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_15";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_16";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_17";
-   attribute HU_SET of XLXI_19 : label is "XLXI_19_18";
-   attribute HU_SET of XLXI_20 : label is "XLXI_20_19";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_62";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_63";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_64";
+   attribute HU_SET of XLXI_19 : label is "XLXI_19_65";
+   attribute HU_SET of XLXI_20 : label is "XLXI_20_66";
 begin
    XLXN_4(15 downto 0) <= x"FFFF";
    XLXN_5(15 downto 0) <= x"01AD";
@@ -1835,7 +1930,9 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity System is
-   port ( CLEAR : in    std_logic; 
+   port ( BT1   : in    std_logic; 
+          BT2   : in    std_logic; 
+          CLEAR : in    std_logic; 
           CLOCK : in    std_logic; 
           A     : out   std_logic; 
           B     : out   std_logic; 
@@ -1861,7 +1958,6 @@ end System;
 architecture BEHAVIORAL of System is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal XLXN_67  : std_logic;
    signal XLXN_77  : std_logic;
    signal XLXN_78  : std_logic;
    signal XLXN_79  : std_logic;
@@ -1898,24 +1994,24 @@ architecture BEHAVIORAL of System is
    signal M3_DUMMY : std_logic;
    signal M4_DUMMY : std_logic;
    component Players_MUSER_System
-      port ( TIMEOUTP2 : out   std_logic; 
-             TIMEOUTP1 : out   std_logic; 
+      port ( CLEAR     : in    std_logic; 
+             ACIONAP1  : in    std_logic; 
              ACIONAP2  : in    std_logic; 
              CLOCK     : in    std_logic; 
-             CLEAR     : in    std_logic; 
-             ACIONAP1  : in    std_logic; 
+             TIMEOUTP1 : out   std_logic; 
+             P1UA      : out   std_logic; 
              P1UB      : out   std_logic; 
              P1UC      : out   std_logic; 
-             P1UA      : out   std_logic; 
-             P2UB      : out   std_logic; 
-             P2UA      : out   std_logic; 
-             P2UD      : out   std_logic; 
-             P2UC      : out   std_logic; 
              P1UD      : out   std_logic; 
              P1DA      : out   std_logic; 
+             P1DB      : out   std_logic; 
+             P2UD      : out   std_logic; 
+             P2UC      : out   std_logic; 
+             P2UB      : out   std_logic; 
+             P2UA      : out   std_logic; 
              P2DA      : out   std_logic; 
              P2DB      : out   std_logic; 
-             P1DB      : out   std_logic);
+             TIMEOUTP2 : out   std_logic);
    end component;
    
    component DivisorFrequencia_MUSER_System
@@ -1989,11 +2085,11 @@ architecture BEHAVIORAL of System is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_21";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_22";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_23";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_24";
-   attribute HU_SET of XLXI_9 : label is "XLXI_9_20";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_68";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_69";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_70";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_71";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_67";
 begin
    L1 <= L1_DUMMY;
    L2 <= L2_DUMMY;
@@ -2004,8 +2100,8 @@ begin
    M3 <= M3_DUMMY;
    M4 <= M4_DUMMY;
    XLXI_2 : Players_MUSER_System
-      port map (ACIONAP1=>XLXN_67,
-                ACIONAP2=>XLXN_67,
+      port map (ACIONAP1=>BT1,
+                ACIONAP2=>BT2,
                 CLEAR=>CLEAR,
                 CLOCK=>XLXN_141,
                 P1DA=>XLXN_78,
@@ -2150,9 +2246,6 @@ begin
    
    XLXI_29 : VCC
       port map (P=>XLXN_134);
-   
-   XLXI_30 : VCC
-      port map (P=>XLXN_67);
    
    XLXI_32 : DivisorFreqDisplay_MUSER_System
       port map (CLOCK=>CLOCK,

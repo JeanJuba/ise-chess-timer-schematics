@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="Players">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2019-9-20T0:42:35</timestamp>
-    <pin polarity="Output" x="384" y="-1824" name="TIMEOUTP2" />
-    <pin polarity="Output" x="384" y="-1888" name="TIMEOUTP1" />
-    <pin polarity="Input" x="0" y="-1760" name="ACIONAP2" />
-    <pin polarity="Input" x="0" y="-1696" name="CLOCK" />
+    <timestamp>2019-9-21T0:4:9</timestamp>
     <pin polarity="Input" x="0" y="-1632" name="CLEAR" />
     <pin polarity="Input" x="0" y="-1856" name="ACIONAP1" />
+    <pin polarity="Input" x="0" y="-1760" name="ACIONAP2" />
+    <pin polarity="Input" x="0" y="-1696" name="CLOCK" />
+    <pin polarity="Output" x="384" y="-1888" name="TIMEOUTP1" />
+    <pin polarity="Output" x="384" y="-1744" name="P1UA" />
     <pin polarity="Output" x="384" y="-1696" name="P1UB" />
     <pin polarity="Output" x="384" y="-1648" name="P1UC" />
-    <pin polarity="Output" x="384" y="-1744" name="P1UA" />
-    <pin polarity="Output" x="384" y="-1280" name="P2UB" />
-    <pin polarity="Output" x="384" y="-1328" name="P2UA" />
-    <pin polarity="Output" x="384" y="-1184" name="P2UD" />
-    <pin polarity="Output" x="384" y="-1232" name="P2UC" />
     <pin polarity="Output" x="384" y="-1600" name="P1UD" />
     <pin polarity="Output" x="384" y="-1536" name="P1DA" />
+    <pin polarity="Output" x="384" y="-1488" name="P1DB" />
+    <pin polarity="Output" x="384" y="-1184" name="P2UD" />
+    <pin polarity="Output" x="384" y="-1232" name="P2UC" />
+    <pin polarity="Output" x="384" y="-1280" name="P2UB" />
+    <pin polarity="Output" x="384" y="-1328" name="P2UA" />
     <pin polarity="Output" x="384" y="-1120" name="P2DA" />
     <pin polarity="Output" x="384" y="-1072" name="P2DB" />
-    <pin polarity="Output" x="384" y="-1488" name="P1DB" />
+    <pin polarity="Output" x="384" y="-1824" name="TIMEOUTP2" />
     <graph>
         <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-1928" type="symbol" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1824" type="pin TIMEOUTP2" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1632" type="pin CLEAR" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1856" type="pin ACIONAP1" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1760" type="pin ACIONAP2" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1696" type="pin CLOCK" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1888" type="pin TIMEOUTP1" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1744" type="pin P1UA" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1696" type="pin P1UB" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1648" type="pin P1UC" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1600" type="pin P1UD" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1536" type="pin P1DA" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1488" type="pin P1DB" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1184" type="pin P2UD" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1232" type="pin P2UC" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1280" type="pin P2UB" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1328" type="pin P2UA" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1120" type="pin P2DA" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1072" type="pin P2DB" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1824" type="pin TIMEOUTP2" />
         <line x2="384" y1="-1888" y2="-1888" x1="320" />
         <line x2="384" y1="-1824" y2="-1824" x1="320" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1760" type="pin ACIONAP2" />
         <line x2="0" y1="-1760" y2="-1760" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1696" type="pin CLOCK" />
         <line x2="0" y1="-1696" y2="-1696" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1632" type="pin CLEAR" />
         <line x2="0" y1="-1632" y2="-1632" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1856" type="pin ACIONAP1" />
         <line x2="0" y1="-1856" y2="-1856" x1="64" />
         <rect width="256" x="64" y="-1916" height="872" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1696" type="pin P1UB" />
         <line x2="384" y1="-1696" y2="-1696" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1648" type="pin P1UC" />
         <line x2="384" y1="-1648" y2="-1648" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1744" type="pin P1UA" />
         <line x2="384" y1="-1744" y2="-1744" x1="320" />
         <line x2="384" y1="-1280" y2="-1280" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1328" type="pin P2UA" />
         <line x2="384" y1="-1328" y2="-1328" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1280" type="pin P2UB" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1184" type="pin P2UD" />
         <line x2="384" y1="-1184" y2="-1184" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1232" type="pin P2UC" />
         <line x2="384" y1="-1232" y2="-1232" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1600" type="pin P1UD" />
         <line x2="384" y1="-1600" y2="-1600" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1536" type="pin P1DA" />
         <line x2="384" y1="-1536" y2="-1536" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1120" type="pin P2DA" />
         <line x2="384" y1="-1120" y2="-1120" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1072" type="pin P2DB" />
         <line x2="384" y1="-1072" y2="-1072" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1488" type="pin P1DB" />
         <line x2="384" y1="-1488" y2="-1488" x1="320" />
     </graph>
 </symbol>

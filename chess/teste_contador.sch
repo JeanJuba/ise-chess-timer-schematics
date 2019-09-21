@@ -53,15 +53,16 @@
         <port polarity="Output" name="E13" />
         <port polarity="Output" name="F14" />
         <blockdef name="decade_down_counter">
-            <timestamp>2019-9-20T18:44:28</timestamp>
+            <timestamp>2019-9-21T0:1:59</timestamp>
+            <line x2="0" y1="96" y2="96" x1="64" />
             <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="256" x="64" y="-256" height="320" />
             <line x2="384" y1="-192" y2="-192" x1="320" />
             <line x2="384" y1="-128" y2="-128" x1="320" />
             <line x2="384" y1="-64" y2="-64" x1="320" />
             <line x2="384" y1="0" y2="0" x1="320" />
+            <rect width="256" x="64" y="-256" height="384" />
         </blockdef>
         <blockdef name="DivisorFrequencia">
             <timestamp>2019-9-20T0:47:58</timestamp>
@@ -144,6 +145,7 @@
             <blockpin signalname="XLXN_126" name="D" />
             <blockpin signalname="XLXN_113" name="B" />
             <blockpin signalname="XLXN_112" name="A" />
+            <blockpin name="CE" />
         </block>
         <block symbolname="Decodificador_4bits" name="XLXI_3">
             <blockpin signalname="XLXN_30" name="a_7" />

@@ -1,1 +1,8 @@
+sch2hdl,-intstyle,ise,-family,spartan3,-flat,-suppress,-vhdl,C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf,-w,C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.sch
 sch2hdl,-intstyle,ise,-family,spartan3,-flat,-suppress,-vhdl,C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf,-w,C:/Users/jeanw/ise-chess-timer-schematics/chess/System.sch
+sch2hdl,-intstyle,ise,-family,spartan3,-flat,-suppress,-vhdl,C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.vhf,-w,C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.sch
+sch2hdl,-intstyle,ise,-family,spartan3,-flat,-suppress,-vhdl,C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.vhf,-w,C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.sch
+sch2hdl,-intstyle,ise,-family,spartan3,-flat,-suppress,-vhdl,C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf,-w,C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.sch
+sch2hdl,-intstyle,ise,-family,spartan3,-flat,-suppress,-vhdl,C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf,-w,C:/Users/jeanw/ise-chess-timer-schematics/chess/System.sch
+sch2hdl,-intstyle,ise,-family,spartan3,-flat,-suppress,-vhdl,C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.vhf,-w,C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.sch
+sch2hdl,-intstyle,ise,-family,spartan3,-flat,-suppress,-vhdl,C:/Users/jeanw/ise-chess-timer-schematics/chess/test_timerblock.vhf,-w,C:/Users/jeanw/ise-chess-timer-schematics/chess/test_timerblock.sch

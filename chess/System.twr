@@ -40,16 +40,68 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Clock BT1 to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+A           |   16.138(R)|XLXI_2/XLXN_57    |   0.000|
+B           |   15.848(R)|XLXI_2/XLXN_57    |   0.000|
+C           |   15.371(R)|XLXI_2/XLXN_57    |   0.000|
+D           |   15.383(R)|XLXI_2/XLXN_57    |   0.000|
+E           |   15.622(R)|XLXI_2/XLXN_57    |   0.000|
+F           |   16.425(R)|XLXI_2/XLXN_57    |   0.000|
+G           |   14.513(R)|XLXI_2/XLXN_57    |   0.000|
+M1          |   13.109(R)|XLXI_2/XLXN_57    |   0.000|
+M2          |   13.837(R)|XLXI_2/XLXN_57    |   0.000|
+M3          |   12.810(R)|XLXI_2/XLXN_57    |   0.000|
+M4          |   11.629(R)|XLXI_2/XLXN_57    |   0.000|
+------------+------------+------------------+--------+
+
+Clock BT2 to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+A           |   14.337(R)|XLXI_2/XLXN_56    |   0.000|
+B           |   14.047(R)|XLXI_2/XLXN_56    |   0.000|
+C           |   13.570(R)|XLXI_2/XLXN_56    |   0.000|
+D           |   13.582(R)|XLXI_2/XLXN_56    |   0.000|
+E           |   13.821(R)|XLXI_2/XLXN_56    |   0.000|
+F           |   14.624(R)|XLXI_2/XLXN_56    |   0.000|
+G           |   13.132(R)|XLXI_2/XLXN_56    |   0.000|
+M1          |   12.592(R)|XLXI_2/XLXN_56    |   0.000|
+M2          |   12.747(R)|XLXI_2/XLXN_56    |   0.000|
+M3          |   11.018(R)|XLXI_2/XLXN_56    |   0.000|
+M4          |   11.033(R)|XLXI_2/XLXN_56    |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock BT1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+BT1            |    2.845|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock BT2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+BT2            |    2.090|         |         |         |
+---------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock CLOCK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLOCK          |         |         |         |    1.676|
+CLOCK          |         |         |         |    1.701|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Sep 20 20:27:28 2019 
+Analysis completed Fri Sep 20 20:48:35 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:

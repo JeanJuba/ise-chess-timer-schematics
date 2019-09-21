@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Sep 20 20:27:15 2019
+// Written by: Map P.20131013 on Fri Sep 20 21:05:28 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -19,6 +19,8 @@ COMP "D" LOCATE = SITE "P15" LEVEL 1;
 COMP "E" LOCATE = SITE "R16" LEVEL 1;
 COMP "F" LOCATE = SITE "F13" LEVEL 1;
 COMP "G" LOCATE = SITE "N16" LEVEL 1;
+COMP "BT1" LOCATE = SITE "K13" LEVEL 1;
+COMP "BT2" LOCATE = SITE "K14" LEVEL 1;
 COMP "CLOCK" LOCATE = SITE "T9" LEVEL 1;
 NET "CLOCK_BUFGP/IBUFG" BEL "CLOCK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 SCHEMATIC END;

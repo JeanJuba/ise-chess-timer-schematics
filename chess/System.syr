@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: System.prj
 
@@ -125,6 +125,8 @@ Entity <ftce_mxilinx_system> compiled.
 Entity <ftce_mxilinx_system> (Architecture <behavioral>) compiled.
 Entity <cb2ce_mxilinx_system> compiled.
 Entity <cb2ce_mxilinx_system> (Architecture <behavioral>) compiled.
+Entity <FJKCE_MXILINX_System> compiled.
+Entity <FJKCE_MXILINX_System> (Architecture <BEHAVIORAL>) compiled.
 Entity <decade_down_counter_muser_system> compiled.
 Entity <decade_down_counter_muser_system> (Architecture <behavioral>) compiled.
 Entity <down_counter_3bit_muser_system> compiled.
@@ -154,21 +156,38 @@ Architecture behavioral of Entity fjkc_mxilinx_divisorfrequencia is up to date.
 Architecture behavioral of Entity comp16_mxilinx_divisorfrequencia is up to date.
 Architecture behavioral of Entity divisorfrequencia is up to date.
 Compiling vhdl file "C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf" in Library work.
-Architecture behavioral of Entity fjkc_mxilinx_players is up to date.
-Architecture behavioral of Entity decade_down_counter_muser_players is up to date.
-Architecture behavioral of Entity down_counter_3bit_muser_players is up to date.
-Architecture behavioral of Entity decimal_muser_players is up to date.
-Architecture behavioral of Entity timerblock_muser_players is up to date.
-Architecture behavioral of Entity players is up to date.
+Entity <FJKCE_MXILINX_Players> compiled.
+Entity <FJKCE_MXILINX_Players> (Architecture <BEHAVIORAL>) compiled.
+Entity <decade_down_counter_muser_players> compiled.
+Entity <decade_down_counter_muser_players> (Architecture <behavioral>) compiled.
+Entity <fjkc_mxilinx_players> compiled.
+Entity <fjkc_mxilinx_players> (Architecture <behavioral>) compiled.
+Entity <down_counter_3bit_muser_players> compiled.
+Entity <down_counter_3bit_muser_players> (Architecture <behavioral>) compiled.
+Entity <decimal_muser_players> compiled.
+Entity <decimal_muser_players> (Architecture <behavioral>) compiled.
+Entity <timerblock_muser_players> compiled.
+Entity <timerblock_muser_players> (Architecture <behavioral>) compiled.
+Entity <players> compiled.
+Entity <players> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/jeanw/ise-chess-timer-schematics/chess/TimerBlock.vhf" in Library work.
-Architecture behavioral of Entity fjkc_mxilinx_timerblock is up to date.
-Architecture behavioral of Entity decade_down_counter_muser_timerblock is up to date.
-Architecture behavioral of Entity down_counter_3bit_muser_timerblock is up to date.
-Architecture behavioral of Entity decimal_muser_timerblock is up to date.
-Architecture behavioral of Entity timerblock is up to date.
+Entity <FJKCE_MXILINX_TimerBlock> compiled.
+Entity <FJKCE_MXILINX_TimerBlock> (Architecture <BEHAVIORAL>) compiled.
+Entity <decade_down_counter_muser_timerblock> compiled.
+Entity <decade_down_counter_muser_timerblock> (Architecture <behavioral>) compiled.
+Entity <fjkc_mxilinx_timerblock> compiled.
+Entity <fjkc_mxilinx_timerblock> (Architecture <behavioral>) compiled.
+Entity <down_counter_3bit_muser_timerblock> compiled.
+Entity <down_counter_3bit_muser_timerblock> (Architecture <behavioral>) compiled.
+Entity <decimal_muser_timerblock> compiled.
+Entity <decimal_muser_timerblock> (Architecture <behavioral>) compiled.
+Entity <timerblock> compiled.
+Entity <timerblock> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.vhf" in Library work.
-Architecture behavioral of Entity fjkc_mxilinx_decade_down_counter is up to date.
-Architecture behavioral of Entity decade_down_counter is up to date.
+Entity <FJKCE_MXILINX_decade_down_counter> compiled.
+Entity <FJKCE_MXILINX_decade_down_counter> (Architecture <BEHAVIORAL>) compiled.
+Entity <decade_down_counter> compiled.
+Entity <decade_down_counter> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/jeanw/ise-chess-timer-schematics/chess/Decimal.vhf" in Library work.
 Architecture behavioral of Entity fjkc_mxilinx_decimal is up to date.
 Architecture behavioral of Entity down_counter_3bit_muser_decimal is up to date.
@@ -216,13 +235,7 @@ Analyzing hierarchy for entity <decade_down_counter_MUSER_System> in library <wo
 
 Analyzing hierarchy for entity <down_counter_3bit_MUSER_System> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FJKC_MXILINX_System> in library <work> (architecture <behavioral>) with generics.
-	INIT = '0'
-
-Analyzing hierarchy for entity <FJKC_MXILINX_System> in library <work> (architecture <behavioral>) with generics.
-	INIT = '0'
-
-Analyzing hierarchy for entity <FJKC_MXILINX_System> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <FJKCE_MXILINX_System> in library <work> (architecture <BEHAVIORAL>) with generics.
 	INIT = '0'
 
 Analyzing hierarchy for entity <FJKC_MXILINX_System> in library <work> (architecture <behavioral>) with generics.
@@ -233,15 +246,15 @@ Analyzing hierarchy for entity <FJKC_MXILINX_System> in library <work> (architec
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <System> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf" line 2006: Unconnected output port 'TIMEOUTP2' of component 'Players_MUSER_System'.
-WARNING:Xst:753 - "C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf" line 2006: Unconnected output port 'TIMEOUTP1' of component 'Players_MUSER_System'.
-    Set user-defined property "HU_SET =  XLXI_5_21" for instance <XLXI_5> in unit <System>.
-    Set user-defined property "HU_SET =  XLXI_6_22" for instance <XLXI_6> in unit <System>.
-    Set user-defined property "HU_SET =  XLXI_7_23" for instance <XLXI_7> in unit <System>.
-    Set user-defined property "HU_SET =  XLXI_8_24" for instance <XLXI_8> in unit <System>.
-WARNING:Xst:753 - "C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf" line 2070: Unconnected output port 'CEO' of component 'CB2CE_MXILINX_System'.
-WARNING:Xst:753 - "C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf" line 2070: Unconnected output port 'TC' of component 'CB2CE_MXILINX_System'.
-    Set user-defined property "HU_SET =  XLXI_9_20" for instance <XLXI_9> in unit <System>.
+WARNING:Xst:753 - "C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf" line 2102: Unconnected output port 'TIMEOUTP1' of component 'Players_MUSER_System'.
+WARNING:Xst:753 - "C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf" line 2102: Unconnected output port 'TIMEOUTP2' of component 'Players_MUSER_System'.
+    Set user-defined property "HU_SET =  XLXI_5_68" for instance <XLXI_5> in unit <System>.
+    Set user-defined property "HU_SET =  XLXI_6_69" for instance <XLXI_6> in unit <System>.
+    Set user-defined property "HU_SET =  XLXI_7_70" for instance <XLXI_7> in unit <System>.
+    Set user-defined property "HU_SET =  XLXI_8_71" for instance <XLXI_8> in unit <System>.
+WARNING:Xst:753 - "C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf" line 2166: Unconnected output port 'CEO' of component 'CB2CE_MXILINX_System'.
+WARNING:Xst:753 - "C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf" line 2166: Unconnected output port 'TC' of component 'CB2CE_MXILINX_System'.
+    Set user-defined property "HU_SET =  XLXI_9_67" for instance <XLXI_9> in unit <System>.
 Entity <System> analyzed. Unit <System> generated.
 
 Analyzing Entity <Players_MUSER_System> in library <work> (Architecture <behavioral>).
@@ -254,8 +267,8 @@ Analyzing Entity <Decimal_MUSER_System> in library <work> (Architecture <behavio
 Entity <Decimal_MUSER_System> analyzed. Unit <Decimal_MUSER_System> generated.
 
 Analyzing Entity <down_counter_3bit_MUSER_System> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_1_13" for instance <XLXI_1> in unit <down_counter_3bit_MUSER_System>.
-    Set user-defined property "HU_SET =  XLXI_2_14" for instance <XLXI_2> in unit <down_counter_3bit_MUSER_System>.
+    Set user-defined property "HU_SET =  XLXI_1_60" for instance <XLXI_1> in unit <down_counter_3bit_MUSER_System>.
+    Set user-defined property "HU_SET =  XLXI_2_61" for instance <XLXI_2> in unit <down_counter_3bit_MUSER_System>.
 Entity <down_counter_3bit_MUSER_System> analyzed. Unit <down_counter_3bit_MUSER_System> generated.
 
 Analyzing generic Entity <FJKC_MXILINX_System> in library <work> (Architecture <behavioral>).
@@ -265,18 +278,24 @@ Analyzing generic Entity <FJKC_MXILINX_System> in library <work> (Architecture <
 Entity <FJKC_MXILINX_System> analyzed. Unit <FJKC_MXILINX_System> generated.
 
 Analyzing Entity <decade_down_counter_MUSER_System> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_1_11" for instance <XLXI_1> in unit <decade_down_counter_MUSER_System>.
-    Set user-defined property "HU_SET =  XLXI_2_12" for instance <XLXI_2> in unit <decade_down_counter_MUSER_System>.
-    Set user-defined property "HU_SET =  XLXI_3_9" for instance <XLXI_3> in unit <decade_down_counter_MUSER_System>.
-    Set user-defined property "HU_SET =  XLXI_4_10" for instance <XLXI_4> in unit <decade_down_counter_MUSER_System>.
+    Set user-defined property "HU_SET =  XLXI_29_56" for instance <XLXI_29> in unit <decade_down_counter_MUSER_System>.
+    Set user-defined property "HU_SET =  XLXI_30_57" for instance <XLXI_30> in unit <decade_down_counter_MUSER_System>.
+    Set user-defined property "HU_SET =  XLXI_31_58" for instance <XLXI_31> in unit <decade_down_counter_MUSER_System>.
+    Set user-defined property "HU_SET =  XLXI_32_59" for instance <XLXI_32> in unit <decade_down_counter_MUSER_System>.
 Entity <decade_down_counter_MUSER_System> analyzed. Unit <decade_down_counter_MUSER_System> generated.
 
+Analyzing generic Entity <FJKCE_MXILINX_System> in library <work> (Architecture <BEHAVIORAL>).
+	INIT = '0'
+    Set user-defined property "INIT =  0" for instance <I_36_32> in unit <FJKCE_MXILINX_System>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_32> in unit <FJKCE_MXILINX_System>.
+Entity <FJKCE_MXILINX_System> analyzed. Unit <FJKCE_MXILINX_System> generated.
+
 Analyzing Entity <DivisorFrequencia_MUSER_System> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_3_15" for instance <XLXI_3> in unit <DivisorFrequencia_MUSER_System>.
-    Set user-defined property "HU_SET =  XLXI_4_16" for instance <XLXI_4> in unit <DivisorFrequencia_MUSER_System>.
-    Set user-defined property "HU_SET =  XLXI_15_17" for instance <XLXI_15> in unit <DivisorFrequencia_MUSER_System>.
-    Set user-defined property "HU_SET =  XLXI_19_18" for instance <XLXI_19> in unit <DivisorFrequencia_MUSER_System>.
-    Set user-defined property "HU_SET =  XLXI_20_19" for instance <XLXI_20> in unit <DivisorFrequencia_MUSER_System>.
+    Set user-defined property "HU_SET =  XLXI_3_62" for instance <XLXI_3> in unit <DivisorFrequencia_MUSER_System>.
+    Set user-defined property "HU_SET =  XLXI_4_63" for instance <XLXI_4> in unit <DivisorFrequencia_MUSER_System>.
+    Set user-defined property "HU_SET =  XLXI_15_64" for instance <XLXI_15> in unit <DivisorFrequencia_MUSER_System>.
+    Set user-defined property "HU_SET =  XLXI_19_65" for instance <XLXI_19> in unit <DivisorFrequencia_MUSER_System>.
+    Set user-defined property "HU_SET =  XLXI_20_66" for instance <XLXI_20> in unit <DivisorFrequencia_MUSER_System>.
 Entity <DivisorFrequencia_MUSER_System> analyzed. Unit <DivisorFrequencia_MUSER_System> generated.
 
 Analyzing Entity <COMP16_MXILINX_System> in library <work> (Architecture <behavioral>).
@@ -302,16 +321,16 @@ Analyzing Entity <CR16CE_MXILINX_System> in library <work> (Architecture <behavi
 Entity <CR16CE_MXILINX_System> analyzed. Unit <CR16CE_MXILINX_System> generated.
 
 Analyzing Entity <M4_1E_MXILINX_System> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  I_M01_6" for instance <I_M01> in unit <M4_1E_MXILINX_System>.
-    Set user-defined property "HU_SET =  I_M23_5" for instance <I_M23> in unit <M4_1E_MXILINX_System>.
+    Set user-defined property "HU_SET =  I_M01_53" for instance <I_M01> in unit <M4_1E_MXILINX_System>.
+    Set user-defined property "HU_SET =  I_M23_52" for instance <I_M23> in unit <M4_1E_MXILINX_System>.
 Entity <M4_1E_MXILINX_System> analyzed. Unit <M4_1E_MXILINX_System> generated.
 
 Analyzing Entity <M2_1E_MXILINX_System> in library <work> (Architecture <behavioral>).
 Entity <M2_1E_MXILINX_System> analyzed. Unit <M2_1E_MXILINX_System> generated.
 
 Analyzing Entity <CB2CE_MXILINX_System> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  I_Q0_7" for instance <I_Q0> in unit <CB2CE_MXILINX_System>.
-    Set user-defined property "HU_SET =  I_Q1_8" for instance <I_Q1> in unit <CB2CE_MXILINX_System>.
+    Set user-defined property "HU_SET =  I_Q0_54" for instance <I_Q0> in unit <CB2CE_MXILINX_System>.
+    Set user-defined property "HU_SET =  I_Q1_55" for instance <I_Q1> in unit <CB2CE_MXILINX_System>.
 Entity <CB2CE_MXILINX_System> analyzed. Unit <CB2CE_MXILINX_System> generated.
 
 Analyzing generic Entity <FTCE_MXILINX_System> in library <work> (Architecture <behavioral>).
@@ -327,11 +346,11 @@ Analyzing Entity <Demux_MUSER_System> in library <work> (Architecture <behaviora
 Entity <Demux_MUSER_System> analyzed. Unit <Demux_MUSER_System> generated.
 
 Analyzing Entity <DivisorFreqDisplay_MUSER_System> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_22_0" for instance <XLXI_22> in unit <DivisorFreqDisplay_MUSER_System>.
-    Set user-defined property "HU_SET =  XLXI_23_1" for instance <XLXI_23> in unit <DivisorFreqDisplay_MUSER_System>.
-    Set user-defined property "HU_SET =  XLXI_24_2" for instance <XLXI_24> in unit <DivisorFreqDisplay_MUSER_System>.
-    Set user-defined property "HU_SET =  XLXI_25_3" for instance <XLXI_25> in unit <DivisorFreqDisplay_MUSER_System>.
-    Set user-defined property "HU_SET =  XLXI_26_4" for instance <XLXI_26> in unit <DivisorFreqDisplay_MUSER_System>.
+    Set user-defined property "HU_SET =  XLXI_22_47" for instance <XLXI_22> in unit <DivisorFreqDisplay_MUSER_System>.
+    Set user-defined property "HU_SET =  XLXI_23_48" for instance <XLXI_23> in unit <DivisorFreqDisplay_MUSER_System>.
+    Set user-defined property "HU_SET =  XLXI_24_49" for instance <XLXI_24> in unit <DivisorFreqDisplay_MUSER_System>.
+    Set user-defined property "HU_SET =  XLXI_25_50" for instance <XLXI_25> in unit <DivisorFreqDisplay_MUSER_System>.
+    Set user-defined property "HU_SET =  XLXI_26_51" for instance <XLXI_26> in unit <DivisorFreqDisplay_MUSER_System>.
 Entity <DivisorFreqDisplay_MUSER_System> analyzed. Unit <DivisorFreqDisplay_MUSER_System> generated.
 
 
@@ -354,6 +373,11 @@ Unit <Demux_MUSER_System> synthesized.
 Synthesizing Unit <FJKC_MXILINX_System>.
     Related source file is "C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf".
 Unit <FJKC_MXILINX_System> synthesized.
+
+
+Synthesizing Unit <FJKCE_MXILINX_System>.
+    Related source file is "C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf".
+Unit <FJKCE_MXILINX_System> synthesized.
 
 
 Synthesizing Unit <COMP16_MXILINX_System>.
@@ -456,6 +480,8 @@ Optimizing unit <Decodificador_4bits_MUSER_System> ...
 
 Optimizing unit <FJKC_MXILINX_System> ...
 
+Optimizing unit <FJKCE_MXILINX_System> ...
+
 Optimizing unit <COMP16_MXILINX_System> ...
 
 Optimizing unit <CR16CE_MXILINX_System> ...
@@ -507,11 +533,11 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 21
+# IOs                              : 23
 
 Cell Usage :
-# BELS                             : 328
-#      AND2                        : 15
+# BELS                             : 326
+#      AND2                        : 13
 #      AND2B1                      : 14
 #      AND2B2                      : 4
 #      AND3                        : 14
@@ -529,13 +555,13 @@ Cell Usage :
 #      XNOR2                       : 66
 #      XOR2                        : 3
 # FlipFlops/Latches                : 80
-#      FDC                         : 14
-#      FDCE                        : 2
+#      FDC                         : 6
+#      FDCE                        : 10
 #      FDCE_1                      : 64
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 20
-#      IBUF                        : 1
+# IO Buffers                       : 22
+#      IBUF                        : 3
 #      OBUF                        : 19
 =========================================================================
 
@@ -547,8 +573,8 @@ Selected Device : 3s1000ft256-4
  Number of Slices:                       49  out of   7680     0%  
  Number of Slice Flip Flops:             80  out of  15360     0%  
  Number of 4 input LUTs:                 98  out of  15360     0%  
- Number of IOs:                          21
- Number of bonded IOBs:                  21  out of    173    12%  
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    173    13%  
  Number of GCLKs:                         1  out of      8    12%  
 
 ---------------------------
@@ -572,8 +598,8 @@ Clock Information:
 ---------------------------------------------+-------------------------------------------------+-------+
 Clock Signal                                 | Clock buffer(FF name)                           | Load  |
 ---------------------------------------------+-------------------------------------------------+-------+
-XLXI_2/XLXI_1/XLXI_10/XLXI_4/Q               | NONE(XLXI_2/XLXI_1/XLXI_6/XLXI_1/XLXI_1/I_36_32)| 2     |
-XLXI_2/XLXI_2/XLXI_10/XLXI_4/Q               | NONE(XLXI_2/XLXI_2/XLXI_6/XLXI_1/XLXI_1/I_36_32)| 2     |
+XLXI_2/XLXI_1/XLXI_10/XLXI_32/Q              | NONE(XLXI_2/XLXI_1/XLXI_6/XLXI_1/XLXI_1/I_36_32)| 2     |
+XLXI_2/XLXI_2/XLXI_10/XLXI_32/Q              | NONE(XLXI_2/XLXI_2/XLXI_6/XLXI_1/XLXI_1/I_36_32)| 2     |
 XLXI_32/XLXI_25/EQ(XLXI_32/XLXI_25/I_36_31:O)| NONE(*)(XLXI_32/XLXI_26/I_36_32)                | 1     |
 XLXI_4/XLXI_4/EQ(XLXI_4/XLXI_4/I_36_31:O)    | NONE(*)(XLXI_4/XLXI_15/I_36_32)                 | 1     |
 XLXI_32/XLXI_24/EQ(XLXI_32/XLXI_24/I_36_31:O)| NONE(*)(XLXI_32/XLXI_23/I_Q0)                   | 1     |
@@ -640,10 +666,9 @@ XLXI_4/XLXI_19/Q<12>                         | NONE(XLXI_4/XLXI_19/I_Q13)       
 XLXI_4/XLXI_19/Q<13>                         | NONE(XLXI_4/XLXI_19/I_Q14)                      | 1     |
 XLXI_4/XLXI_19/Q<14>                         | NONE(XLXI_4/XLXI_19/I_Q15)                      | 1     |
 XLXI_32/XLXI_26/Q                            | NONE(XLXI_9/I_Q1/I_36_35)                       | 2     |
-XLXI_2/XLXN_57(XLXI_2/XLXI_3:O)              | NONE(*)(XLXI_2/XLXI_1/XLXI_10/XLXI_1/I_36_32)   | 4     |
-XLXI_2/XLXN_56(XLXI_2/XLXI_4:O)              | NONE(*)(XLXI_2/XLXI_2/XLXI_10/XLXI_1/I_36_32)   | 4     |
+XLXI_4/XLXI_15/Q                             | NONE(XLXI_2/XLXI_1/XLXI_10/XLXI_29/I_36_32)     | 8     |
 ---------------------------------------------+-------------------------------------------------+-------+
-(*) These 6 clock signal(s) are generated by combinatorial logic,
+(*) These 4 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -667,7 +692,7 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 8.933ns (Maximum Frequency: 111.944MHz)
-   Minimum input arrival time before clock: No path found
+   Minimum input arrival time before clock: 2.340ns
    Maximum output required time after clock: 18.356ns
    Maximum combinational path delay: No path found
 
@@ -676,15 +701,15 @@ Timing Detail:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'XLXI_2/XLXI_1/XLXI_10/XLXI_4/Q'
+Timing constraint: Default period analysis for Clock 'XLXI_2/XLXI_1/XLXI_10/XLXI_32/Q'
   Clock period: 6.102ns (frequency: 163.881MHz)
   Total number of paths / destination ports: 10 / 2
 -------------------------------------------------------------------------
 Delay:               6.102ns (Levels of Logic = 4)
   Source:            XLXI_2/XLXI_1/XLXI_6/XLXI_1/XLXI_1/I_36_32 (FF)
   Destination:       XLXI_2/XLXI_1/XLXI_6/XLXI_1/XLXI_2/I_36_32 (FF)
-  Source Clock:      XLXI_2/XLXI_1/XLXI_10/XLXI_4/Q rising
-  Destination Clock: XLXI_2/XLXI_1/XLXI_10/XLXI_4/Q rising
+  Source Clock:      XLXI_2/XLXI_1/XLXI_10/XLXI_32/Q rising
+  Destination Clock: XLXI_2/XLXI_1/XLXI_10/XLXI_32/Q rising
 
   Data Path: XLXI_2/XLXI_1/XLXI_6/XLXI_1/XLXI_1/I_36_32 to XLXI_2/XLXI_1/XLXI_6/XLXI_1/XLXI_2/I_36_32
                                 Gate     Net
@@ -702,15 +727,15 @@ Delay:               6.102ns (Levels of Logic = 4)
                                        (42.2% logic, 57.8% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'XLXI_2/XLXI_2/XLXI_10/XLXI_4/Q'
+Timing constraint: Default period analysis for Clock 'XLXI_2/XLXI_2/XLXI_10/XLXI_32/Q'
   Clock period: 6.102ns (frequency: 163.881MHz)
   Total number of paths / destination ports: 10 / 2
 -------------------------------------------------------------------------
 Delay:               6.102ns (Levels of Logic = 4)
   Source:            XLXI_2/XLXI_2/XLXI_6/XLXI_1/XLXI_1/I_36_32 (FF)
   Destination:       XLXI_2/XLXI_2/XLXI_6/XLXI_1/XLXI_2/I_36_32 (FF)
-  Source Clock:      XLXI_2/XLXI_2/XLXI_10/XLXI_4/Q rising
-  Destination Clock: XLXI_2/XLXI_2/XLXI_10/XLXI_4/Q rising
+  Source Clock:      XLXI_2/XLXI_2/XLXI_10/XLXI_32/Q rising
+  Destination Clock: XLXI_2/XLXI_2/XLXI_10/XLXI_32/Q rising
 
   Data Path: XLXI_2/XLXI_2/XLXI_6/XLXI_1/XLXI_1/I_36_32 to XLXI_2/XLXI_2/XLXI_6/XLXI_1/XLXI_2/I_36_32
                                 Gate     Net
@@ -752,10 +777,10 @@ Delay:               4.544ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'XLXI_4/XLXI_4/EQ'
-  Clock period: 4.544ns (frequency: 220.070MHz)
+  Clock period: 4.761ns (frequency: 210.040MHz)
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Delay:               4.544ns (Levels of Logic = 2)
+Delay:               4.761ns (Levels of Logic = 2)
   Source:            XLXI_4/XLXI_15/I_36_32 (FF)
   Destination:       XLXI_4/XLXI_15/I_36_32 (FF)
   Source Clock:      XLXI_4/XLXI_4/EQ rising
@@ -765,13 +790,13 @@ Delay:               4.544ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              4   0.720   0.917  I_36_32 (Q)
+     FDC:C->Q             10   0.720   1.134  I_36_32 (Q)
      AND3B2:I2->O          1   0.551   0.801  I_36_37 (A0)
      OR3:I2->O             1   0.551   0.801  I_36_41 (AD)
      FDC:D                     0.203          I_36_32
     ----------------------------------------
-    Total                      4.544ns (2.025ns logic, 2.519ns route)
-                                       (44.6% logic, 55.4% route)
+    Total                      4.761ns (2.025ns logic, 2.736ns route)
+                                       (42.5% logic, 57.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'XLXI_32/XLXI_24/EQ'
@@ -2184,60 +2209,52 @@ Delay:               3.976ns (Levels of Logic = 2)
                                        (37.1% logic, 62.9% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'XLXI_2/XLXN_57'
+Timing constraint: Default period analysis for Clock 'XLXI_4/XLXI_15/Q'
   Clock period: 8.933ns (frequency: 111.944MHz)
-  Total number of paths / destination ports: 77 / 4
+  Total number of paths / destination ports: 154 / 8
 -------------------------------------------------------------------------
 Delay:               8.933ns (Levels of Logic = 6)
-  Source:            XLXI_2/XLXI_1/XLXI_10/XLXI_4/I_36_32 (FF)
-  Destination:       XLXI_2/XLXI_1/XLXI_10/XLXI_2/I_36_32 (FF)
-  Source Clock:      XLXI_2/XLXN_57 rising
-  Destination Clock: XLXI_2/XLXN_57 rising
+  Source:            XLXI_2/XLXI_1/XLXI_10/XLXI_32/I_36_32 (FF)
+  Destination:       XLXI_2/XLXI_1/XLXI_10/XLXI_30/I_36_32 (FF)
+  Source Clock:      XLXI_4/XLXI_15/Q rising
+  Destination Clock: XLXI_4/XLXI_15/Q rising
 
-  Data Path: XLXI_2/XLXI_1/XLXI_10/XLXI_4/I_36_32 to XLXI_2/XLXI_1/XLXI_10/XLXI_2/I_36_32
+  Data Path: XLXI_2/XLXI_1/XLXI_10/XLXI_32/I_36_32 to XLXI_2/XLXI_1/XLXI_10/XLXI_30/I_36_32
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             11   0.720   1.144  I_36_32 (Q)
-     end scope: 'XLXI_2/XLXI_1/XLXI_10/XLXI_4'
+     FDCE:C->Q            11   0.720   1.144  I_36_32 (Q)
+     end scope: 'XLXI_2/XLXI_1/XLXI_10/XLXI_32'
      INV:I->O              1   0.551   0.801  XLXI_2/XLXI_1/XLXI_10/XLXI_16 (XLXI_2/XLXI_1/XLXI_10/XLXN_18)
      AND3:I2->O            1   0.551   0.801  XLXI_2/XLXI_1/XLXI_10/XLXI_13 (XLXI_2/XLXI_1/XLXI_10/XLXN_16)
      OR2:I1->O             3   0.551   0.907  XLXI_2/XLXI_1/XLXI_10/XLXI_28 (XLXI_2/XLXI_1/XLXI_10/XLXN_22)
-     begin scope: 'XLXI_2/XLXI_1/XLXI_10/XLXI_2'
+     begin scope: 'XLXI_2/XLXI_1/XLXI_10/XLXI_30'
      AND3B2:I0->O          1   0.551   0.801  I_36_37 (A0)
      OR3:I2->O             1   0.551   0.801  I_36_41 (AD)
-     FDC:D                     0.203          I_36_32
+     FDCE:D                    0.203          I_36_32
     ----------------------------------------
     Total                      8.933ns (3.678ns logic, 5.255ns route)
                                        (41.2% logic, 58.8% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'XLXI_2/XLXN_56'
-  Clock period: 8.933ns (frequency: 111.944MHz)
-  Total number of paths / destination ports: 77 / 4
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_4/XLXI_15/Q'
+  Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
-Delay:               8.933ns (Levels of Logic = 6)
-  Source:            XLXI_2/XLXI_2/XLXI_10/XLXI_4/I_36_32 (FF)
-  Destination:       XLXI_2/XLXI_2/XLXI_10/XLXI_2/I_36_32 (FF)
-  Source Clock:      XLXI_2/XLXN_56 rising
-  Destination Clock: XLXI_2/XLXN_56 rising
+Offset:              2.340ns (Levels of Logic = 2)
+  Source:            BT1 (PAD)
+  Destination:       XLXI_2/XLXI_1/XLXI_10/XLXI_29/I_36_32 (FF)
+  Destination Clock: XLXI_4/XLXI_15/Q rising
 
-  Data Path: XLXI_2/XLXI_2/XLXI_10/XLXI_4/I_36_32 to XLXI_2/XLXI_2/XLXI_10/XLXI_2/I_36_32
+  Data Path: BT1 to XLXI_2/XLXI_1/XLXI_10/XLXI_29/I_36_32
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             11   0.720   1.144  I_36_32 (Q)
-     end scope: 'XLXI_2/XLXI_2/XLXI_10/XLXI_4'
-     INV:I->O              1   0.551   0.801  XLXI_2/XLXI_2/XLXI_10/XLXI_16 (XLXI_2/XLXI_2/XLXI_10/XLXN_18)
-     AND3:I2->O            1   0.551   0.801  XLXI_2/XLXI_2/XLXI_10/XLXI_13 (XLXI_2/XLXI_2/XLXI_10/XLXN_16)
-     OR2:I1->O             3   0.551   0.907  XLXI_2/XLXI_2/XLXI_10/XLXI_28 (XLXI_2/XLXI_2/XLXI_10/XLXN_22)
-     begin scope: 'XLXI_2/XLXI_2/XLXI_10/XLXI_2'
-     AND3B2:I0->O          1   0.551   0.801  I_36_37 (A0)
-     OR3:I2->O             1   0.551   0.801  I_36_41 (AD)
-     FDC:D                     0.203          I_36_32
+     IBUF:I->O             4   0.821   0.917  BT1_IBUF (BT1_IBUF)
+     begin scope: 'XLXI_2/XLXI_1/XLXI_10/XLXI_32'
+     FDCE:CE                   0.602          I_36_32
     ----------------------------------------
-    Total                      8.933ns (3.678ns logic, 5.255ns route)
-                                       (41.2% logic, 58.8% route)
+    Total                      2.340ns (1.423ns logic, 0.917ns route)
+                                       (60.8% logic, 39.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_32/XLXI_26/Q'
@@ -2273,13 +2290,13 @@ Offset:              18.356ns (Levels of Logic = 12)
                                        (57.6% logic, 42.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXI_2/XLXI_10/XLXI_4/Q'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXI_2/XLXI_10/XLXI_32/Q'
   Total number of paths / destination ports: 24 / 9
 -------------------------------------------------------------------------
 Offset:              17.576ns (Levels of Logic = 12)
   Source:            XLXI_2/XLXI_2/XLXI_6/XLXI_1/XLXI_1/I_36_32 (FF)
   Destination:       D (PAD)
-  Source Clock:      XLXI_2/XLXI_2/XLXI_10/XLXI_4/Q rising
+  Source Clock:      XLXI_2/XLXI_2/XLXI_10/XLXI_32/Q rising
 
   Data Path: XLXI_2/XLXI_2/XLXI_6/XLXI_1/XLXI_1/I_36_32 to D
                                 Gate     Net
@@ -2305,45 +2322,13 @@ Offset:              17.576ns (Levels of Logic = 12)
                                        (60.2% logic, 39.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXN_56'
-  Total number of paths / destination ports: 40 / 11
--------------------------------------------------------------------------
-Offset:              17.779ns (Levels of Logic = 12)
-  Source:            XLXI_2/XLXI_2/XLXI_10/XLXI_1/I_36_32 (FF)
-  Destination:       D (PAD)
-  Source Clock:      XLXI_2/XLXN_56 rising
-
-  Data Path: XLXI_2/XLXI_2/XLXI_10/XLXI_1/I_36_32 to D
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              9   0.720   1.124  I_36_32 (Q)
-     end scope: 'XLXI_2/XLXI_2/XLXI_10/XLXI_1'
-     begin scope: 'XLXI_5'
-     begin scope: 'I_M23'
-     AND3B1:I2->O          1   0.551   0.801  I_36_31 (M0)
-     OR2:I1->O             1   0.551   0.000  I_36_38 (O)
-     end scope: 'I_M23'
-     MUXF5:I1->O           6   0.360   1.003  I_O (O)
-     end scope: 'XLXI_5'
-     INV:I->O              7   0.551   1.066  XLXI_14/XLXI_3 (XLXI_14/XLXN_34)
-     AND2:I0->O            1   0.551   0.801  XLXI_14/XLXI_13 (XLXI_14/XLXN_40)
-     OR4:I3->O             1   0.551   0.801  XLXI_14/XLXI_17 (XLXI_14/XLXN_52)
-     OR2:I0->O             1   0.551   0.801  XLXI_14/XLXI_18 (XLXN_107)
-     INV:I->O              1   0.551   0.801  XLXI_18 (D_OBUF)
-     OBUF:I->O                 5.644          D_OBUF (D)
-    ----------------------------------------
-    Total                     17.779ns (10.581ns logic, 7.198ns route)
-                                       (59.5% logic, 40.5% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXI_1/XLXI_10/XLXI_4/Q'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXI_1/XLXI_10/XLXI_32/Q'
   Total number of paths / destination ports: 24 / 9
 -------------------------------------------------------------------------
 Offset:              17.576ns (Levels of Logic = 12)
   Source:            XLXI_2/XLXI_1/XLXI_6/XLXI_1/XLXI_1/I_36_32 (FF)
   Destination:       D (PAD)
-  Source Clock:      XLXI_2/XLXI_1/XLXI_10/XLXI_4/Q rising
+  Source Clock:      XLXI_2/XLXI_1/XLXI_10/XLXI_32/Q rising
 
   Data Path: XLXI_2/XLXI_1/XLXI_6/XLXI_1/XLXI_1/I_36_32 to D
                                 Gate     Net
@@ -2369,20 +2354,20 @@ Offset:              17.576ns (Levels of Logic = 12)
                                        (60.2% logic, 39.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXN_57'
-  Total number of paths / destination ports: 40 / 11
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_4/XLXI_15/Q'
+  Total number of paths / destination ports: 80 / 11
 -------------------------------------------------------------------------
 Offset:              17.779ns (Levels of Logic = 12)
-  Source:            XLXI_2/XLXI_1/XLXI_10/XLXI_1/I_36_32 (FF)
+  Source:            XLXI_2/XLXI_1/XLXI_10/XLXI_29/I_36_32 (FF)
   Destination:       D (PAD)
-  Source Clock:      XLXI_2/XLXN_57 rising
+  Source Clock:      XLXI_4/XLXI_15/Q rising
 
-  Data Path: XLXI_2/XLXI_1/XLXI_10/XLXI_1/I_36_32 to D
+  Data Path: XLXI_2/XLXI_1/XLXI_10/XLXI_29/I_36_32 to D
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              9   0.720   1.124  I_36_32 (Q)
-     end scope: 'XLXI_2/XLXI_1/XLXI_10/XLXI_1'
+     FDCE:C->Q             9   0.720   1.124  I_36_32 (Q)
+     end scope: 'XLXI_2/XLXI_1/XLXI_10/XLXI_29'
      begin scope: 'XLXI_5'
      begin scope: 'I_M01'
      AND3B1:I2->O          1   0.551   0.801  I_36_31 (M0)
@@ -2403,12 +2388,12 @@ Offset:              17.779ns (Levels of Logic = 12)
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.95 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.63 secs
  
 --> 
 
-Total memory usage is 4553680 kilobytes
+Total memory usage is 4553760 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    4 (   0 filtered)
