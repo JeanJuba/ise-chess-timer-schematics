@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : DivisorFrequencia.vhf
--- /___/   /\     Timestamp : 09/20/2019 19:35:23
+-- /___/   /\     Timestamp : 09/21/2019 02:28:33
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -591,11 +591,11 @@ architecture BEHAVIORAL of DivisorFrequencia is
              Q   : out   std_logic_vector (15 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_37";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_38";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_39";
-   attribute HU_SET of XLXI_19 : label is "XLXI_19_40";
-   attribute HU_SET of XLXI_20 : label is "XLXI_20_41";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_0";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_1";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_2";
+   attribute HU_SET of XLXI_19 : label is "XLXI_19_3";
+   attribute HU_SET of XLXI_20 : label is "XLXI_20_4";
 begin
    XLXN_4(15 downto 0) <= x"FFFF";
    XLXN_5(15 downto 0) <= x"01AD";

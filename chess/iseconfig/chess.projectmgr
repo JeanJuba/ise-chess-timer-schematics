@@ -12,15 +12,17 @@
          <ClosedNode>/Players C:|Users|jeanw|ise-chess-timer-schematics|chess|Players.sch/XLXI_2 - TimerBlock</ClosedNode>
          <ClosedNode>/TOP C:|Users|jeanw|chess|TOP.sch/XLXI_124 - Div_Freq_20</ClosedNode>
          <ClosedNode>/TOP C:|Users|jeanw|chess|TOP.sch/XLXI_7 - Div_Freq</ClosedNode>
+         <ClosedNode>/teste_contador C:|Users|jeanw|ise-chess-timer-schematics|chess|teste_contador.sch</ClosedNode>
+         <ClosedNode>/teste_statemachine C:|Users|jeanw|ise-chess-timer-schematics|chess|teste_statemachine.sch</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>teste_contador (C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_contador.sch)</SelectedItem>
+         <SelectedItem>System (C:/Users/jeanw/ise-chess-timer-schematics/chess/System.sch)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001c1000000020000000000000000000000000200000064ffffffff000000810000000300000002000001c10000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>teste_contador (C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_contador.sch)</CurrentItem>
+      <CurrentItem>System (C:/Users/jeanw/ise-chess-timer-schematics/chess/System.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -73,13 +75,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Design Summary/Reports</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013b0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Design Summary/Reports</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -131,7 +133,6 @@
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem></SelectedItem>

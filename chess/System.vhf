@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : System.vhf
--- /___/   /\     Timestamp : 09/20/2019 21:05:06
+-- /___/   /\     Timestamp : 09/21/2019 02:28:35
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -591,11 +591,11 @@ architecture BEHAVIORAL of DivisorFreqDisplay_MUSER_System is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_22 : label is "XLXI_22_47";
-   attribute HU_SET of XLXI_23 : label is "XLXI_23_48";
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_49";
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_50";
-   attribute HU_SET of XLXI_26 : label is "XLXI_26_51";
+   attribute HU_SET of XLXI_22 : label is "XLXI_22_10";
+   attribute HU_SET of XLXI_23 : label is "XLXI_23_11";
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_12";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_13";
+   attribute HU_SET of XLXI_26 : label is "XLXI_26_14";
 begin
    XLXN_36(15 downto 0) <= x"FFFF";
    XLXN_37(15 downto 0) <= x"0005";
@@ -1044,8 +1044,8 @@ architecture BEHAVIORAL of M4_1E_MXILINX_System is
    end component;
    attribute BOX_TYPE of MUXF5 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_M01 : label is "I_M01_53";
-   attribute HU_SET of I_M23 : label is "I_M23_52";
+   attribute HU_SET of I_M01 : label is "I_M01_16";
+   attribute HU_SET of I_M23 : label is "I_M23_15";
 begin
    I_M01 : M2_1E_MXILINX_System
       port map (D0=>D0,
@@ -1172,8 +1172,8 @@ architecture BEHAVIORAL of CB2CE_MXILINX_System is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_54";
-   attribute HU_SET of I_Q1 : label is "I_Q1_55";
+   attribute HU_SET of I_Q0 : label is "I_Q0_17";
+   attribute HU_SET of I_Q1 : label is "I_Q1_18";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -1415,10 +1415,10 @@ architecture BEHAVIORAL of decade_down_counter_MUSER_System is
              Q   : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_29 : label is "XLXI_29_56";
-   attribute HU_SET of XLXI_30 : label is "XLXI_30_57";
-   attribute HU_SET of XLXI_31 : label is "XLXI_31_58";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_59";
+   attribute HU_SET of XLXI_29 : label is "XLXI_29_19";
+   attribute HU_SET of XLXI_30 : label is "XLXI_30_20";
+   attribute HU_SET of XLXI_31 : label is "XLXI_31_21";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_22";
 begin
    A <= A_DUMMY;
    B <= B_DUMMY;
@@ -1585,8 +1585,8 @@ architecture BEHAVIORAL of down_counter_3bit_MUSER_System is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_60";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_61";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_23";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_24";
 begin
    A <= A_DUMMY;
    XLXI_1 : FJKC_MXILINX_System
@@ -1870,11 +1870,11 @@ architecture BEHAVIORAL of DivisorFrequencia_MUSER_System is
              Q   : out   std_logic_vector (15 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_62";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_63";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_64";
-   attribute HU_SET of XLXI_19 : label is "XLXI_19_65";
-   attribute HU_SET of XLXI_20 : label is "XLXI_20_66";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_25";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_26";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_27";
+   attribute HU_SET of XLXI_19 : label is "XLXI_19_28";
+   attribute HU_SET of XLXI_20 : label is "XLXI_20_29";
 begin
    XLXN_4(15 downto 0) <= x"FFFF";
    XLXN_5(15 downto 0) <= x"01AD";
@@ -2085,11 +2085,11 @@ architecture BEHAVIORAL of System is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_68";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_69";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_70";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_71";
-   attribute HU_SET of XLXI_9 : label is "XLXI_9_67";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_31";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_32";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_33";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_34";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_30";
 begin
    L1 <= L1_DUMMY;
    L2 <= L2_DUMMY;

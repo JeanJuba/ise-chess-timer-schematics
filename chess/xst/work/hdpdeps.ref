@@ -1,4 +1,4 @@
-V3 246
+V3 245
 FL C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.vhf 2019/09/20.21:05:04 P.20131013
 AR work/FJKC_MXILINX_decade_down_counter/BEHAVIORAL 1569023239 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/decade_down_counter.vhf \
@@ -93,36 +93,36 @@ AR work/DivisorFreqDisplay/BEHAVIORAL 1569024362 \
       EN work/DivisorFreqDisplay 1569024361 CP CR16CE_MXILINX_DivisorFreqDisplay \
       CP COMP16_MXILINX_DivisorFreqDisplay CP FJKC_MXILINX_DivisorFreqDisplay \
       CP INV CP VCC CP OR2
-FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf 2019/09/20.19:35:23 P.20131013
-EN work/CR16CE_MXILINX_DivisorFrequencia 1569024363 \
+FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf 2019/09/21.02:28:34 P.20131013
+EN work/CR16CE_MXILINX_DivisorFrequencia 1569043736 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/CR16CE_MXILINX_DivisorFrequencia/BEHAVIORAL 1569024364 \
+AR work/CR16CE_MXILINX_DivisorFrequencia/BEHAVIORAL 1569043737 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf \
-      EN work/CR16CE_MXILINX_DivisorFrequencia 1569024363 CP FDCE_1 CP INV CP VCC
-EN work/FJKC_MXILINX_DivisorFrequencia 1569024365 \
+      EN work/CR16CE_MXILINX_DivisorFrequencia 1569043736 CP FDCE_1 CP INV CP VCC
+EN work/FJKC_MXILINX_DivisorFrequencia 1569043738 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FJKC_MXILINX_DivisorFrequencia/BEHAVIORAL 1569024366 \
+AR work/FJKC_MXILINX_DivisorFrequencia/BEHAVIORAL 1569043739 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf \
-      EN work/FJKC_MXILINX_DivisorFrequencia 1569024365 CP FDC CP AND3B2 CP AND3B1 \
+      EN work/FJKC_MXILINX_DivisorFrequencia 1569043738 CP FDC CP AND3B2 CP AND3B1 \
       CP OR3 CP AND2B1
-EN work/COMP16_MXILINX_DivisorFrequencia 1569024367 \
+EN work/COMP16_MXILINX_DivisorFrequencia 1569043740 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/COMP16_MXILINX_DivisorFrequencia/BEHAVIORAL 1569024368 \
+AR work/COMP16_MXILINX_DivisorFrequencia/BEHAVIORAL 1569043741 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf \
-      EN work/COMP16_MXILINX_DivisorFrequencia 1569024367 CP AND4 CP XNOR2
-EN work/DivisorFrequencia 1569024369 \
+      EN work/COMP16_MXILINX_DivisorFrequencia 1569043740 CP AND4 CP XNOR2
+EN work/DivisorFrequencia 1569043742 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/DivisorFrequencia/BEHAVIORAL 1569024370 \
+AR work/DivisorFrequencia/BEHAVIORAL 1569043743 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf \
-      EN work/DivisorFrequencia 1569024369 CP COMP16_MXILINX_DivisorFrequencia \
+      EN work/DivisorFrequencia 1569043742 CP COMP16_MXILINX_DivisorFrequencia \
       CP OR2 CP FJKC_MXILINX_DivisorFrequencia CP VCC CP INV \
       CP CR16CE_MXILINX_DivisorFrequencia
 FL C:/Users/jeanw/ise-chess-timer-schematics/chess/down_counter_3bit.vhf 2019/09/20.19:35:24 P.20131013
@@ -198,14 +198,14 @@ EN work/Players 1569024383 \
 AR work/Players/BEHAVIORAL 1569024384 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/Players.vhf \
       EN work/Players 1569024383 CP TimerBlock_MUSER_Players
-FL C:/Users/jeanw/ise-chess-timer-schematics/chess/StateMachine.vhf 2019/09/20.17:25:20 P.20131013
-EN work/StateMachine 1569013818 \
+FL C:/Users/jeanw/ise-chess-timer-schematics/chess/StateMachine.vhf 2019/09/21.02:28:33 P.20131013
+EN work/StateMachine 1569043744 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/StateMachine.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/StateMachine/BEHAVIORAL 1569013819 \
+AR work/StateMachine/BEHAVIORAL 1569043745 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/StateMachine.vhf \
-      EN work/StateMachine 1569013818 CP FDC CP OR3 CP AND2B1 CP AND3B1 CP AND4B3 \
+      EN work/StateMachine 1569043744 CP FDC CP OR3 CP AND2B1 CP AND3B1 CP AND4B3 \
       CP OR4 CP AND4B2 CP AND5B4 CP AND2
 FL C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf 2019/09/20.21:05:08 P.20131013
 EN work/FJKC_MXILINX_System 1569024315 \
@@ -404,54 +404,54 @@ AR work/teste_contador/BEHAVIORAL 1569005387 \
       EN work/teste_contador 1569005386 CP DivisorFrequencia_MUSER_teste_contador \
       CP Decodificador_4bits_MUSER_teste_contador CP VCC CP INV \
       CP decade_down_counter_MUSER_teste_contador CP GND
-FL C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.vhf 2019/09/20.18:09:55 P.20131013
-EN work/StateMachine_MUSER_teste_statemachine 1569013798 \
+FL C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.vhf 2019/09/21.02:28:35 P.20131013
+EN work/StateMachine_MUSER_teste_statemachine 1569043724 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/StateMachine_MUSER_teste_statemachine/BEHAVIORAL 1569013799 \
+AR work/StateMachine_MUSER_teste_statemachine/BEHAVIORAL 1569043725 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.vhf \
-      EN work/StateMachine_MUSER_teste_statemachine 1569013798 CP FDC CP OR3 \
+      EN work/StateMachine_MUSER_teste_statemachine 1569043724 CP FDC CP OR3 \
       CP AND2B1 CP AND3B1 CP AND4B3 CP OR4 CP AND4B2 CP AND5B4 CP AND2
-EN work/CR16CE_MXILINX_teste_statemachine 1569013800 \
+EN work/CR16CE_MXILINX_teste_statemachine 1569043726 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/CR16CE_MXILINX_teste_statemachine/BEHAVIORAL 1569013801 \
+AR work/CR16CE_MXILINX_teste_statemachine/BEHAVIORAL 1569043727 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.vhf \
-      EN work/CR16CE_MXILINX_teste_statemachine 1569013800 CP FDCE_1 CP INV CP VCC
-EN work/FJKC_MXILINX_teste_statemachine 1569013802 \
+      EN work/CR16CE_MXILINX_teste_statemachine 1569043726 CP FDCE_1 CP INV CP VCC
+EN work/FJKC_MXILINX_teste_statemachine 1569043728 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FJKC_MXILINX_teste_statemachine/BEHAVIORAL 1569013803 \
+AR work/FJKC_MXILINX_teste_statemachine/BEHAVIORAL 1569043729 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.vhf \
-      EN work/FJKC_MXILINX_teste_statemachine 1569013802 CP FDC CP AND3B2 CP AND3B1 \
+      EN work/FJKC_MXILINX_teste_statemachine 1569043728 CP FDC CP AND3B2 CP AND3B1 \
       CP OR3 CP AND2B1
-EN work/COMP16_MXILINX_teste_statemachine 1569013804 \
+EN work/COMP16_MXILINX_teste_statemachine 1569043730 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/COMP16_MXILINX_teste_statemachine/BEHAVIORAL 1569013805 \
+AR work/COMP16_MXILINX_teste_statemachine/BEHAVIORAL 1569043731 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.vhf \
-      EN work/COMP16_MXILINX_teste_statemachine 1569013804 CP AND4 CP XNOR2
-EN work/DivisorFrequencia_MUSER_teste_statemachine 1569013806 \
+      EN work/COMP16_MXILINX_teste_statemachine 1569043730 CP AND4 CP XNOR2
+EN work/DivisorFrequencia_MUSER_teste_statemachine 1569043732 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/DivisorFrequencia_MUSER_teste_statemachine/BEHAVIORAL 1569013807 \
+AR work/DivisorFrequencia_MUSER_teste_statemachine/BEHAVIORAL 1569043733 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.vhf \
-      EN work/DivisorFrequencia_MUSER_teste_statemachine 1569013806 \
+      EN work/DivisorFrequencia_MUSER_teste_statemachine 1569043732 \
       CP COMP16_MXILINX_teste_statemachine CP OR2 \
       CP FJKC_MXILINX_teste_statemachine CP VCC CP INV \
       CP CR16CE_MXILINX_teste_statemachine
-EN work/teste_statemachine 1569013808 \
+EN work/teste_statemachine 1569043734 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/teste_statemachine/BEHAVIORAL 1569013809 \
+AR work/teste_statemachine/BEHAVIORAL 1569043735 \
       FL C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.vhf \
-      EN work/teste_statemachine 1569013808 \
+      EN work/teste_statemachine 1569043734 \
       CP DivisorFrequencia_MUSER_teste_statemachine \
       CP StateMachine_MUSER_teste_statemachine
 FL C:/Users/jeanw/ise-chess-timer-schematics/chess/test_timerblock.vhf 2019/09/20.20:04:06 P.20131013

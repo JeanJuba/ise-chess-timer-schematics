@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : StateMachine.vhf
--- /___/   /\     Timestamp : 09/20/2019 17:25:20
+-- /___/   /\     Timestamp : 09/21/2019 02:28:33
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

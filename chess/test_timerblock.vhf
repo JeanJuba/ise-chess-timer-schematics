@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : test_timerblock.vhf
--- /___/   /\     Timestamp : 09/20/2019 21:05:10
+-- /___/   /\     Timestamp : 09/21/2019 02:28:38
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -877,11 +877,11 @@ architecture BEHAVIORAL of DivisorFrequencia_MUSER_test_timerblock is
              Q   : out   std_logic_vector (15 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_78";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_79";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_80";
-   attribute HU_SET of XLXI_19 : label is "XLXI_19_81";
-   attribute HU_SET of XLXI_20 : label is "XLXI_20_82";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_35";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_36";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_37";
+   attribute HU_SET of XLXI_19 : label is "XLXI_19_38";
+   attribute HU_SET of XLXI_20 : label is "XLXI_20_39";
 begin
    XLXN_4(15 downto 0) <= x"FFFF";
    XLXN_5(15 downto 0) <= x"01AD";
@@ -1136,10 +1136,10 @@ architecture BEHAVIORAL of decade_down_counter_MUSER_test_timerblock is
              Q   : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_29 : label is "XLXI_29_83";
-   attribute HU_SET of XLXI_30 : label is "XLXI_30_84";
-   attribute HU_SET of XLXI_31 : label is "XLXI_31_85";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_86";
+   attribute HU_SET of XLXI_29 : label is "XLXI_29_40";
+   attribute HU_SET of XLXI_30 : label is "XLXI_30_41";
+   attribute HU_SET of XLXI_31 : label is "XLXI_31_42";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_43";
 begin
    A <= A_DUMMY;
    B <= B_DUMMY;
@@ -1306,8 +1306,8 @@ architecture BEHAVIORAL of down_counter_3bit_MUSER_test_timerblock is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_87";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_88";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_44";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_45";
 begin
    A <= A_DUMMY;
    XLXI_1 : FJKC_MXILINX_test_timerblock
@@ -1550,10 +1550,10 @@ architecture BEHAVIORAL of test_timerblock is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_89";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_90";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_91";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_92";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_46";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_47";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_48";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_49";
 begin
    XLXI_1 : TimerBlock_MUSER_test_timerblock
       port map (CE=>XLXI_1_CE_openSignal,

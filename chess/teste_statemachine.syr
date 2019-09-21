@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: teste_statemachine.prj
 
@@ -105,67 +105,72 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.vhf" in Library work.
-Entity <StateMachine_MUSER_teste_statemachine> compiled.
-Entity <StateMachine_MUSER_teste_statemachine> (Architecture <BEHAVIORAL>) compiled.
-Entity <CR16CE_MXILINX_teste_statemachine> compiled.
-Entity <CR16CE_MXILINX_teste_statemachine> (Architecture <BEHAVIORAL>) compiled.
-Entity <FJKC_MXILINX_teste_statemachine> compiled.
-Entity <FJKC_MXILINX_teste_statemachine> (Architecture <BEHAVIORAL>) compiled.
-Entity <COMP16_MXILINX_teste_statemachine> compiled.
-Entity <COMP16_MXILINX_teste_statemachine> (Architecture <BEHAVIORAL>) compiled.
-Entity <DivisorFrequencia_MUSER_teste_statemachine> compiled.
-Entity <DivisorFrequencia_MUSER_teste_statemachine> (Architecture <BEHAVIORAL>) compiled.
+Entity <statemachine_muser_teste_statemachine> compiled.
+Entity <statemachine_muser_teste_statemachine> (Architecture <behavioral>) compiled.
+Entity <cr16ce_mxilinx_teste_statemachine> compiled.
+Entity <cr16ce_mxilinx_teste_statemachine> (Architecture <behavioral>) compiled.
+Entity <fjkc_mxilinx_teste_statemachine> compiled.
+Entity <fjkc_mxilinx_teste_statemachine> (Architecture <behavioral>) compiled.
+Entity <comp16_mxilinx_teste_statemachine> compiled.
+Entity <comp16_mxilinx_teste_statemachine> (Architecture <behavioral>) compiled.
+Entity <divisorfrequencia_muser_teste_statemachine> compiled.
+Entity <divisorfrequencia_muser_teste_statemachine> (Architecture <behavioral>) compiled.
 Entity <teste_statemachine> compiled.
-Entity <teste_statemachine> (Architecture <BEHAVIORAL>) compiled.
+Entity <teste_statemachine> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/jeanw/ise-chess-timer-schematics/chess/DivisorFrequencia.vhf" in Library work.
-Architecture behavioral of Entity cr16ce_mxilinx_divisorfrequencia is up to date.
-Architecture behavioral of Entity fjkc_mxilinx_divisorfrequencia is up to date.
-Architecture behavioral of Entity comp16_mxilinx_divisorfrequencia is up to date.
-Architecture behavioral of Entity divisorfrequencia is up to date.
+Entity <cr16ce_mxilinx_divisorfrequencia> compiled.
+Entity <cr16ce_mxilinx_divisorfrequencia> (Architecture <behavioral>) compiled.
+Entity <fjkc_mxilinx_divisorfrequencia> compiled.
+Entity <fjkc_mxilinx_divisorfrequencia> (Architecture <behavioral>) compiled.
+Entity <comp16_mxilinx_divisorfrequencia> compiled.
+Entity <comp16_mxilinx_divisorfrequencia> (Architecture <behavioral>) compiled.
+Entity <divisorfrequencia> compiled.
+Entity <divisorfrequencia> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/jeanw/ise-chess-timer-schematics/chess/StateMachine.vhf" in Library work.
-Architecture behavioral of Entity statemachine is up to date.
+Entity <statemachine> compiled.
+Entity <statemachine> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <teste_statemachine> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <teste_statemachine> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <DivisorFrequencia_MUSER_teste_statemachine> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <DivisorFrequencia_MUSER_teste_statemachine> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <StateMachine_MUSER_teste_statemachine> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <StateMachine_MUSER_teste_statemachine> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <COMP16_MXILINX_teste_statemachine> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <COMP16_MXILINX_teste_statemachine> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FJKC_MXILINX_teste_statemachine> in library <work> (architecture <BEHAVIORAL>) with generics.
+Analyzing hierarchy for entity <FJKC_MXILINX_teste_statemachine> in library <work> (architecture <behavioral>) with generics.
 	INIT = '0'
 
-Analyzing hierarchy for entity <CR16CE_MXILINX_teste_statemachine> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <CR16CE_MXILINX_teste_statemachine> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <teste_statemachine> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <teste_statemachine> in library <work> (Architecture <behavioral>).
 Entity <teste_statemachine> analyzed. Unit <teste_statemachine> generated.
 
-Analyzing Entity <DivisorFrequencia_MUSER_teste_statemachine> in library <work> (Architecture <BEHAVIORAL>).
-    Set user-defined property "HU_SET =  XLXI_3_0" for instance <XLXI_3> in unit <DivisorFrequencia_MUSER_teste_statemachine>.
-    Set user-defined property "HU_SET =  XLXI_4_1" for instance <XLXI_4> in unit <DivisorFrequencia_MUSER_teste_statemachine>.
-    Set user-defined property "HU_SET =  XLXI_15_2" for instance <XLXI_15> in unit <DivisorFrequencia_MUSER_teste_statemachine>.
-    Set user-defined property "HU_SET =  XLXI_19_3" for instance <XLXI_19> in unit <DivisorFrequencia_MUSER_teste_statemachine>.
-    Set user-defined property "HU_SET =  XLXI_20_4" for instance <XLXI_20> in unit <DivisorFrequencia_MUSER_teste_statemachine>.
+Analyzing Entity <DivisorFrequencia_MUSER_teste_statemachine> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_3_5" for instance <XLXI_3> in unit <DivisorFrequencia_MUSER_teste_statemachine>.
+    Set user-defined property "HU_SET =  XLXI_4_6" for instance <XLXI_4> in unit <DivisorFrequencia_MUSER_teste_statemachine>.
+    Set user-defined property "HU_SET =  XLXI_15_7" for instance <XLXI_15> in unit <DivisorFrequencia_MUSER_teste_statemachine>.
+    Set user-defined property "HU_SET =  XLXI_19_8" for instance <XLXI_19> in unit <DivisorFrequencia_MUSER_teste_statemachine>.
+    Set user-defined property "HU_SET =  XLXI_20_9" for instance <XLXI_20> in unit <DivisorFrequencia_MUSER_teste_statemachine>.
 Entity <DivisorFrequencia_MUSER_teste_statemachine> analyzed. Unit <DivisorFrequencia_MUSER_teste_statemachine> generated.
 
-Analyzing Entity <COMP16_MXILINX_teste_statemachine> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <COMP16_MXILINX_teste_statemachine> in library <work> (Architecture <behavioral>).
 Entity <COMP16_MXILINX_teste_statemachine> analyzed. Unit <COMP16_MXILINX_teste_statemachine> generated.
 
-Analyzing generic Entity <FJKC_MXILINX_teste_statemachine> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing generic Entity <FJKC_MXILINX_teste_statemachine> in library <work> (Architecture <behavioral>).
 	INIT = '0'
     Set user-defined property "INIT =  0" for instance <I_36_32> in unit <FJKC_MXILINX_teste_statemachine>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_32> in unit <FJKC_MXILINX_teste_statemachine>.
 Entity <FJKC_MXILINX_teste_statemachine> analyzed. Unit <FJKC_MXILINX_teste_statemachine> generated.
 
-Analyzing Entity <CR16CE_MXILINX_teste_statemachine> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <CR16CE_MXILINX_teste_statemachine> in library <work> (Architecture <behavioral>).
     Set user-defined property "INIT =  0" for instance <I_Q0> in unit <CR16CE_MXILINX_teste_statemachine>.
     Set user-defined property "INIT =  0" for instance <I_Q1> in unit <CR16CE_MXILINX_teste_statemachine>.
     Set user-defined property "INIT =  0" for instance <I_Q2> in unit <CR16CE_MXILINX_teste_statemachine>.
@@ -184,7 +189,7 @@ Analyzing Entity <CR16CE_MXILINX_teste_statemachine> in library <work> (Architec
     Set user-defined property "INIT =  0" for instance <I_Q15> in unit <CR16CE_MXILINX_teste_statemachine>.
 Entity <CR16CE_MXILINX_teste_statemachine> analyzed. Unit <CR16CE_MXILINX_teste_statemachine> generated.
 
-Analyzing Entity <StateMachine_MUSER_teste_statemachine> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <StateMachine_MUSER_teste_statemachine> in library <work> (Architecture <behavioral>).
     Set user-defined property "INIT =  0" for instance <XLXI_9> in unit <StateMachine_MUSER_teste_statemachine>.
     Set user-defined property "INIT =  0" for instance <XLXI_10> in unit <StateMachine_MUSER_teste_statemachine>.
     Set user-defined property "INIT =  0" for instance <XLXI_11> in unit <StateMachine_MUSER_teste_statemachine>.
@@ -1218,12 +1223,12 @@ Offset:              8.850ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.37 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.89 secs
  
 --> 
 
-Total memory usage is 4537532 kilobytes
+Total memory usage is 4537540 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
