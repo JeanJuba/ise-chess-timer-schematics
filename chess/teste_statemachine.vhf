@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : teste_statemachine.vhf
--- /___/   /\     Timestamp : 09/21/2019 21:02:41
+-- /___/   /\     Timestamp : 09/22/2019 18:37:19
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -898,11 +898,11 @@ architecture BEHAVIORAL of DivisorFrequencia_MUSER_teste_statemachine is
              Q   : out   std_logic_vector (15 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_5";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_6";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_7";
-   attribute HU_SET of XLXI_19 : label is "XLXI_19_8";
-   attribute HU_SET of XLXI_20 : label is "XLXI_20_9";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_55";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_56";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_57";
+   attribute HU_SET of XLXI_19 : label is "XLXI_19_58";
+   attribute HU_SET of XLXI_20 : label is "XLXI_20_59";
 begin
    XLXN_4(15 downto 0) <= x"FFFF";
    XLXN_5(15 downto 0) <= x"01AD";

@@ -1,3 +1,1 @@
-sch2hdl,-intstyle,ise,-family,spartan3,-flat,-suppress,-vhdl,C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.vhf,-w,C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.sch
-sch2hdl,-intstyle,ise,-family,spartan3,-flat,-suppress,-vhdl,C:/Users/jeanw/ise-chess-timer-schematics/chess/StateMachine.vhf,-w,C:/Users/jeanw/ise-chess-timer-schematics/chess/StateMachine.sch
-sch2hdl,-intstyle,ise,-family,spartan3,-flat,-suppress,-vhdl,C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.vhf,-w,C:/Users/jeanw/ise-chess-timer-schematics/chess/teste_statemachine.sch
+sch2hdl,-intstyle,ise,-family,spartan3,-flat,-suppress,-vhdl,C:/Users/jeanw/ise-chess-timer-schematics/chess/System.vhf,-w,C:/Users/jeanw/ise-chess-timer-schematics/chess/System.sch

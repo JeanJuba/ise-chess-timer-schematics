@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-09-21T02:27:56</DateModified>
-  <ModuleName>teste_statemachine</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <DateModified>2019-09-22T15:29:34</DateModified>
+  <ModuleName>System</ModuleName>
+  <SummaryTimeStamp>2019-09-22T15:29:07</SummaryTimeStamp>
   <SavedFilePath>C:/Users/jeanw/ise-chess-timer-schematics/chess/iseconfig/System.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/jeanw/ise-chess-timer-schematics/chess</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/jeanw/ise-chess-timer-schematics/chess\</ImplementationReportsDirectory>
   <DateInitialized>2019-09-21T02:27:55</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

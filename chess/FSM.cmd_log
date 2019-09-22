@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3 -w -refsym FSM C:/Users/jeanw/ise-chess-timer-schematics/chess/FSM.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/FSM.sym 
+sch2sym -intstyle ise -family spartan3 -w -refsym FSM C:/Users/jeanw/ise-chess-timer-schematics/chess/FSM.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/FSM.sym 
+sch2sym -intstyle ise -family spartan3 -w -refsym FSM C:/Users/jeanw/ise-chess-timer-schematics/chess/FSM.sch C:/Users/jeanw/ise-chess-timer-schematics/chess/FSM.sym 

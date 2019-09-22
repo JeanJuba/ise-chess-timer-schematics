@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : down_counter_3bit.vhf
--- /___/   /\     Timestamp : 09/20/2019 19:35:24
+-- /___/   /\     Timestamp : 09/22/2019 18:37:11
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -158,8 +158,8 @@ architecture BEHAVIORAL of down_counter_3bit is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_42";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_43";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_5";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_6";
 begin
    A <= A_DUMMY;
    XLXI_1 : FJKC_MXILINX_down_counter_3bit

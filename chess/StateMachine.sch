@@ -17,7 +17,6 @@
         <signal name="XLXN_69" />
         <signal name="XLXN_81" />
         <signal name="XLXN_82" />
-        <signal name="XLXN_125" />
         <signal name="XLXN_83" />
         <signal name="XLXN_85" />
         <signal name="XLXN_86" />
@@ -45,13 +44,7 @@
         <signal name="TIMEOUT" />
         <signal name="CHEQ" />
         <signal name="BUTTON" />
-        <signal name="XLXN_155" />
-        <signal name="XLXN_156" />
-        <signal name="XLXN_157" />
-        <signal name="XLXN_158" />
         <signal name="CLOCK" />
-        <signal name="XLXN_160" />
-        <signal name="XLXN_161" />
         <signal name="CLEAR" />
         <port polarity="Output" name="Y2" />
         <port polarity="Output" name="Y1" />

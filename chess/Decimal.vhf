@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Decimal.vhf
--- /___/   /\     Timestamp : 09/20/2019 19:35:31
+-- /___/   /\     Timestamp : 09/22/2019 18:37:22
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -158,8 +158,8 @@ architecture BEHAVIORAL of down_counter_3bit_MUSER_Decimal is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_92";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_93";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_75";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_76";
 begin
    A <= A_DUMMY;
    XLXI_1 : FJKC_MXILINX_Decimal

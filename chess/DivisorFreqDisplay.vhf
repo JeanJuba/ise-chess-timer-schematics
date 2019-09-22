@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : DivisorFreqDisplay.vhf
--- /___/   /\     Timestamp : 09/20/2019 20:17:24
+-- /___/   /\     Timestamp : 09/22/2019 18:37:10
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

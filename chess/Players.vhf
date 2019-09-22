@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Players.vhf
--- /___/   /\     Timestamp : 09/20/2019 21:05:04
+-- /___/   /\     Timestamp : 09/22/2019 18:37:23
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -225,10 +225,10 @@ architecture BEHAVIORAL of decade_down_counter_MUSER_Players is
              Q   : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_29 : label is "XLXI_29_41";
-   attribute HU_SET of XLXI_30 : label is "XLXI_30_42";
-   attribute HU_SET of XLXI_31 : label is "XLXI_31_43";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_44";
+   attribute HU_SET of XLXI_29 : label is "XLXI_29_83";
+   attribute HU_SET of XLXI_30 : label is "XLXI_30_84";
+   attribute HU_SET of XLXI_31 : label is "XLXI_31_85";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_86";
 begin
    A <= A_DUMMY;
    B <= B_DUMMY;
@@ -495,8 +495,8 @@ architecture BEHAVIORAL of down_counter_3bit_MUSER_Players is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_45";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_46";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_87";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_88";
 begin
    A <= A_DUMMY;
    XLXI_1 : FJKC_MXILINX_Players
@@ -596,6 +596,11 @@ end TimerBlock_MUSER_Players;
 architecture BEHAVIORAL of TimerBlock_MUSER_Players is
    attribute BOX_TYPE   : string ;
    signal XLXN_3      : std_logic;
+   signal XLXN_11     : std_logic;
+   signal XLXN_12     : std_logic;
+   signal CONTA_DUMMY : std_logic;
+   signal CONTB_DUMMY : std_logic;
+   signal CONTC_DUMMY : std_logic;
    signal CONTD_DUMMY : std_logic;
    component Decimal_MUSER_Players
       port ( CLOCK : in    std_logic; 
@@ -621,14 +626,33 @@ architecture BEHAVIORAL of TimerBlock_MUSER_Players is
              CE    : in    std_logic);
    end component;
    
+   component AND4B4
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND4B4 : component is "BLACK_BOX";
+   
+   component AND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
 begin
+   CONTA <= CONTA_DUMMY;
+   CONTB <= CONTB_DUMMY;
+   CONTC <= CONTC_DUMMY;
    CONTD <= CONTD_DUMMY;
    XLXI_6 : Decimal_MUSER_Players
       port map (CLEAR=>CLEAR,
                 CLOCK=>CONTD_DUMMY,
                 A=>DECA,
                 B=>DECB,
-                CYCLE=>TIMEOUT);
+                CYCLE=>XLXN_11);
    
    XLXI_7 : VCC
       port map (P=>XLXN_3);
@@ -638,10 +662,22 @@ begin
                 CLEAR=>CLEAR,
                 clock=>CLOCK,
                 POWER=>XLXN_3,
-                A=>CONTA,
-                B=>CONTB,
-                C=>CONTC,
+                A=>CONTA_DUMMY,
+                B=>CONTB_DUMMY,
+                C=>CONTC_DUMMY,
                 D=>CONTD_DUMMY);
+   
+   XLXI_11 : AND4B4
+      port map (I0=>CONTD_DUMMY,
+                I1=>CONTC_DUMMY,
+                I2=>CONTB_DUMMY,
+                I3=>CONTA_DUMMY,
+                O=>XLXN_12);
+   
+   XLXI_12 : AND2
+      port map (I0=>XLXN_11,
+                I1=>XLXN_12,
+                O=>TIMEOUT);
    
 end BEHAVIORAL;
 

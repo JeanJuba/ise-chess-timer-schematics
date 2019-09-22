@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : decade_down_counter.vhf
--- /___/   /\     Timestamp : 09/20/2019 21:05:04
+-- /___/   /\     Timestamp : 09/22/2019 18:37:19
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -225,10 +225,10 @@ architecture BEHAVIORAL of decade_down_counter is
              Q   : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_29 : label is "XLXI_29_37";
-   attribute HU_SET of XLXI_30 : label is "XLXI_30_38";
-   attribute HU_SET of XLXI_31 : label is "XLXI_31_39";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_40";
+   attribute HU_SET of XLXI_29 : label is "XLXI_29_51";
+   attribute HU_SET of XLXI_30 : label is "XLXI_30_52";
+   attribute HU_SET of XLXI_31 : label is "XLXI_31_53";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_54";
 begin
    A <= A_DUMMY;
    B <= B_DUMMY;
