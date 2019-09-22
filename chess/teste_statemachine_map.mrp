@@ -10,7 +10,7 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -4
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Sat Sep 21 02:28:58 2019
+Mapped Date    : Sat Sep 21 21:07:47 2019
 
 Design Summary
 --------------
@@ -18,21 +18,21 @@ Number of errors:      0
 Number of warnings:    2
 Logic Utilization:
   Number of Slice Flip Flops:            36 out of  15,360    1%
-  Number of 4 input LUTs:                28 out of  15,360    1%
+  Number of 4 input LUTs:                25 out of  15,360    1%
 Logic Distribution:
-  Number of occupied Slices:             51 out of   7,680    1%
-    Number of Slices containing only related logic:      51 out of      51 100%
-    Number of Slices containing unrelated logic:          0 out of      51   0%
+  Number of occupied Slices:             49 out of   7,680    1%
+    Number of Slices containing only related logic:      49 out of      49 100%
+    Number of Slices containing unrelated logic:          0 out of      49   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:          28 out of  15,360    1%
-  Number of bonded IOBs:                  9 out of     173    5%
+  Total Number of 4 input LUTs:          25 out of  15,360    1%
+  Number of bonded IOBs:                  8 out of     173    4%
   Number of BUFGMUXs:                     1 out of       8   12%
 
   Number of RPM macros:            1
-Average Fanout of Non-Clock Nets:                2.81
+Average Fanout of Non-Clock Nets:                2.86
 
 Peak Memory Usage:  4412 MB
-Total REAL time to MAP completion:  2 secs 
+Total REAL time to MAP completion:  1 secs 
 Total CPU time to MAP completion:   1 secs 
 
 NOTES:
@@ -140,11 +140,10 @@ Section 6 - IOB Properties
 | CHEQ                               | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | CLEAR                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | CLOCK                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| J                                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| K                                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | TIMEOUT                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| W                                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| Z                                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| Y0                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| Y1                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| Y2                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

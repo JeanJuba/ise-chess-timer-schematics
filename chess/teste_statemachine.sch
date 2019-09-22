@@ -8,23 +8,34 @@
     <netlist>
         <signal name="XLXN_1" />
         <signal name="CLEAR" />
-        <signal name="CHEQ" />
-        <signal name="BUTTON" />
-        <signal name="TIMEOUT" />
-        <signal name="J" />
-        <signal name="K" />
-        <signal name="W" />
-        <signal name="Z" />
         <signal name="CLOCK" />
+        <signal name="XLXN_5" />
+        <signal name="XLXN_6" />
+        <signal name="XLXN_7" />
+        <signal name="XLXN_9" />
+        <signal name="XLXN_10" />
+        <signal name="XLXN_11" />
+        <signal name="XLXN_13" />
+        <signal name="XLXN_15" />
+        <signal name="XLXN_17" />
+        <signal name="XLXN_40" />
+        <signal name="CHEQ" />
+        <signal name="XLXN_42" />
+        <signal name="BUTTON" />
+        <signal name="XLXN_44" />
+        <signal name="TIMEOUT" />
+        <signal name="XLXN_46" />
+        <signal name="Y2" />
+        <signal name="Y1" />
+        <signal name="Y0" />
         <port polarity="Input" name="CLEAR" />
+        <port polarity="Input" name="CLOCK" />
         <port polarity="Input" name="CHEQ" />
         <port polarity="Input" name="BUTTON" />
         <port polarity="Input" name="TIMEOUT" />
-        <port polarity="Output" name="J" />
-        <port polarity="Output" name="K" />
-        <port polarity="Output" name="W" />
-        <port polarity="Output" name="Z" />
-        <port polarity="Input" name="CLOCK" />
+        <port polarity="Output" name="Y2" />
+        <port polarity="Output" name="Y1" />
+        <port polarity="Output" name="Y0" />
         <blockdef name="DivisorFrequencia">
             <timestamp>2019-9-20T0:47:58</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
@@ -32,17 +43,16 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="StateMachine">
-            <timestamp>2019-9-20T0:38:47</timestamp>
-            <rect width="256" x="64" y="-320" height="320" />
+            <timestamp>2019-9-22T0:0:29</timestamp>
+            <line x2="0" y1="160" y2="160" x1="64" />
+            <line x2="384" y1="16" y2="16" x1="320" />
+            <line x2="384" y1="64" y2="64" x1="320" />
+            <line x2="384" y1="112" y2="112" x1="320" />
             <line x2="0" y1="-288" y2="-288" x1="64" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
-            <line x2="384" y1="-192" y2="-192" x1="320" />
-            <line x2="384" y1="-240" y2="-240" x1="320" />
-            <line x2="384" y1="-112" y2="-112" x1="320" />
-            <line x2="384" y1="-64" y2="-64" x1="320" />
+            <rect width="256" x="64" y="-320" height="512" />
         </blockdef>
         <block symbolname="DivisorFrequencia" name="XLXI_1">
             <blockpin signalname="CLOCK" name="CLOCK" />
@@ -50,59 +60,59 @@
         </block>
         <block symbolname="StateMachine" name="XLXI_2">
             <blockpin signalname="TIMEOUT" name="TIMEOUT" />
-            <blockpin signalname="BUTTON" name="BUTTON" />
             <blockpin signalname="CHEQ" name="CHEQ" />
-            <blockpin signalname="CLEAR" name="CLEAR" />
+            <blockpin signalname="BUTTON" name="BUTTON" />
             <blockpin signalname="XLXN_1" name="CLOCK" />
-            <blockpin signalname="K" name="K" />
-            <blockpin signalname="J" name="J" />
-            <blockpin signalname="W" name="W" />
-            <blockpin signalname="Z" name="Z" />
+            <blockpin signalname="Y2" name="Y2" />
+            <blockpin signalname="Y1" name="Y1" />
+            <blockpin signalname="Y0" name="Y0" />
+            <blockpin signalname="CLEAR" name="CLEAR" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <instance x="736" y="1104" name="XLXI_1" orien="R0">
+        <branch name="CLOCK">
+            <wire x2="720" y1="1056" y2="1056" x1="688" />
+            <wire x2="736" y1="1056" y2="1056" x1="720" />
+        </branch>
+        <branch name="CLEAR">
+            <wire x2="1440" y1="1248" y2="1248" x1="1360" />
+            <wire x2="1456" y1="1248" y2="1248" x1="1440" />
+        </branch>
+        <instance x="1456" y="1088" name="XLXI_2" orien="R0">
         </instance>
         <branch name="XLXN_1">
-            <wire x2="1456" y1="1072" y2="1072" x1="1120" />
+            <wire x2="1456" y1="1056" y2="1056" x1="1120" />
         </branch>
-        <instance x="1456" y="1104" name="XLXI_2" orien="R0">
-        </instance>
-        <branch name="CLEAR">
-            <wire x2="1456" y1="1008" y2="1008" x1="1424" />
-        </branch>
-        <iomarker fontsize="28" x="1424" y="1008" name="CLEAR" orien="R180" />
         <branch name="CHEQ">
-            <wire x2="1456" y1="944" y2="944" x1="1424" />
+            <wire x2="1376" y1="928" y2="928" x1="1360" />
+            <wire x2="1456" y1="928" y2="928" x1="1376" />
         </branch>
-        <iomarker fontsize="28" x="1424" y="944" name="CHEQ" orien="R180" />
         <branch name="BUTTON">
-            <wire x2="1456" y1="880" y2="880" x1="1424" />
+            <wire x2="1376" y1="864" y2="864" x1="1360" />
+            <wire x2="1456" y1="864" y2="864" x1="1376" />
         </branch>
-        <iomarker fontsize="28" x="1424" y="880" name="BUTTON" orien="R180" />
         <branch name="TIMEOUT">
-            <wire x2="1456" y1="816" y2="816" x1="1424" />
+            <wire x2="1376" y1="800" y2="800" x1="1360" />
+            <wire x2="1456" y1="800" y2="800" x1="1376" />
         </branch>
-        <iomarker fontsize="28" x="1424" y="816" name="TIMEOUT" orien="R180" />
-        <branch name="J">
-            <wire x2="1872" y1="864" y2="864" x1="1840" />
+        <iomarker fontsize="28" x="1360" y="928" name="CHEQ" orien="R180" />
+        <iomarker fontsize="28" x="1360" y="864" name="BUTTON" orien="R180" />
+        <iomarker fontsize="28" x="1360" y="800" name="TIMEOUT" orien="R180" />
+        <instance x="736" y="1088" name="XLXI_1" orien="R0">
+        </instance>
+        <iomarker fontsize="28" x="688" y="1056" name="CLOCK" orien="R180" />
+        <branch name="Y2">
+            <wire x2="1872" y1="1104" y2="1104" x1="1840" />
         </branch>
-        <iomarker fontsize="28" x="1872" y="864" name="J" orien="R0" />
-        <branch name="K">
-            <wire x2="1872" y1="912" y2="912" x1="1840" />
+        <iomarker fontsize="28" x="1872" y="1104" name="Y2" orien="R0" />
+        <branch name="Y1">
+            <wire x2="1872" y1="1152" y2="1152" x1="1840" />
         </branch>
-        <iomarker fontsize="28" x="1872" y="912" name="K" orien="R0" />
-        <branch name="W">
-            <wire x2="1872" y1="992" y2="992" x1="1840" />
+        <iomarker fontsize="28" x="1872" y="1152" name="Y1" orien="R0" />
+        <branch name="Y0">
+            <wire x2="1872" y1="1200" y2="1200" x1="1840" />
         </branch>
-        <iomarker fontsize="28" x="1872" y="992" name="W" orien="R0" />
-        <branch name="Z">
-            <wire x2="1872" y1="1040" y2="1040" x1="1840" />
-        </branch>
-        <iomarker fontsize="28" x="1872" y="1040" name="Z" orien="R0" />
-        <branch name="CLOCK">
-            <wire x2="736" y1="1072" y2="1072" x1="704" />
-        </branch>
-        <iomarker fontsize="28" x="704" y="1072" name="CLOCK" orien="R180" />
+        <iomarker fontsize="28" x="1872" y="1200" name="Y0" orien="R0" />
+        <iomarker fontsize="28" x="1360" y="1248" name="CLEAR" orien="R180" />
     </sheet>
 </drawing>

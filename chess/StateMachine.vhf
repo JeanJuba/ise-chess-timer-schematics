@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : StateMachine.vhf
--- /___/   /\     Timestamp : 09/21/2019 02:28:33
+-- /___/   /\     Timestamp : 09/21/2019 21:02:41
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -31,31 +31,48 @@ entity StateMachine is
           CLEAR   : in    std_logic; 
           CLOCK   : in    std_logic; 
           TIMEOUT : in    std_logic; 
-          J       : out   std_logic; 
-          K       : out   std_logic; 
-          W       : out   std_logic; 
-          Z       : out   std_logic);
+          Y0      : out   std_logic; 
+          Y1      : out   std_logic; 
+          Y2      : out   std_logic);
 end StateMachine;
 
 architecture BEHAVIORAL of StateMachine is
    attribute BOX_TYPE   : string ;
-   signal XLXN_8  : std_logic;
-   signal XLXN_9  : std_logic;
-   signal XLXN_12 : std_logic;
-   signal XLXN_14 : std_logic;
-   signal XLXN_23 : std_logic;
-   signal XLXN_24 : std_logic;
-   signal XLXN_25 : std_logic;
-   signal XLXN_26 : std_logic;
-   signal XLXN_27 : std_logic;
-   signal XLXN_37 : std_logic;
-   signal XLXN_38 : std_logic;
-   signal XLXN_39 : std_logic;
-   signal XLXN_41 : std_logic;
-   signal XLXN_42 : std_logic;
-   signal XLXN_59 : std_logic;
-   signal XLXN_60 : std_logic;
-   signal W_DUMMY : std_logic;
+   signal XLXN_61  : std_logic;
+   signal XLXN_62  : std_logic;
+   signal XLXN_63  : std_logic;
+   signal XLXN_64  : std_logic;
+   signal XLXN_65  : std_logic;
+   signal XLXN_66  : std_logic;
+   signal XLXN_67  : std_logic;
+   signal XLXN_68  : std_logic;
+   signal XLXN_69  : std_logic;
+   signal XLXN_81  : std_logic;
+   signal XLXN_82  : std_logic;
+   signal XLXN_83  : std_logic;
+   signal XLXN_85  : std_logic;
+   signal XLXN_86  : std_logic;
+   signal XLXN_87  : std_logic;
+   signal XLXN_88  : std_logic;
+   signal XLXN_89  : std_logic;
+   signal XLXN_90  : std_logic;
+   signal XLXN_91  : std_logic;
+   signal XLXN_94  : std_logic;
+   signal XLXN_95  : std_logic;
+   signal XLXN_96  : std_logic;
+   signal XLXN_98  : std_logic;
+   signal XLXN_100 : std_logic;
+   signal XLXN_101 : std_logic;
+   signal XLXN_102 : std_logic;
+   signal XLXN_103 : std_logic;
+   signal XLXN_104 : std_logic;
+   signal XLXN_105 : std_logic;
+   signal XLXN_106 : std_logic;
+   signal XLXN_107 : std_logic;
+   signal XLXN_108 : std_logic;
+   signal Y0_DUMMY : std_logic;
+   signal Y1_DUMMY : std_logic;
+   signal Y2_DUMMY : std_logic;
    component FDC
       generic( INIT : bit :=  '0');
       port ( C   : in    std_logic; 
@@ -73,29 +90,20 @@ architecture BEHAVIORAL of StateMachine is
    end component;
    attribute BOX_TYPE of OR3 : component is "BLACK_BOX";
    
-   component AND2B1
+   component AND2
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
              O  : out   std_logic);
    end component;
-   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
+   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
    
-   component AND3B1
+   component AND3
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
              I2 : in    std_logic; 
              O  : out   std_logic);
    end component;
-   attribute BOX_TYPE of AND3B1 : component is "BLACK_BOX";
-   
-   component AND4B3
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND4B3 : component is "BLACK_BOX";
+   attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
    
    component OR4
       port ( I0 : in    std_logic; 
@@ -106,16 +114,16 @@ architecture BEHAVIORAL of StateMachine is
    end component;
    attribute BOX_TYPE of OR4 : component is "BLACK_BOX";
    
-   component AND4B2
+   component AND4
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
              I2 : in    std_logic; 
              I3 : in    std_logic; 
              O  : out   std_logic);
    end component;
-   attribute BOX_TYPE of AND4B2 : component is "BLACK_BOX";
+   attribute BOX_TYPE of AND4 : component is "BLACK_BOX";
    
-   component AND5B4
+   component AND5
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
              I2 : in    std_logic; 
@@ -123,138 +131,196 @@ architecture BEHAVIORAL of StateMachine is
              I4 : in    std_logic; 
              O  : out   std_logic);
    end component;
-   attribute BOX_TYPE of AND5B4 : component is "BLACK_BOX";
+   attribute BOX_TYPE of AND5 : component is "BLACK_BOX";
    
-   component AND2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
+   component INV
+      port ( I : in    std_logic; 
+             O : out   std_logic);
    end component;
-   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
 begin
-   W <= W_DUMMY;
+   Y0 <= Y0_DUMMY;
+   Y1 <= Y1_DUMMY;
+   Y2 <= Y2_DUMMY;
    XLXI_9 : FDC
       port map (C=>CLOCK,
                 CLR=>CLEAR,
-                D=>XLXN_12,
-                Q=>W_DUMMY);
+                D=>XLXN_61,
+                Q=>Y2_DUMMY);
    
    XLXI_10 : FDC
       port map (C=>CLOCK,
                 CLR=>CLEAR,
-                D=>XLXN_27,
-                Q=>XLXN_59);
+                D=>XLXN_65,
+                Q=>Y1_DUMMY);
    
    XLXI_11 : FDC
       port map (C=>CLOCK,
                 CLR=>CLEAR,
-                D=>XLXN_42,
-                Q=>XLXN_60);
+                D=>XLXN_81,
+                Q=>Y0_DUMMY);
    
-   XLXI_16 : OR3
-      port map (I0=>XLXN_9,
-                I1=>XLXN_8,
-                I2=>XLXN_14,
-                O=>XLXN_12);
+   XLXI_38 : OR3
+      port map (I0=>XLXN_64,
+                I1=>XLXN_63,
+                I2=>XLXN_62,
+                O=>XLXN_61);
    
-   XLXI_18 : AND2B1
+   XLXI_39 : AND2
+      port map (I0=>XLXN_87,
+                I1=>Y2_DUMMY,
+                O=>XLXN_62);
+   
+   XLXI_40 : AND3
+      port map (I0=>TIMEOUT,
+                I1=>XLXN_88,
+                I2=>Y1_DUMMY,
+                O=>XLXN_63);
+   
+   XLXI_41 : AND3
+      port map (I0=>CHEQ,
+                I1=>XLXN_89,
+                I2=>Y1_DUMMY,
+                O=>XLXN_64);
+   
+   XLXI_47 : OR4
+      port map (I0=>XLXN_69,
+                I1=>XLXN_68,
+                I2=>XLXN_67,
+                I3=>XLXN_66,
+                O=>XLXN_65);
+   
+   XLXI_48 : AND3
       port map (I0=>BUTTON,
-                I1=>W_DUMMY,
-                O=>XLXN_14);
+                I1=>Y0_DUMMY,
+                I2=>XLXN_90,
+                O=>XLXN_66);
    
-   XLXI_20 : AND3B1
-      port map (I0=>XLXN_60,
-                I1=>XLXN_59,
-                I2=>TIMEOUT,
-                O=>XLXN_8);
-   
-   XLXI_21 : AND3B1
-      port map (I0=>XLXN_60,
-                I1=>XLXN_59,
-                I2=>CHEQ,
-                O=>XLXN_9);
-   
-   XLXI_22 : AND3B1
-      port map (I0=>XLXN_59,
-                I1=>BUTTON,
-                I2=>XLXN_60,
-                O=>XLXN_23);
-   
-   XLXI_23 : AND3B1
-      port map (I0=>BUTTON,
+   XLXI_49 : AND3
+      port map (I0=>XLXN_91,
                 I1=>TIMEOUT,
-                I2=>XLXN_60,
-                O=>XLXN_24);
+                I2=>Y0_DUMMY,
+                O=>XLXN_67);
    
-   XLXI_24 : AND3B1
-      port map (I0=>BUTTON,
+   XLXI_50 : AND3
+      port map (I0=>XLXN_94,
                 I1=>CHEQ,
-                I2=>XLXN_60,
-                O=>XLXN_25);
+                I2=>Y0_DUMMY,
+                O=>XLXN_68);
    
-   XLXI_25 : AND4B3
+   XLXI_51 : AND4
+      port map (I0=>XLXN_98,
+                I1=>XLXN_96,
+                I2=>XLXN_95,
+                I3=>Y1_DUMMY,
+                O=>XLXN_69);
+   
+   XLXI_64 : OR4
+      port map (I0=>XLXN_86,
+                I1=>XLXN_85,
+                I2=>XLXN_83,
+                I3=>XLXN_82,
+                O=>XLXN_81);
+   
+   XLXI_65 : AND2
+      port map (I0=>XLXN_102,
+                I1=>Y0_DUMMY,
+                O=>XLXN_82);
+   
+   XLXI_66 : AND4
+      port map (I0=>CHEQ,
+                I1=>BUTTON,
+                I2=>XLXN_101,
+                I3=>XLXN_100,
+                O=>XLXN_83);
+   
+   XLXI_67 : AND4
       port map (I0=>TIMEOUT,
                 I1=>BUTTON,
-                I2=>CHEQ,
-                I3=>XLXN_59,
-                O=>XLXN_26);
+                I2=>XLXN_104,
+                I3=>XLXN_103,
+                O=>XLXN_85);
    
-   XLXI_26 : OR4
-      port map (I0=>XLXN_26,
-                I1=>XLXN_25,
-                I2=>XLXN_24,
-                I3=>XLXN_23,
-                O=>XLXN_27);
-   
-   XLXI_27 : AND2B1
+   XLXI_68 : AND5
       port map (I0=>BUTTON,
-                I1=>XLXN_60,
-                O=>XLXN_37);
+                I1=>XLXN_108,
+                I2=>XLXN_107,
+                I3=>XLXN_106,
+                I4=>XLXN_105,
+                O=>XLXN_86);
    
-   XLXI_28 : AND4B2
-      port map (I0=>W_DUMMY,
-                I1=>XLXN_59,
-                I2=>BUTTON,
-                I3=>CHEQ,
-                O=>XLXN_38);
+   XLXI_69 : INV
+      port map (I=>BUTTON,
+                O=>XLXN_87);
    
-   XLXI_29 : AND4B2
-      port map (I0=>W_DUMMY,
-                I1=>XLXN_59,
-                I2=>TIMEOUT,
-                I3=>BUTTON,
-                O=>XLXN_39);
+   XLXI_70 : INV
+      port map (I=>Y0_DUMMY,
+                O=>XLXN_88);
    
-   XLXI_30 : AND5B4
-      port map (I0=>W_DUMMY,
-                I1=>XLXN_60,
-                I2=>TIMEOUT,
-                I3=>CHEQ,
-                I4=>BUTTON,
-                O=>XLXN_41);
+   XLXI_71 : INV
+      port map (I=>Y0_DUMMY,
+                O=>XLXN_89);
    
-   XLXI_31 : OR4
-      port map (I0=>XLXN_41,
-                I1=>XLXN_39,
-                I2=>XLXN_38,
-                I3=>XLXN_37,
-                O=>XLXN_42);
+   XLXI_72 : INV
+      port map (I=>Y1_DUMMY,
+                O=>XLXN_90);
    
-   XLXI_32 : AND2B1
-      port map (I0=>XLXN_59,
-                I1=>XLXN_60,
-                O=>J);
+   XLXI_73 : INV
+      port map (I=>BUTTON,
+                O=>XLXN_91);
    
-   XLXI_33 : AND2B1
-      port map (I0=>XLXN_60,
-                I1=>XLXN_59,
-                O=>K);
+   XLXI_74 : INV
+      port map (I=>BUTTON,
+                O=>XLXN_94);
    
-   XLXI_34 : AND2
-      port map (I0=>XLXN_60,
-                I1=>XLXN_59,
-                O=>Z);
+   XLXI_75 : INV
+      port map (I=>CHEQ,
+                O=>XLXN_95);
+   
+   XLXI_76 : INV
+      port map (I=>TIMEOUT,
+                O=>XLXN_96);
+   
+   XLXI_77 : INV
+      port map (I=>BUTTON,
+                O=>XLXN_98);
+   
+   XLXI_78 : INV
+      port map (I=>BUTTON,
+                O=>XLXN_102);
+   
+   XLXI_79 : INV
+      port map (I=>Y2_DUMMY,
+                O=>XLXN_100);
+   
+   XLXI_80 : INV
+      port map (I=>Y1_DUMMY,
+                O=>XLXN_101);
+   
+   XLXI_87 : INV
+      port map (I=>Y2_DUMMY,
+                O=>XLXN_103);
+   
+   XLXI_88 : INV
+      port map (I=>Y1_DUMMY,
+                O=>XLXN_104);
+   
+   XLXI_89 : INV
+      port map (I=>Y2_DUMMY,
+                O=>XLXN_105);
+   
+   XLXI_90 : INV
+      port map (I=>Y0_DUMMY,
+                O=>XLXN_106);
+   
+   XLXI_91 : INV
+      port map (I=>CHEQ,
+                O=>XLXN_107);
+   
+   XLXI_92 : INV
+      port map (I=>TIMEOUT,
+                O=>XLXN_108);
    
 end BEHAVIORAL;
 
